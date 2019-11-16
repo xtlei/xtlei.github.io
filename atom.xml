@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xtlei.github.io/"/>
-  <updated>2019-11-16T17:43:48.530Z</updated>
+  <updated>2019-11-16T17:56:53.440Z</updated>
   <id>https://xtlei.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://xtlei.github.io/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/"/>
     <id>https://xtlei.github.io/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/</id>
     <published>2019-11-13T02:41:00.000Z</published>
-    <updated>2019-11-16T17:43:48.530Z</updated>
+    <updated>2019-11-16T17:56:53.440Z</updated>
     
-    <content type="html"><![CDATA[<html><font face='Times New Roman,宋体' size='4'><h4 id="1-什么是Markdown？"><a href="#1-什么是Markdown？" class="headerlink" title="1.什么是Markdown？"></a>1.什么是Markdown？</h4><p>&emsp;&emsp;Markdown是一种轻量级标记语言。  </p><p>&emsp;&emsp;百度百科对标记语言的定义为：标记语言，是一种将文本以及文本相关的其他信息结合起来，展现出关于文档结构和数据处理细节的电脑文字编码。                 </p><a id="more"></a><h4 id="2-用Markdown码字的好处"><a href="#2-用Markdown码字的好处" class="headerlink" title="2.用Markdown码字的好处"></a>2.用Markdown码字的好处</h4><p><strong>Word的优缺点：</strong></p><p>&emsp;&emsp;<strong>学习成本低</strong>——因为所见即所得——正因为其所见即所得的特性，所以只要是个识字的，会用拼音或五笔的，都会用Word，只要不是宏之类的。</p><p>&emsp;&emsp;<strong>臃肿</strong>——打开这个软件本身就需要耗费一些时间，更不用提文档较大时。</p><p>&emsp;&emsp;<strong>兼容性问题</strong>——不同版本的之间的兼容性都有点问题，更不用提其他文本编辑器了，因为与微软的战略合作关系，WPS对Word文档兼容性最好，但也会出现用WPS能打开，用Word打不开的情况。</p><p>&emsp;&emsp;<strong>容易崩溃</strong>——难道是是盗版的问题么？而且奔溃后，数据不一定能找回。</p><p>&emsp;&emsp;<strong>没有版本控制</strong>——了解Git之后，觉得这个东西实在是太神奇了，不愧时光机的称号，只要你的使用习惯好，你可以知道你之前写了什么，你可以回退到任何一个保存过的版本，能不能将其应用到码字上呢？反正Word很难做到版本控制。</p><p>&emsp;&emsp;<strong>你是关注文字还是排版</strong>——上大学时，做课程设计和实习报告，被打回来多因为一个问题：格式问题。因为大家内容都差不多，主要工作就是各种整格式，那时算是学会怎么去掉页眉的横线、怎么添加分页符、怎么插目录……但这些是重点么？难道不应该更多地关注内容？</p><p><strong>Markdown的好处</strong>：</p><p>&emsp;&emsp;<strong>学习成本低</strong>——身为一个轻量级的标记语言，Markdown拥有较少的标记符号，经常用到的就更少了，而且非常简单。</p><p>&emsp;&emsp;<strong>任何文本编辑器都可以打开</strong>——Markdown文档实际上就是纯文本（plain text）格式，只要是个文本编辑器都可以打开，只不过支持Markdown语法的编辑器会将其渲染成相应格式，由于其语法足够简单，即使用不支持Markdown的编辑器打开，你也能看懂。</p><p>&emsp;&emsp;<strong>格式转换方便</strong>——不少Markdown编辑器支持将文档转为pdf、docx、html等，你也可以使用具有瑞士军刀之称的Pandoc轻松将Markdown文档转为其他格式。</p><p>&emsp;&emsp;<strong>你可以更多地关注内容</strong>——用富文本编辑器编辑文档的话，你的精力往往过多分散到排版上，有的人甚至逐句调整格式，学会Markdown的话，你的注意力又会重新转移到内容上来。</p><p>&emsp;&emsp;<strong>像记事本一样的速度</strong>——在Windows上办公时，我常常想，如果用记事本码字就好了，因为其打开速度实在是太快了。但记事本里的文字是没有格式的，体验很差，Markdown格式文档完美继承其速度，又添加了优美的格式。</p><p>&emsp;&emsp;<strong>利用Github做版本控制</strong>——Github不仅仅可以用来托管代码，还可以用来托管文章，而且Github文档默认是Markdown格式的。另外，你还可以利用GitHub与Gitbook写电子书。</p><div style="text-align:right">链接：https://www.jianshu.com/p/27d009f3c986</div><br/>&emsp;&emsp;富文本编辑器，Rich Text Editor， 简称RTE，是一种可内嵌于浏览器，所见即所得的文本编辑器。富文本编辑器不同于文本编辑器，程序员可到网上下载免费的富文本编辑器内嵌于自己的网站或程序里（当然付费的功能会更强大些），方便用户编辑文章或信息。<br/><br/><br/><br/><br/></font></html>]]></content>
+    <content type="html"><![CDATA[<html><font face='Times New Roman,宋体' size='4'><h4 id="1-什么是Markdown？"><a href="#1-什么是Markdown？" class="headerlink" title="1.什么是Markdown？"></a>1.什么是Markdown？</h4><p>&emsp;&emsp;Markdown是一种轻量级标记语言。  </p><a id="more"></a><p>&emsp;&emsp;百度百科对标记语言的定义为：标记语言，是一种将文本以及文本相关的其他信息结合起来，展现出关于文档结构和数据处理细节的电脑文字编码。                 </p><h4 id="2-用Markdown码字的好处"><a href="#2-用Markdown码字的好处" class="headerlink" title="2.用Markdown码字的好处"></a>2.用Markdown码字的好处</h4><p><strong>Word的优缺点：</strong></p><p>&emsp;&emsp;<strong>学习成本低</strong>——因为所见即所得——正因为其所见即所得的特性，所以只要是个识字的，会用拼音或五笔的，都会用Word，只要不是宏之类的。</p><p>&emsp;&emsp;<strong>臃肿</strong>——打开这个软件本身就需要耗费一些时间，更不用提文档较大时。</p><p>&emsp;&emsp;<strong>兼容性问题</strong>——不同版本的之间的兼容性都有点问题，更不用提其他文本编辑器了，因为与微软的战略合作关系，WPS对Word文档兼容性最好，但也会出现用WPS能打开，用Word打不开的情况。</p><p>&emsp;&emsp;<strong>容易崩溃</strong>——难道是是盗版的问题么？而且奔溃后，数据不一定能找回。</p><p>&emsp;&emsp;<strong>没有版本控制</strong>——了解Git之后，觉得这个东西实在是太神奇了，不愧时光机的称号，只要你的使用习惯好，你可以知道你之前写了什么，你可以回退到任何一个保存过的版本，能不能将其应用到码字上呢？反正Word很难做到版本控制。</p><p>&emsp;&emsp;<strong>你是关注文字还是排版</strong>——上大学时，做课程设计和实习报告，被打回来多因为一个问题：格式问题。因为大家内容都差不多，主要工作就是各种整格式，那时算是学会怎么去掉页眉的横线、怎么添加分页符、怎么插目录……但这些是重点么？难道不应该更多地关注内容？</p><p><strong>Markdown的好处</strong>：</p><p>&emsp;&emsp;<strong>学习成本低</strong>——身为一个轻量级的标记语言，Markdown拥有较少的标记符号，经常用到的就更少了，而且非常简单。</p><p>&emsp;&emsp;<strong>任何文本编辑器都可以打开</strong>——Markdown文档实际上就是纯文本（plain text）格式，只要是个文本编辑器都可以打开，只不过支持Markdown语法的编辑器会将其渲染成相应格式，由于其语法足够简单，即使用不支持Markdown的编辑器打开，你也能看懂。</p><p>&emsp;&emsp;<strong>格式转换方便</strong>——不少Markdown编辑器支持将文档转为pdf、docx、html等，你也可以使用具有瑞士军刀之称的Pandoc轻松将Markdown文档转为其他格式。</p><p>&emsp;&emsp;<strong>你可以更多地关注内容</strong>——用富文本编辑器编辑文档的话，你的精力往往过多分散到排版上，有的人甚至逐句调整格式，学会Markdown的话，你的注意力又会重新转移到内容上来。</p><p>&emsp;&emsp;<strong>像记事本一样的速度</strong>——在Windows上办公时，我常常想，如果用记事本码字就好了，因为其打开速度实在是太快了。但记事本里的文字是没有格式的，体验很差，Markdown格式文档完美继承其速度，又添加了优美的格式。</p><p>&emsp;&emsp;<strong>利用Github做版本控制</strong>——Github不仅仅可以用来托管代码，还可以用来托管文章，而且Github文档默认是Markdown格式的。另外，你还可以利用GitHub与Gitbook写电子书。</p><div style="text-align:right">链接：https://www.jianshu.com/p/27d009f3c986</div><br/>&emsp;&emsp;富文本编辑器，Rich Text Editor， 简称RTE，是一种可内嵌于浏览器，所见即所得的文本编辑器。富文本编辑器不同于文本编辑器，程序员可到网上下载免费的富文本编辑器内嵌于自己的网站或程序里（当然付费的功能会更强大些），方便用户编辑文章或信息。<br/><br/><br/><br/><br/></font></html>]]></content>
     
     <summary type="html">
     
@@ -31,7 +31,6 @@
 &lt;font face=&#39;Times New Roman,宋体&#39; size=&#39;4&#39;&gt;
 
 &lt;h4 id=&quot;1-什么是Markdown？&quot;&gt;&lt;a href=&quot;#1-什么是Markdown？&quot; class=&quot;headerlink&quot; title=&quot;1.什么是Markdown？&quot;&gt;&lt;/a&gt;1.什么是Markdown？&lt;/h4&gt;&lt;p&gt;&amp;emsp;&amp;emsp;Markdown是一种轻量级标记语言。  &lt;/p&gt;
-&lt;p&gt;&amp;emsp;&amp;emsp;百度百科对标记语言的定义为：标记语言，是一种将文本以及文本相关的其他信息结合起来，展现出关于文档结构和数据处理细节的电脑文字编码。                 &lt;/p&gt;
     
     </summary>
     
