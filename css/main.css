@@ -1185,7 +1185,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fff;
+  background: #d0da13;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2628,17 +2628,29 @@ hr {
 .sub-menu .menu-item {
   display: inline-block;
 }
-article {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.4);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.4);
+.content {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 article {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.4);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.4);
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.content {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+article {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
