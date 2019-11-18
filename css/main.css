@@ -1185,7 +1185,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #03018a;
+  background: #fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2628,31 +2628,17 @@ hr {
 .sub-menu .menu-item {
   display: inline-block;
 }
-.post {
-  margin-top: 60px;
-  margin-bottom: 60px;
+article {
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 25px;
-  -webkit-box-shadow: 0 0 500px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 500px rgba(202,203,204,0.5);
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.4);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.4);
 }
 article {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 25px;
-  -webkit-box-shadow: 0 0 10px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 10px rgba(202,203,204,0.5);
-}
-.post {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 500px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 500px rgba(202,203,204,0.5);
-}
-article {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 10px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 10px rgba(202,203,204,0.5);
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.4);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.4);
 }
