@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xtlei.github.io/2019/11/13/%25E8%25AF%2597%25E7%25BB%258F%25E6%25A5%259A%25E8%25BE%259E/</loc>
+    <loc>https://xtlei.github.io/about/index.html</loc>
     
-    <lastmod>2019-11-18T09:55:32.895Z</lastmod>
+    <lastmod>2019-11-18T12:08:18.605Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xtlei.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-11-18T12:00:27.788Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xtlei.github.io/life/index.html</loc>
+    
+    <lastmod>2019-11-18T12:00:01.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xtlei.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-11-18T11:59:45.379Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://xtlei.github.io/2019/11/13/Github+Hexo%25E5%25BB%25BA%25E7%25AB%258B%25E4%25B8%25AA%25E4%25BA%25BA%25E5%258D%259A%25E5%25AE%25A2%25E2%2580%2594%25E4%25B8%25BB%25E9%25A2%2598%25E9%2585%258D%25E7%25BD%25AE%25EF%25BC%2588Next%25EF%25BC%2589/</loc>
     
-    <lastmod>2019-11-18T09:54:53.920Z</lastmod>
+    <lastmod>2019-11-18T11:54:47.736Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xtlei.github.io/2019/11/13/%25E8%25AF%2597%25E7%25BB%258F%25E6%25A5%259A%25E8%25BE%259E/</loc>
+    
+    <lastmod>2019-11-18T10:15:07.722Z</lastmod>
     
   </url>
   
@@ -26,27 +54,6 @@
     <loc>https://xtlei.github.io/google5c0d66e68c025e4e.html</loc>
     
     <lastmod>2019-11-17T13:16:43.744Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xtlei.github.io/tags/index.html</loc>
-    
-    <lastmod>2019-11-17T09:56:00.401Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xtlei.github.io/categories/index.html</loc>
-    
-    <lastmod>2019-11-17T09:55:40.975Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xtlei.github.io/about/index.html</loc>
-    
-    <lastmod>2019-11-13T02:33:27.295Z</lastmod>
     
   </url>
   
