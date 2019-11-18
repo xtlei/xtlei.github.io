@@ -1185,7 +1185,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2effa3;
+  background: #a3a7ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2640,7 +2640,7 @@ article {
   margin-bottom: 20px;
 }
 .posts-expand .post-header .post-title {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
 }
 .post-body p a {
@@ -2686,7 +2686,7 @@ article {
   margin-bottom: 20px;
 }
 .posts-expand .post-header .post-title {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
 }
 .post-body p a {
