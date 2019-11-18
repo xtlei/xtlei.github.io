@@ -1185,7 +1185,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8b8500;
+  background: #506fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2633,11 +2633,15 @@ article {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.posts-expand .post-block:not(:first-child) {
+  margin-top: 0px;
+}
 .post-copyright {
   margin-bottom: 20px;
 }
 .posts-expand .post-header .post-title {
-  font-size: 1em;
+  font-size: 28px;
+  font-weight: bold;
 }
 .post-body p a {
   color: #0593d3;
@@ -2675,11 +2679,15 @@ article {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.posts-expand .post-block:not(:first-child) {
+  margin-top: 0px;
+}
 .post-copyright {
   margin-bottom: 20px;
 }
 .posts-expand .post-header .post-title {
-  font-size: 1em;
+  font-size: 28px;
+  font-weight: bold;
 }
 .post-body p a {
   color: #0593d3;
