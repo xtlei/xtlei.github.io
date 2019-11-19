@@ -360,7 +360,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-19 15:30:36 / 修改时间：18:35:54" itemprop="dateCreated datePublished" datetime="2019-11-19T15:30:36+08:00">2019-11-19</time>
+              <time title="创建时间：2019-11-19 15:30:36 / 修改时间：18:39:21" itemprop="dateCreated datePublished" datetime="2019-11-19T15:30:36+08:00">2019-11-19</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -415,110 +415,10 @@
 <font face="Times New Roman,宋体" size="4">
 
 <h4 id="本地环境搭建"><a href="#本地环境搭建" class="headerlink" title="本地环境搭建"></a>本地环境搭建</h4><h5 id="1-Git环境"><a href="#1-Git环境" class="headerlink" title="1.Git环境"></a>1.Git环境</h5><p>1.注册并登录Github<br>2.Git下载安装</p>
-<h5 id="2-Node环境"><a href="#2-Node环境" class="headerlink" title="2.Node环境"></a>2.Node环境</h5><p>1.安装Node.js同样选择适合自己计算机系统的版本下载安装即可。<br>2.安装完毕后，测试是否安装成功，打开命令终端，win+r输入cmd进入终端，键入命令node -v或者直接输入node回车即可，如果出现下图则说明node环境安装成功：<br><img src="/images/1_1.png" alt><br>1.node中集成了npm包安装工具，输入命令npm -v查看版本号，如图：<br><img src="/images/1_2.png" alt></p>
-<h5 id="3-Hexo环境"><a href="#3-Hexo环境" class="headerlink" title="3.Hexo环境"></a>3.Hexo环境</h5><p>Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>1.安装hexo-cli：命令行键入命令cnpm i hexo-cli -g或者npm i hexo-cli -g[其中 ‘cnpm’ 代替 npm，安装速度更快；‘i’表示install，‘-g’表示全局安装 (注意：如果安装失败，建议在管理者模式下安装)]<br><img src="/images/1_3.png" alt><br>2.初始化：在本地合适的位置创建一个文件夹用作Blog环境，比如，在D盘Github目录下创建了一个myblog文件夹，进入此目录，按住shift键同时点击鼠标右键打开Powershell终端，键入命令hexo init进行初始化，出现下图表示安装成功。<br><img src="/images/1_4.png" alt><br>完毕后发现空目录多出很多文件，如下图：<br><img src="/images/1_5.png" alt><br>这里的node_modules是项目依赖，在初始化的时候已经下载下来了，不用再hexo i了(有的教程写的hexo i就是安装依赖的作用)。</p>
-<h5 id="4-测试本地运行"><a href="#4-测试本地运行" class="headerlink" title="4.测试本地运行"></a>4.测试本地运行</h5><p>上述环境完成后，就可以在本地预览blog了。<br>1.键入命令hexo generate生成静态文件，可以简写为hexo g<br>2.键入命令hexo server在本地运行， 可以简写为hexo s<br>注意要保证PowerShell当前目录仍为myblog，出现下图则表示成功，<br><img src="/images/1_6.png" alt><br>打开浏览器，地址栏键入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可进行预览，效果如下</p>
-<h4 id="Github部署"><a href="#Github部署" class="headerlink" title="Github部署"></a>Github部署</h4><h5 id="1-在github上创建一个仓库"><a href="#1-在github上创建一个仓库" class="headerlink" title="1.在github上创建一个仓库"></a>1.在github上创建一个仓库</h5><p>注意此仓库的名称格式是：你的github用户名.github.io(其中用户名不区分大小写) 如下图<br><img src="/images/1_7.png" alt></p>
-<h5 id="2-修改hexo文件配置"><a href="#2-修改hexo文件配置" class="headerlink" title="2.修改hexo文件配置"></a>2.修改hexo文件配置</h5><p>1.要想部署到github，需要对本地myblog文件夹下的_config.yml文件进行配置,如图<br><img src="/images/1_8.png" alt><br>2.用编译器打开该文件，拉到最后，找到deploy选项，作如下配置:<br>1234 deploy:  type: ‘git’  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:xtlei/xtlei.github.io.git  baranch:master<br>其中，repo填写github创建的仓库的地址，点进你的仓库，如图<br><img src="/images/1_9.png" alt></p>
-<h5 id="3-部署"><a href="#3-部署" class="headerlink" title="3.部署"></a>3.部署</h5><p>部署之前，需要安装git部署插件<br>1.打开myblog文件夹，调出Powershell终端，键入cnpm i hexo-deployer-git -S安装插件<br>2.安装完毕后，键入命令hexo g生成静态文件<br>3.键入命令hexo d完成部署<br>4.再进入到github，进入io仓库，点击setting进入设置，往下拉至GitHub Pages看到如图<br><img src="/images/1_10.png" alt><br>这时候只需要地址栏中输入rosesnow.github.io(输入自己的github名称.github.io) 即可访问刚刚部署成功的Blog啦。<br><img src="/images/1_11.png" alt><br>原文链接<a href="https://rosesnow.github.io" target="_blank" rel="noopener">https://rosesnow.github.io</a><br><a href="https://rosesnow.github.io" target="_blank" rel="noopener">https://rosesnow.github.io</a><br></p></font><p></p>
-</html>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xtlei.github.io/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="XTLei">
-      <meta itemprop="description" content="浮生若梦总关情，半世平凡是无常">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="蟹家之宝树">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/" class="post-title-link" itemprop="url">Markdown简介</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-11-13 10:41:00" itemprop="dateCreated datePublished" datetime="2019-11-13T10:41:00+08:00">2019-11-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-19 17:50:35" itemprop="dateModified" datetime="2019-11-19T17:50:35+08:00">2019-11-19</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机使用</span>
-                  </a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.5k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <html>
-<font face="Times New Roman,宋体" size="4">
-
-<h4 id="1-什么是Markdown？"><a href="#1-什么是Markdown？" class="headerlink" title="1.什么是Markdown？"></a>1.什么是Markdown？</h4><p>&emsp;&emsp;Markdown是一种轻量级标记语言。  </p></font></html>
+<h5 id="2-Node环境"><a href="#2-Node环境" class="headerlink" title="2.Node环境"></a>2.Node环境</h5><p>1.安装Node.js同样选择适合自己计算机系统的版本下载安装即可。</p></font></html>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/#more" rel="contents">
+              <a class="btn" href="/2019/11/19/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%882%EF%BC%89%E2%80%94%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E4%B8%8E%E9%83%A8%E7%BD%B2/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -720,6 +620,106 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/11/13/%E8%AF%97%E7%BB%8F%E6%A5%9A%E8%BE%9E/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xtlei.github.io/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="XTLei">
+      <meta itemprop="description" content="浮生若梦总关情，半世平凡是无常">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蟹家之宝树">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/" class="post-title-link" itemprop="url">Markdown简介</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-13 10:41:00" itemprop="dateCreated datePublished" datetime="2019-11-13T10:41:00+08:00">2019-11-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-19 17:50:35" itemprop="dateModified" datetime="2019-11-19T17:50:35+08:00">2019-11-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机使用</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <html>
+<font face="Times New Roman,宋体" size="4">
+
+<h4 id="1-什么是Markdown？"><a href="#1-什么是Markdown？" class="headerlink" title="1.什么是Markdown？"></a>1.什么是Markdown？</h4><p>&emsp;&emsp;Markdown是一种轻量级标记语言。  </p></font></html>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
