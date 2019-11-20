@@ -56,7 +56,7 @@
   <meta name="description" content="1.在右上角或者左上角实现fork me on github实现效果图 具体实现方法点击这里或者这里挑选自己喜欢的样式，并复制代码。">
 <meta name="keywords" content="github,hexo,blog,next">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github+Hexo搭建个人博客（4）—Next7.5主题个性化1">
+<meta property="og:title" content="Github+Hexo搭建个人博客（4）—next7.5主题个性化1">
 <meta property="og:url" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;2019&#x2F;11&#x2F;13&#x2F;Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%884%EF%BC%89%E2%80%94Next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%961&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
 <meta property="og:description" content="1.在右上角或者左上角实现fork me on github实现效果图 具体实现方法点击这里或者这里挑选自己喜欢的样式，并复制代码。">
@@ -75,7 +75,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;images&#x2F;4_5.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;images&#x2F;4_6.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;images&#x2F;4_15.png">
-<meta property="og:updated_time" content="2019-11-20T02:51:36.198Z">
+<meta property="og:updated_time" content="2019-11-20T03:05:50.553Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;images&#x2F;4_1.png">
 
@@ -93,7 +93,7 @@
   };
 </script>
 
-  <title>Github+Hexo搭建个人博客（4）—Next7.5主题个性化1 | 蟹家之宝树</title>
+  <title>Github+Hexo搭建个人博客（4）—next7.5主题个性化1 | 蟹家之宝树</title>
   
 
 
@@ -259,7 +259,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Github+Hexo搭建个人博客（4）—Next7.5主题个性化1
+          Github+Hexo搭建个人博客（4）—next7.5主题个性化1
         </h1>
 
         <div class="post-meta">
@@ -276,7 +276,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-20 10:51:36" itemprop="dateModified" datetime="2019-11-20T10:51:36+08:00">2019-11-20</time>
+                <time title="修改时间：2019-11-20 11:05:50" itemprop="dateModified" datetime="2019-11-20T11:05:50+08:00">2019-11-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -349,7 +349,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo.extend.filter.register(<span class="string">'theme_inject'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">injects</span>) </span>&#123; </span><br><span class="line">    injects.style.push(<span class="string">'source/_data/styles.styl'</span>); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p><strong>经过该步操作，很多教程修改_custom.styl的操作都可以通过修改style.styl实现，另外很多修改_layout.styl等原配置文件的操作都建议通过修改style.styl文件实现，这样避免修改源代码，也方便查找自定义的修改。</strong></p>
 <h4 id="3-添加动态背景"><a href="#3-添加动态背景" class="headerlink" title="3.添加动态背景"></a>3.添加动态背景</h4><p><strong>实现效果图</strong><br><img src="/images/4_7.gif" alt=" "></p>
-<p><strong>具体实现方法</strong><br>1.打开next/layout/_layout.swig<br>在&lt; /body&gt;之前添加代码(注意不要放在&lt; /head&gt;的后面)</p>
+<p><strong>具体实现方法</strong><br>原则上说，next7.5版本只需要修改next的_config.yml配置文件即可实现，但是我没有成功，所以还是按照以下步骤实现。<br>1.打开next/layout/_layout.swig<br>在&lt; /body&gt;之前添加代码(注意不要放在&lt; /head&gt;的后面)</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.canvas_nest %&#125;</span><br><span class="line">    &lt;script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"&gt;&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <p>2.打开/next/_config.yml,在里面修改如下代码：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># background settings</span></span><br><span class="line"><span class="comment"># add canvas-nest effect</span></span><br><span class="line"><span class="comment"># see detail from https://github.com/hustcc/canvas-nest.js</span></span><br><span class="line"><span class="attr">canvas_nest:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
@@ -432,7 +432,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://xtlei.github.io/2019/11/13/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%884%EF%BC%89%E2%80%94Next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%961/" title="Github+Hexo搭建个人博客（4）—Next7.5主题个性化1">https://xtlei.github.io/2019/11/13/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%884%EF%BC%89%E2%80%94Next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%961/</a>
+    <a href="https://xtlei.github.io/2019/11/13/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%884%EF%BC%89%E2%80%94Next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%961/" title="Github+Hexo搭建个人博客（4）—next7.5主题个性化1">https://xtlei.github.io/2019/11/13/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%884%EF%BC%89%E2%80%94Next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%961/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -464,13 +464,16 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/" rel="next" title="Markdown简介">
+                  <i class="fa fa-chevron-left"></i> Markdown简介
+                </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/13/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%883%EF%BC%89%E2%80%94Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" rel="prev" title="Github+Hexo搭建个人博客（3）—Next主题配置">
-                  Github+Hexo搭建个人博客（3）—Next主题配置 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/11/13/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%883%EF%BC%89%E2%80%94Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" rel="prev" title="Github+Hexo搭建个人博客（3）—next主题配置">
+                  Github+Hexo搭建个人博客（3）—next主题配置 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
