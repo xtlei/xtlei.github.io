@@ -68,11 +68,11 @@ daovoice('update');
 <meta property="og:site_name" content="蟹家之宝树">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;黑盒测试与白盒测试查看源代码的思想不同，即通常所说的将系统看做黑盒子，不去考虑具体的代码，而只是根据本段代码要实现的功能需求，进行测试数据的输入，比较结果的输出是否符合预期的输出。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;images&#x2F;heihe1.jpeg">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;images&#x2F;heihe2.jpeg">
-<meta property="og:updated_time" content="2019-11-21T09:37:36.842Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;heihe1.jpeg">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;heihe2.jpeg">
+<meta property="og:updated_time" content="2019-11-25T03:22:20.436Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;images&#x2F;heihe1.jpeg">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;heihe1.jpeg">
 
 <link rel="canonical" href="https://xtlei.github.io/2019/11/13/%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95%E6%A6%82%E8%BF%B0/">
 
@@ -271,7 +271,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-21 17:37:36" itemprop="dateModified" datetime="2019-11-21T17:37:36+08:00">2019-11-21</time>
+                <time title="修改时间：2019-11-25 11:22:20" itemprop="dateModified" datetime="2019-11-25T11:22:20+08:00">2019-11-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -389,7 +389,7 @@ daovoice('update');
 <li>将测试路径转化为测试数据的输入输出，套用测试用例的模板，形成测试用例。</li>
 </ol>
 <h4 id="1-4-功能测试最佳实践"><a href="#1-4-功能测试最佳实践" class="headerlink" title="1.4 功能测试最佳实践"></a>1.4 功能测试最佳实践</h4><h5 id="1-4-1-案例简介"><a href="#1-4-1-案例简介" class="headerlink" title="1.4.1 案例简介"></a>1.4.1 案例简介</h5><p>&emsp;&emsp;本系统的GPRS监控系统是功能测试的主要对象，某产品销往各地后通过内嵌的芯片以指令的形式上传大量产品的信息，用于检测产品是否正常运行。其中产品信息通过Socket服务器接收，并将其中的目标信息（过滤一些无用信息）同步入系统数据库和mongodb数据库，用于之后的网页端显示等。<br>&emsp;&emsp;涉及的主要逻辑有指令的接收判断和数据的同步。其中上传的指令可大体分为两种，数据指令和心跳指令。数据指令是用来保存并检测产品的指令，心跳指令是判断芯片和Socket端正常连接所必要的，接收到心跳指令不用关注收到的具体内容，而是立即返回这些内容以证明连接正常。Socket端接收到信息立即存入系统数据库，并尝试与mongodb数据库同步，所有的同步信息首先存入实时表中，同步过程发生错误会终止当前内容的同步，已经同步的内容存入历史表中，实时表中剩余的未同步的内容不断尝试向历史表中同步，直至所有的信息进入历史表中，即系统数据库与mongodb数据库同步完成。</p>
-<h5 id="1-4-2-画流程图"><a href="#1-4-2-画流程图" class="headerlink" title="1.4.2 画流程图"></a>1.4.2 画流程图</h5><p>&emsp;&emsp;在已经全面了解系统逻辑的前提下，使用画图工具（工具可自行选择，这里推荐微软的visio）画出初始的系统功能流程图，这里根据前面对被测系统的介绍，画出的案例系统的流程图如下：<br><img src="/images/heihe1.jpeg" alt=" "> </p>
+<h5 id="1-4-2-画流程图"><a href="#1-4-2-画流程图" class="headerlink" title="1.4.2 画流程图"></a>1.4.2 画流程图</h5><p>&emsp;&emsp;在已经全面了解系统逻辑的前提下，使用画图工具（工具可自行选择，这里推荐微软的visio）画出初始的系统功能流程图，这里根据前面对被测系统的介绍，画出的案例系统的流程图如下：<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/heihe1.jpeg" alt=" "> </p>
 <p>图1-1  GPRS实时监控系统流程图</p>
 <h5 id="1-4-3-划分模块，进行等价类划分，形成初始等价类表"><a href="#1-4-3-划分模块，进行等价类划分，形成初始等价类表" class="headerlink" title="1.4.3 划分模块，进行等价类划分，形成初始等价类表"></a>1.4.3 划分模块，进行等价类划分，形成初始等价类表</h5><p>&emsp;&emsp;首先根据功能点对模块进行划分，每个模块一个表，然后对划分的每个模块依照前面介绍的等价类方法进行等价类划分，便于后面对等价类的使用，对每个等价类进行编号<br>表1-1 a. socket服务器接收信息模块</p>
 <table>
@@ -451,7 +451,7 @@ daovoice('update');
 </tr>
 </tbody></table>
 <h5 id="1-4-4-边界值分析，补充完善等价类表"><a href="#1-4-4-边界值分析，补充完善等价类表" class="headerlink" title="1.4.4 边界值分析，补充完善等价类表"></a>1.4.4 边界值分析，补充完善等价类表</h5><p>&emsp;&emsp;根据边界值法分析划分等价类的原则，本系统的等价类并非范围的，连续的，而是单个的，离散的，所以每个等价类同时可以作为自身的边界值。例如，上表1-1中，接收的指令只有两种，这是根据等价类划分得到的，同时也是边界值分析得到的。 </p>
-<h5 id="1-4-5-由等价类表得到改良流程图"><a href="#1-4-5-由等价类表得到改良流程图" class="headerlink" title="1.4.5 由等价类表得到改良流程图"></a>1.4.5 由等价类表得到改良流程图</h5><p>&emsp;&emsp;根据完善后的等价类表和第一步得到的流程图<br><img src="/images/heihe2.jpeg" alt=" "></p>
+<h5 id="1-4-5-由等价类表得到改良流程图"><a href="#1-4-5-由等价类表得到改良流程图" class="headerlink" title="1.4.5 由等价类表得到改良流程图"></a>1.4.5 由等价类表得到改良流程图</h5><p>&emsp;&emsp;根据完善后的等价类表和第一步得到的流程图<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/heihe2.jpeg" alt=" "></p>
 <p> 图1-2  改良后的GPRS实时监控系统流程图</p>
 <p>&emsp;&emsp;借鉴白盒测试的逻辑覆盖方法（逻辑覆盖相关的方法：条件组合覆盖就是设计足够的测试用例，运行被测程序，使得每个判断的所有可能的条件取值组合至少执行一次。 路径覆盖就是设计足够多的测试用例，覆盖程序中所有可能的路径。）得到测试路径如下。<br>编号01: 1<br>编号02: 2<br>编号03: 3<br>编号04: 2-&gt;（1）<br>编号05: 2-&gt;（2）<br>编号06: 2-&gt;（2）-&gt;（3）<br>编号07: 2-&gt;（2）-&gt;（4）<br>编号08: 2-&gt;（2）-&gt;（4）-&gt;（3）（测的还是（3）路径）<br>注：其中每一次进行的测试也可以进行排列组合，根据最基本的覆盖，即实现所有功能，测试所有功能模块及其组合一次，上表已经可以完成，每一次的测试组合针对某些特殊的代码（实际每一次测试的组合没必要），试想每一次信息接收完毕或者同步结束代码回到相同的初始状态，所以每一次的组合实际没必要，但是代码的逻辑无法确定时或许还要测。</p>
 <h5 id="1-4-6-代入数据，形成用例"><a href="#1-4-6-代入数据，形成用例" class="headerlink" title="1.4.6 代入数据，形成用例"></a>1.4.6 代入数据，形成用例</h5><p>表1-3  测试用例模板</p>
@@ -896,13 +896,16 @@ daovoice('update');
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/13/%E6%B1%89%E8%B5%8B%E4%B9%90%E5%BA%9C/" rel="next" title="汉赋乐府">
+                  <i class="fa fa-chevron-left"></i> 汉赋乐府
+                </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/13/Markdown%E7%AE%80%E4%BB%8B/" rel="prev" title="Markdown简介">
-                  Markdown简介 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/11/13/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%883%EF%BC%89%E2%80%94Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" rel="prev" title="Github+Hexo搭建博客（3）—next主题配置">
+                  Github+Hexo搭建博客（3）—next主题配置 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
