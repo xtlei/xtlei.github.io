@@ -86,7 +86,7 @@ daovoice('update');
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;6_2_3.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;6_2_4.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;6_2_5.png">
-<meta property="og:updated_time" content="2019-11-25T04:53:07.269Z">
+<meta property="og:updated_time" content="2019-11-25T04:57:45.772Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;6_1.png">
 
@@ -287,7 +287,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-25 12:53:07" itemprop="dateModified" datetime="2019-11-25T12:53:07+08:00">2019-11-25</time>
+                <time title="修改时间：2019-11-25 12:57:45" itemprop="dateModified" datetime="2019-11-25T12:57:45+08:00">2019-11-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -373,7 +373,7 @@ daovoice('update');
 <p>然后就会将一下代码自动推送到百度，位置是themes\next\layout_scripts\baidu_push.swig,这样每次访问博客中的页面就会自动向百度提交sitemap</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> bp = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line">    <span class="keyword">var</span> curProtocol = <span class="built_in">window</span>.location.protocol.split(<span class="string">':'</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">'https'</span>) &#123;</span><br><span class="line">        bp.src = <span class="string">'https://zz.bdstatic.com/linksubmit/push.js'</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        bp.src = <span class="string">'http://push.zhanzhang.baidu.com/push.js'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&#123;% endif %&#125;</span></span><br></pre></td></tr></table></figure>
 <h6 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h6><p>将上一步生成的sitemap文件提交到百度就可以了<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/6_3.png" alt=" "></p>
-<p>百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月，收录后在百度搜索site:cherryblog.site已经可以搜索到结果。<br>让google收录你的站点<br>相比于百度，google的效率实在不能更快。方法是和百度是一样的，都是先验证你的站点所有权，然后提交sitemap。<br><a href="https://www.google.com/webmasters/" target="_blank" rel="noopener">点我进入google站点平台</a>，然后就是在谷歌注册账号、验证站点、提交sitemap。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/6_4.png" alt=" "></p>
+<p>百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月，收录后在百度搜索site:cherryblog.site已经可以搜索到结果。<br>让google收录你的站点<br>相比于百度，google的效率实在不能更快。方法是和百度是一样的，都是先验证你的站点所有权，然后提交sitemap。<br><a href="https://www.google.com/webmasters/" target="_blank" rel="noopener"><strong>点我进入google站点平台</strong></a>，然后就是在谷歌注册账号、验证站点、提交sitemap。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/6_4.png" alt=" "></p>
 <h4 id="3-图片可点击放大查看，放大后可关闭"><a href="#3-图片可点击放大查看，放大后可关闭" class="headerlink" title="3.图片可点击放大查看，放大后可关闭"></a>3.图片可点击放大查看，放大后可关闭</h4><p>打开站点配置文件_config.yml，搜索fancybox字段，设置其值为true<br>进入到theme/next/文件夹下，打开git bash</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox</span><br></pre></td></tr></table></figure>
 <h4 id="4-首页显示文章摘要"><a href="#4-首页显示文章摘要" class="headerlink" title="4.首页显示文章摘要"></a>4.首页显示文章摘要</h4><p>不建议使用自动选取，使用<!--more-->控制后面内容首页不显示</p>
