@@ -1185,7 +1185,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #22ab33;
+  background: #5317e8;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2620,16 +2620,29 @@ hr {
 }
 .content {
   margin-top: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   padding-bottom: 25px;
   padding-top: 0px;
   padding-left: 10px;
   padding-right: 10px;
 }
-article {
+article.post-block {
   margin-top: 30px;
   margin-bottom: 45px;
+  width: 840px;
   padding: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+article.post-block.home {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  width: 815px;
+  padding: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -2663,19 +2676,42 @@ article {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+}
+.comments {
+  border: 0;
+  box-shadow: none;
+  width: 935px;
+  margin-top: -45px;
+  margin-left: 20px;
+}
+.pagination {
+  margin-top: 0px;
 }
 .content {
   margin-top: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   padding-bottom: 25px;
   padding-top: 0px;
   padding-left: 10px;
   padding-right: 10px;
 }
-article {
+article.post-block {
   margin-top: 30px;
   margin-bottom: 45px;
+  width: 840px;
   padding: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+article.post-block.home {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  width: 815px;
+  padding: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -2709,4 +2745,14 @@ article {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+}
+.comments {
+  border: 0;
+  box-shadow: none;
+  width: 935px;
+  margin-top: -45px;
+  margin-left: 20px;
+}
+.pagination {
+  margin-top: 0px;
 }
