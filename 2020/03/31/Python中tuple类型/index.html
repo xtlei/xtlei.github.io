@@ -58,16 +58,18 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="浮生若梦总关情，半世平凡是无常">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蟹家之宝树">
-<meta property="og:url" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;categories&#x2F;%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91&#x2F;Python&#x2F;Basis&#x2F;index.html">
+  <meta name="keywords" content="Python基础,数据类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python中tuple类型">
+<meta property="og:url" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Python%E4%B8%ADtuple%E7%B1%BB%E5%9E%8B&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="浮生若梦总关情，半世平凡是无常">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py7-1.png">
+<meta property="og:updated_time" content="2020-03-31T07:15:27.910Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py7-1.png">
 
-<link rel="canonical" href="https://xtlei.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Basis/">
+<link rel="canonical" href="https://xtlei.github.io/2020/03/31/Python%E4%B8%ADtuple%E7%B1%BB%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -75,13 +77,13 @@ daovoice('update');
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>分类: Basis | 蟹家之宝树</title>
+  <title>Python中tuple类型 | 蟹家之宝树</title>
   
 
 
@@ -229,154 +231,210 @@ daovoice('update');
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Basis
-          <small>分类</small>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xtlei.github.io/2020/03/31/Python%E4%B8%ADtuple%E7%B1%BB%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="XTLei">
+      <meta itemprop="description" content="浮生若梦总关情，半世平凡是无常">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蟹家之宝树">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          Python中tuple类型
         </h2>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-31 15:05:21 / 修改时间：15:15:27" itemprop="dateCreated datePublished" datetime="2020-03-31T15:05:21+08:00">2020-03-31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" itemprop="url" rel="index">
+                    <span itemprop="name">软件开发</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Basis/" itemprop="url" rel="index">
+                    <span itemprop="name">Basis</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h2 class="collection-header">2020</h2>
+        <html>
+<font face="Times New Roman,宋体" size="4">
+
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py7-1.png" alt=" "></p>
+<a id="more"></a>
+<h5 id="创建tuple"><a href="#创建tuple" class="headerlink" title="创建tuple"></a>创建tuple</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">t = (<span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>) <span class="comment">#使用()创建</span></span><br><span class="line">t = tuple((<span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>))</span><br><span class="line">t = <span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>  <span class="comment"># 'A', 'B' 不论是否用小括号包括，本身就是元组类型</span></span><br></pre></td></tr></table></figure>
+<p>创建tuple和创建list唯一不同之处是用( )替代了[ ]。<br>创建后元组t就不能改变了，不能向tuple中删除和添加元素。</p>
+<p>获取tuple元素的方式和list是一样的，可以使用t[0]，t[-1]等索引方式访问元素，但是不能赋值成别的元素，否则就会报错：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">t[<span class="number">0</span>] = <span class="string">'Paul'</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: <span class="string">'tuple'</span> object does <span class="keyword">not</span> support item assignment</span><br></pre></td></tr></table></figure>
+
+<p>tuple和list一样，可以包含0个、1个和任意多个元素。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 包含0个元素的tuple，也就是空tuple</span></span><br><span class="line">t = ()</span><br><span class="line">print(t)  <span class="comment"># ()</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#包含一个元素的yaunzu</span></span><br><span class="line">t = (<span class="number">1</span>)</span><br><span class="line">print(t)  <span class="comment"># 1</span></span><br></pre></td></tr></table></figure>
+<p>上述包含一个元素1的元组输出内容为整数1，不是元组类型(1)。因为()既可<br>以表示tuple，又可以作为括号表示运算时的优先级，结果(1)被Python解释器计算出结果1，导致我们得到的不是tuple，而是整数1。<br>正是因为用()定义单元素的tuple有歧义，所以Python规定，单元素tuple 要<br>多加一个逗号“,”，这样就避免了歧义：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">t = (<span class="number">1</span>,)</span><br><span class="line">print(t)  <span class="comment"># (1,)</span></span><br></pre></td></tr></table></figure>
+<p>Python在打印单元素tuple时，也自动添加了一个“,”，为了更明确地表明<br>这是一个tuple。<br>多元素tuple加不加这个额外的“,”效果是一样的：<br>t = (1, 2, 3,)<br>print(t)  # (1, 2, 3)</p>
+<p>“可变”的tuple<br>t = (‘a’, ‘b’, [‘A’, ‘B’])</p>
+<p>注意到t有3个元素：’a’，’b’和一个list：[‘A’, ‘B’]。list作为一个整体是tuple的<br>第3个元素。list对象可以通过t[2]拿到：<br>L = t[2]</p>
+<p>然后，我们把list的两个元素改一改：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">L[<span class="number">0</span>] = <span class="string">'X'</span></span><br><span class="line">L[<span class="number">1</span>] = <span class="string">'Y'</span></span><br></pre></td></tr></table></figure>
+<p>再看看tuple的内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(t)  <span class="comment"># ('a', 'b', ['X', 'Y'])</span></span><br></pre></td></tr></table></figure>
+<p>不是说tuple一旦定义后就不可变了吗？怎么现在又变了？<br>别急，我们先看看定义的时候tuple包含的3个元素：<br><a href="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py7-2.png" target="_blank" rel="noopener"> </a></p>
+<p>当我们把list的元素’A’和’B’修改为’X’和’Y’后，tuple变为：<br><a href="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py7-3.png" target="_blank" rel="noopener"> </a></p>
+<p>表面上看，tuple的元素确实变了，但其实变的不是tuple的元素，而是list的<br>元素。<br>tuple一开始指向的list并没有改成别的list，所以，tuple所谓的“不变”是<br>说，tuple的每个元素，指向永远不变。即指向’a’，就不能改成指向’b’，指向一个list，就不能改成指向其他对象，但指向的这个list本身是可变的！<br>理解了“指向不变”后，要创建一个内容也不变的tuple就必须保证tuple的<br>每一个元素本身也不能变。</p>
+</font>
+</html>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-31T15:05:21+08:00"
-              content="2020-03-31">
-          03-31
-        </time>
+    
+    
+    
+        <div class="reward-container">
+  <div>天生我材必有用，千金散尽还复来~</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="XTLei 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="XTLei 支付宝">
+        <p>支付宝</p>
       </div>
 
-      <h3 class="post-title">
-          <a class="post-title-link" href="/2020/03/31/Python%E4%B8%ADtuple%E7%B1%BB%E5%9E%8B/" itemprop="url">
-            <span itemprop="name">Python中tuple类型</span>
-          </a>
-      </h3>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-31T11:03:57+08:00"
-              content="2020-03-31">
-          03-31
-        </time>
-      </div>
-
-      <h3 class="post-title">
-          <a class="post-title-link" href="/2020/03/31/Python%E4%B8%ADlist%E7%B1%BB%E5%9E%8B/" itemprop="url">
-            <span itemprop="name">Python中list类型</span>
-          </a>
-      </h3>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-31T10:57:17+08:00"
-              content="2020-03-31">
-          03-31
-        </time>
-      </div>
-
-      <h3 class="post-title">
-          <a class="post-title-link" href="/2020/03/31/Python%E5%AD%97%E7%AC%A6%E4%B8%B2/" itemprop="url">
-            <span itemprop="name">Python字符串</span>
-          </a>
-      </h3>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-31T10:16:58+08:00"
-              content="2020-03-31">
-          03-31
-        </time>
-      </div>
-
-      <h3 class="post-title">
-          <a class="post-title-link" href="/2020/03/31/Python%E7%9A%84print%E8%AF%AD%E5%8F%A5/" itemprop="url">
-            <span itemprop="name">Python的print语句</span>
-          </a>
-      </h3>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-31T10:06:31+08:00"
-              content="2020-03-31">
-          03-31
-        </time>
-      </div>
-
-      <h3 class="post-title">
-          <a class="post-title-link" href="/2020/03/31/Python%E5%8F%98%E9%87%8F/" itemprop="url">
-            <span itemprop="name">Python变量</span>
-          </a>
-      </h3>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-15T21:56:22+08:00"
-              content="2020-03-15">
-          03-15
-        </time>
-      </div>
-
-      <h3 class="post-title">
-          <a class="post-title-link" href="/2020/03/15/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" itemprop="url">
-            <span itemprop="name">Python数据类型</span>
-          </a>
-      </h3>
-
-    </header>
-  </article>
-
-    </div>
   </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>XTLei
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://xtlei.github.io/2020/03/31/Python%E4%B8%ADtuple%E7%B1%BB%E5%9E%8B/" title="Python中tuple类型">https://xtlei.github.io/2020/03/31/Python%E4%B8%ADtuple%E7%B1%BB%E5%9E%8B/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+	  
+		<div>
+		  
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:18px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		  
+		</div>
+		
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Python%E5%9F%BA%E7%A1%80/" rel="tag"><i class="fa fa-tag"></i> Python基础</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" rel="tag"><i class="fa fa-tag"></i> 数据类型</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2020/03/31/Python%E4%B8%ADlist%E7%B1%BB%E5%9E%8B/" rel="next" title="Python中list类型">
+                  <i class="fa fa-chevron-left"></i> Python中list类型
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
+  </article>
   
   
   
 
-  
-
+  </div>
 
 
           </div>
           
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NzU4NC8yNDA4NA=="></div>
+  </div>
+  
 
         </div>
           
@@ -401,6 +459,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#创建tuple"><span class="nav-text">创建tuple</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 	  
@@ -576,11 +635,24 @@ daovoice('update');
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://xtlei.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Basis/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://xtlei.github.io/2020/03/31/Python%E4%B8%ADtuple%E7%B1%BB%E5%9E%8B/',]
       });
       });
   </script>
 
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
 
   
   
