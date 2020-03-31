@@ -58,15 +58,15 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="print语句可以向屏幕上输出指定的文字。在Python2和Python3中都提供print()方法来打印信息,但两个版本间的print稍微有差异。Python3中print是一个内置函数，有多个参数，所以打印时必须要加括号：print(“hello world”)；而Python2中print是一个语法结构，打印时可以不加括号：print ‘hello world’。 ..., sep12">
+  <meta name="description" content="print语句可以向屏幕上输出指定的文字。在Python2和Python3中都提供print()方法来打印信息,但两个版本间的print稍微有差异。Python3中print是一个内置函数，有多个参数，所以打印时必须要加括号：print(“hello world”)；而Python2中print是一个语法结构，打印时可以不加括号：print ‘hello world’。">
 <meta name="keywords" content="Python基础,数据类型">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python的print语句">
 <meta property="og:url" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Python%E7%9A%84print%E8%AF%AD%E5%8F%A5&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="print语句可以向屏幕上输出指定的文字。在Python2和Python3中都提供print()方法来打印信息,但两个版本间的print稍微有差异。Python3中print是一个内置函数，有多个参数，所以打印时必须要加括号：print(“hello world”)；而Python2中print是一个语法结构，打印时可以不加括号：print ‘hello world’。 ..., sep12">
+<meta property="og:description" content="print语句可以向屏幕上输出指定的文字。在Python2和Python3中都提供print()方法来打印信息,但两个版本间的print稍微有差异。Python3中print是一个内置函数，有多个参数，所以打印时必须要加括号：print(“hello world”)；而Python2中print是一个语法结构，打印时可以不加括号：print ‘hello world’。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-31T02:18:35.955Z">
+<meta property="og:updated_time" content="2020-03-31T02:33:33.319Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://xtlei.github.io/2020/03/31/Python%E7%9A%84print%E8%AF%AD%E5%8F%A5/">
@@ -260,7 +260,7 @@ daovoice('update');
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-03-31 10:16:58 / 修改时间：10:18:35" itemprop="dateCreated datePublished" datetime="2020-03-31T10:16:58+08:00">2020-03-31</time>
+              <time title="创建时间：2020-03-31 10:16:58 / 修改时间：10:33:33" itemprop="dateCreated datePublished" datetime="2020-03-31T10:16:58+08:00">2020-03-31</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -299,7 +299,7 @@ daovoice('update');
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>758</span>
+              <span>749</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -321,8 +321,10 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<p>print语句可以向屏幕上输出指定的文字。在Python2和Python3中都提供print()方法来打印信息,但两个版本间的print稍微有差异。<br>Python3中print是一个内置函数，有多个参数，所以打印时必须要加括号：print(“hello world”)；而Python2中print是一个语法结构，打印时可以不加括号：print ‘hello world’。</p>
-<figure class="highlight plain"><figcaption><span>..., sep</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">从上面的Python3方法原型可以看出，</span><br><span class="line">①. print可以支持多个参数，支持同时打印多个字符串（其中...表示任意多个字符串）；</span><br><span class="line">②. sep表示多个字符串之间使用什么字符连接；</span><br><span class="line">③. end表示字符串结尾添加什么字符，指点该参数就可以轻松设置打印不换行，Python2.x下的print语句在输出字符串之后会默认换行，如果不希望换行，只要在语句最后加一个“,”即可。但是在Python 3.x下，print()变成内置函数，加“,”的老方法就行不通了。</span><br><span class="line"></span><br><span class="line">```print(&quot;python&quot;, &quot;tab&quot;, &quot;.com&quot;, sep=&apos;&apos;, end=&apos;&apos;) #就可以实现打印出来不换行</span><br><span class="line">pythontab.com</span><br></pre></td></tr></table></figure>
+<p>print语句可以向屏幕上输出指定的文字。在Python2和Python3中都提供print()方法来打印信息,但两个版本间的print稍微有差异。<br>Python3中print是一个内置函数，有多个参数，所以打印时必须要加括号：print(“hello world”)；而Python2中print是一个语法结构，打印时可以不加括号：print ‘hello world’。<a id="more"></a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(value1, ..., sep=<span class="string">' '</span>, end=<span class="string">'\n'</span>, file=sys.stdout, flush=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+<p>从上面的Python3方法原型可以看出，<br>①. print可以支持多个参数，支持同时打印多个字符串（其中…表示任意多个字符串）；<br>②. sep表示多个字符串之间使用什么字符连接；<br>③. end表示字符串结尾添加什么字符，指点该参数就可以轻松设置打印不换行，Python2.x下的print语句在输出字符串之后会默认换行，如果不希望换行，只要在语句最后加一个“,”即可。但是在Python 3.x下，print()变成内置函数，加“,”的老方法就行不通了。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"python"</span>, <span class="string">"tab"</span>, <span class="string">".com"</span>, sep=<span class="string">''</span>, end=<span class="string">''</span>) <span class="comment">#就可以实现打印出来不换行</span></span><br><span class="line">pythontab.com</span><br></pre></td></tr></table></figure>
 
 <p><strong>Python2加括号，解释器可能会把他当成tuple（元祖）</strong>，比如:print (‘hhh’,’ggg’)，对于这个，Python2打印的是(‘hhh’,’ggg’)，而Python3打印的是hhh ggg。除非，这个括号里只有一个字符串，比如(‘hhh’)，那么它就不是元祖，print (‘hhh’)在Python2和Python3中都是打印hhh，毕竟(‘hhh’)==’hhh’，所以Python2才会视他为字符串而不是元祖。</p>
 </font>
