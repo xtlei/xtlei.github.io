@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://xtlei.github.io/2020/03/31/Python%E5%8F%98%E9%87%8F/</loc>
+    <lastmod>2020-04-01</lastmod>
+  </url>  <url>
     <loc>https://xtlei.github.io/2019/11/19/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%882%EF%BC%89%E2%80%94%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E4%B8%8E%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2020-04-01</lastmod>
   </url>  <url>
@@ -23,9 +26,6 @@
     <lastmod>2020-03-31</lastmod>
   </url>  <url>
     <loc>https://xtlei.github.io/2020/03/31/Python%E4%B8%ADset%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2020-03-31</lastmod>
-  </url>  <url>
-    <loc>https://xtlei.github.io/2020/03/31/Python%E5%8F%98%E9%87%8F/</loc>
     <lastmod>2020-03-31</lastmod>
   </url>  <url>
     <loc>https://xtlei.github.io/2020/03/31/Python%E7%9A%84print%E8%AF%AD%E5%8F%A5/</loc>
