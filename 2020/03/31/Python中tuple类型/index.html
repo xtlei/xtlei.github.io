@@ -65,7 +65,9 @@ daovoice('update');
 <meta property="og:site_name" content="蟹家之宝树">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py7-1.png">
-<meta property="og:updated_time" content="2020-04-01T15:26:57.125Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py7-2.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py7-3.png">
+<meta property="og:updated_time" content="2020-04-01T15:33:57.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py7-1.png">
 
@@ -266,7 +268,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-01 23:26:57" itemprop="dateModified" datetime="2020-04-01T23:26:57+08:00">2020-04-01</time>
+                <time title="修改时间：2020-04-01 23:33:57" itemprop="dateModified" datetime="2020-04-01T23:33:57+08:00">2020-04-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -345,9 +347,9 @@ daovoice('update');
 <p>修改list的两个元素，再看tuple的内容：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">L[<span class="number">0</span>] = <span class="string">'X'</span></span><br><span class="line">L[<span class="number">1</span>] = <span class="string">'Y'</span></span><br><span class="line">print(t)  <span class="comment"># ('a', 'b', ['X', 'Y'])</span></span><br></pre></td></tr></table></figure>
 <p>不是说tuple一旦定义后就不可变了吗？怎么现在又变了？<br>定义的时候tuple包含的3个元素：</p>
-<p><a href="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py7-2.png" target="_blank" rel="noopener"> </a></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py7-2.png" alt=" "></p>
 <p>当把list的元素’A’和’B’修改为’X’和’Y’后，tuple变为：</p>
-<p><a href="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py7-3.png" target="_blank" rel="noopener"> </a></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py7-3.png" alt=" "></p>
 <p>表面上看，tuple的元素确实变了，但其实变的不是tuple的元素，而是list的元素。<br>tuple一开始指向的list并没有改成别的list，所以，tuple所谓的“不变”是说，tuple的每个元素，指向永远不变。即指向’a’，就不能改成指向’b’，指向一个list，就不能改成指向其他对象，但指向的这个list本身是可变的！<br>理解了“指向不变”后，要创建一个内容也不变的tuple就必须保证tuple的每一个元素本身也不能变。</p>
 </font>
 </html>
