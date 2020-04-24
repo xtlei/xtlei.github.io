@@ -68,7 +68,7 @@ daovoice('update');
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py9-2.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py9-3.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py9-4.png">
-<meta property="og:updated_time" content="2020-04-01T15:39:32.486Z">
+<meta property="og:updated_time" content="2020-04-24T09:29:46.794Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py9-1.png">
 
@@ -269,7 +269,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-01 23:39:32" itemprop="dateModified" datetime="2020-04-01T23:39:32+08:00">2020-04-01</time>
+                <time title="修改时间：2020-04-24 17:29:46" itemprop="dateModified" datetime="2020-04-24T17:29:46+08:00">2020-04-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -331,28 +331,26 @@ daovoice('update');
 <font face="Times New Roman,宋体" size="4">
 
 <p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py9-1.png" alt=" "><a id="more"></a></p>
-<p>Python中list和tuple可以用来表示顺序集合，例如，班里同学的名字：<br>[‘Adam’, ‘Lisa’, ‘Bart’]或者考试的成绩列表：[95, 85, 59]。<br>Python用dict表示“名字”-“成绩”的查找表如下：</p>
+<p>Python中list和tuple可以用来表示顺序集合，例如，班里同学的名字：[‘Adam’, ‘Lisa’, ‘Bart’]或者考试的成绩列表：[95, 85, 59]。<br>Python用dict表示“名字”-“成绩”的查找表如下，<strong>花括号{}表示这是一个dict，然后按照key: value,写出来即可</strong>。最后一个key: value的逗号可以省略。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;</span><br><span class="line">    <span class="string">'Adam'</span>: <span class="number">95</span>,</span><br><span class="line">    <span class="string">'Lisa'</span>: <span class="number">85</span>,</span><br><span class="line">    <span class="string">'Bart'</span>: <span class="number">59</span></span><br><span class="line">&#125;</span><br><span class="line">print(len(d)) <span class="comment"># 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新增键值对 Cindy:65</span></span><br><span class="line">d[<span class="string">'Cindy'</span>] = <span class="number">65</span></span><br></pre></td></tr></table></figure>
-<p>花括号{}表示这是一个dict，然后按照key: value,写出来即可。最后一个key: value的逗号可以省略。</p>
+
 <h5 id="dict访问"><a href="#dict访问" class="headerlink" title="dict访问"></a>dict访问</h5><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py9-2.png" alt=" "></p>
 <p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py9-3.png" alt=" "></p>
 <p>对于以上Dict，使用d[key]的形式来查找对应的value，这和list很像，不同之处是，<strong>list必须使用索引返回对应的元素，而dict使用key</strong>：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (d[<span class="string">'Adam'</span>]) <span class="comment"># 95</span></span><br><span class="line"><span class="keyword">print</span> (d[<span class="string">'Paul'</span>])</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"index.py"</span>, line <span class="number">11</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    <span class="keyword">print</span> d[<span class="string">'Paul'</span>]</span><br><span class="line">KeyError: <span class="string">'Paul'</span></span><br></pre></td></tr></table></figure>
-<p>注意:通过key访问dict的value，只要key存在，dict就返回对应的value。如果key不存在，会直接报错：KeyError。要避免KeyError发生，有两个办法：<br>一是先判断一下key是否存在，如果’Paul’不存在，if语句判断为False，自然不会执行print d[‘Paul’]，从而避免了错误。用in操作符：</p>
+<p>注意:通过key访问dict的value，只要key存在，dict就返回对应的value。如果key不存在，会直接报错：KeyError。要避免KeyError发生，有两个办法：<br>一是先判断一下key是否存在，如果&#39;Paul&#39;不存在，if语句判断为False，自然不会执行print d[&#39;Paul&#39;]，从而避免了错误。用in操作符：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">'Paul'</span> <span class="keyword">in</span> d:</span><br><span class="line">    <span class="keyword">print</span> (d[<span class="string">'Paul'</span>])</span><br></pre></td></tr></table></figure>
 <p>二是使用dict本身提供的一个get方法，在key不存在的时候，返回None：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (d.get(<span class="string">'Bart'</span>)) <span class="comment"># 59</span></span><br><span class="line"><span class="keyword">print</span> (d.get(<span class="string">'Paul'</span>)) <span class="comment"># None</span></span><br></pre></td></tr></table></figure>
-<h5 id="dict特点"><a href="#dict特点" class="headerlink" title="dict特点"></a>dict特点</h5><p>dict的第一个特点是<strong>查找速度快</strong>，无论dict有10个元素还是10万个元素，查找速度都一样。而list的查找速度随着元素增加而逐渐下降。<br>不过dict的查找速度快不是没有代价的，dict的缺点是占用内存大，还会浪费很多内容，list正好相反，占用内存小，但是查找速度慢。<br>由于dict是按key查找，所以，<strong>在一个dict中，key不能重复</strong>。<br>dict的第二个特点就是<strong>存储的key-value序对是没有顺序的</strong>！而list是有序的，当打印以上dict时：</p>
+<h5 id="dict特点"><a href="#dict特点" class="headerlink" title="dict特点"></a>dict特点</h5><p>dict的第一个特点是<strong>查找速度快</strong>，无论dict有10个元素还是10万个元素，查找速度都一样。而list的查找速度随着元素增加而逐渐下降。不过dict的查找速度快不是没有代价的，<strong>dict的缺点是占用内存大，还会浪费很多内容，list正好相反，占用内存小，但是查找速度慢</strong>。<br>由于dict是按key查找，所以，<strong>在一个dict中，key不能重复</strong>。</p>
+<p>dict的第二个特点就是<strong>存储的key-value序对是没有顺序的</strong>！而list是有序的，当打印以上dict时，打印的顺序不一定是创建时的顺序，而且，不同的机器打印的顺序都可能不同，这说明dict内部是无序的，不能用dict存储有序的集合。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (d) <span class="comment"># &#123;'Lisa': 85, 'Adam': 95, 'Bart': 59&#125;</span></span><br></pre></td></tr></table></figure>
-<p>打印的顺序不一定是创建时的顺序，而且，不同的机器打印的顺序都可能不同，这说明dict内部是无序的，不能用dict存储有序的集合。<br>dict的第三个特点是<strong>作为key的元素必须不可变，Python的基本类型如字符串、整数、浮点数都是不可变的，都可以作为key。但是list是可变的，就不能作为key</strong>。<br><strong>不可变这个限制仅作用于key，value是否可变无所谓</strong>。</p>
-<h5 id="更新dict"><a href="#更新dict" class="headerlink" title="更新dict"></a>更新dict</h5><p>dict是可变的，也就是说，我们可以随时往dict中添加新的key-value。比如以上dict，要把新同学’Paul’的成绩72加进去，用赋值语句：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d[<span class="string">'Paul'</span>] = <span class="number">72</span></span><br></pre></td></tr></table></figure>
-<p>再看看dict的内容：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (d) <span class="comment"># &#123;'Lisa': 85, 'Paul': 72, 'Adam': 95, 'Bart': 59&#125;</span></span><br></pre></td></tr></table></figure>
-<p>如果key已经存在，则赋值会用新的value替换掉原来的value：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d[<span class="string">'Bart'</span>] = <span class="number">60</span></span><br><span class="line">print(d) <span class="comment"># &#123;'Lisa': 85, 'Paul': 72, 'Adam': 95, 'Bart': 60&#125;</span></span><br></pre></td></tr></table></figure>
-<h5 id="遍历dict"><a href="#遍历dict" class="headerlink" title="遍历dict"></a>遍历dict</h5><p>由于dict也是一个集合，所以，遍历dict和遍历list类似，都可以通过for循环实现。<br>直接使用for循环可以遍历dict的key：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">d = &#123; <span class="string">'Adam'</span>: <span class="number">95</span>, <span class="string">'Lisa'</span>: <span class="number">85</span>, <span class="string">'Bart'</span>: <span class="number">59</span> &#125;</span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> d:</span><br><span class="line">    print(key)</span><br><span class="line">Lisa</span><br><span class="line">Adam</span><br><span class="line">Bart</span><br></pre></td></tr></table></figure>
+
+<p>dict的第三个特点是<strong>作为key的元素必须不可变，Python的基本类型如字符串、整数、浮点数都是不可变的，都可以作为key。但是list是可变的，就不能作为key</strong>。<br><strong>不可变这个限制仅作用于key，value是否可变无所谓</strong>。</p>
+<h5 id="更新dict"><a href="#更新dict" class="headerlink" title="更新dict"></a>更新dict</h5><p>dict是可变的，可以随时往dict中添加新的key-value。如果key已经存在，则赋值会用新的value替换掉原来的value：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d[<span class="string">'Paul'</span>] = <span class="number">72</span></span><br><span class="line"><span class="keyword">print</span> (d) <span class="comment"># &#123;'Lisa': 85, 'Paul': 72, 'Adam': 95, 'Bart': 59&#125;</span></span><br><span class="line"></span><br><span class="line">d[<span class="string">'Bart'</span>] = <span class="number">60</span></span><br><span class="line">print(d) <span class="comment"># &#123;'Lisa': 85, 'Paul': 72, 'Adam': 95, 'Bart': 60&#125;</span></span><br></pre></td></tr></table></figure>
+<h5 id="遍历dict"><a href="#遍历dict" class="headerlink" title="遍历dict"></a>遍历dict</h5><p>由于dict也是一个集合，所以，遍历dict和遍历list类似，都可以通过for循环实现。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 直接使用for循环可以遍历dict的key：</span></span><br><span class="line">d = &#123; <span class="string">'Adam'</span>: <span class="number">95</span>, <span class="string">'Lisa'</span>: <span class="number">85</span>, <span class="string">'Bart'</span>: <span class="number">59</span> &#125;</span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> d:</span><br><span class="line">    print(key)</span><br><span class="line">Lisa</span><br><span class="line">Adam</span><br><span class="line">Bart</span><br></pre></td></tr></table></figure>
 <p>由于通过key可以获取对应的value，因此，在循环体内，可以获取到value的值。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py9-4.png" alt=" "></p>
 </font>
 </html>
@@ -577,7 +575,7 @@ daovoice('update');
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">148k</span>
+    <span title="站点总字数">149k</span>
 </div>
 
         

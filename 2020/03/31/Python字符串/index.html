@@ -67,7 +67,7 @@ daovoice('update');
 <meta property="og:description" content="一、字符串Python中字符串类型和list类型及tuple类型都是有序列表的一种扩展形式。主要特征是可以通过序列的下标访问其中的元素。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py5-1.png">
-<meta property="og:updated_time" content="2020-04-01T15:04:55.471Z">
+<meta property="og:updated_time" content="2020-04-24T06:08:47.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py5-1.png">
 
@@ -268,7 +268,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-01 23:04:55" itemprop="dateModified" datetime="2020-04-01T23:04:55+08:00">2020-04-01</time>
+                <time title="修改时间：2020-04-24 14:08:47" itemprop="dateModified" datetime="2020-04-24T14:08:47+08:00">2020-04-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -307,7 +307,7 @@ daovoice('update');
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.7k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -329,26 +329,24 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<h4 id="一、字符串"><a href="#一、字符串" class="headerlink" title="一、字符串"></a>一、字符串</h4><p>Python中字符串类型和list类型及tuple类型都是有序列表的一种扩展形式。主要特征是可以通过序列的下标访问其中的元素。<a id="more"></a><br>Python字符串是使用单个到三个引号括起来的任意文本。<br>如果字符串本身包含单引号’，比如表示字符串I’m OK，这时，可以用””括起来表示：”I’m OK”。类似的，如果字符串包含”，就可以用’ ‘括起来表示：’Learn “Python” in imooc’。<br>如果字符串既包含单引号’又包含双引号”，需要对字符串的某些特殊字符进行“转义”，Python字符串用\进行转义。比如，要表示字符串Bob said “I’m OK”.。在需要转义的引号前面插入一个\表示这是一个普通字符，不代表字符串的起始，因此，这个字符串又可以表示为’Bob said &quot;I&#39;m OK&quot;.’。<br>常用的转义字符还有：\n(表示换行)、\t(表示一个制表符)、\(表示\字符本身)<br><strong>注意：转义字符\不计入字符串的内容中。</strong></p>
-<h5 id="raw字符串和多行字符串"><a href="#raw字符串和多行字符串" class="headerlink" title="raw字符串和多行字符串"></a>raw字符串和多行字符串</h5><p>如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。为了避免这种情况，可以在字符串前面加个前缀r，表示这是一个raw字符串，里面的字符就不需要转义了。例如：r’/<em>/</em>/‘。但是r’…’表示法不能表示多行字符串，也不能表示包含’和”的字符串。</p>
-<p>如果要表示多行字符串，可以用’’’…’’’表示（三引号字符串赋值给变量即为字符串，否则就作为注释）：</p>
+<h4 id="一、字符串"><a href="#一、字符串" class="headerlink" title="一、字符串"></a>一、字符串</h4><p>Python中字符串类型和list类型及tuple类型都是有序列表的一种扩展形式。主要特征是可以通过序列的下标访问其中的元素。<a id="more"></a></p>
+<p>Python字符串是使用单个到三个引号括起来的任意文本。<br>如果字符串本身包含单引号，比如表示字符串I&#39;m OK，这时，可以用双引号表示：&quot;I&#39;m OK&quot;。类似的，如果字符串包含双引号，就可以用单引号括起来表示：&#39;Learn &quot;Python&quot; in imooc&#39;。<br>如果字符串既包含单引号又包含双引号，需要对字符串的某些特殊字符进行“转义”，Python字符串用\进行转义。比如，要表示字符串Bob said &quot;I&#39;m OK&quot;.。在需要转义的引号前面插入一个\表示这是一个普通字符，不代表字符串的起始，因此，这个字符串又可以表示为&#39;Bob said \&quot;I\&#39;m OK\&quot;.&#39;。<br>常用的转义字符还有：\n(表示换行)、\t(表示一个制表符)、\\(表示\字符本身)<br><strong>注意：转义字符\不计入字符串的内容中。</strong></p>
+<h5 id="raw字符串和多行字符串"><a href="#raw字符串和多行字符串" class="headerlink" title="raw字符串和多行字符串"></a>raw字符串和多行字符串</h5><p>如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。为了避免这种情况，可以在字符串前面加个前缀r，表示这是一个raw字符串，里面的字符就不需要转义了。例如：r&#39;/*/*/&#39;。但是r&#39;…&#39;表示法不能表示多行字符串，也不能表示包含&#39;和&quot;的字符串。</p>
+<p>如果要表示多行字符串，可以用&#39;&#39;&#39;…&#39;&#39;&#39;表示（<strong>三引号字符串赋值给变量即为字符串，否则就作为注释</strong>）：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'''Line 1</span></span><br><span class="line"><span class="string">Line 2</span></span><br><span class="line"><span class="string">Line 3'''</span></span><br></pre></td></tr></table></figure>
 <p>上面这个字符串的表示方法和下面的是完全一样的：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'Line 1\nLine 2\nLine 3'</span></span><br></pre></td></tr></table></figure>
 <p>还可以在多行字符串前面添加r，把这个多行字符串也变成一个raw字符串：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">r'''Python is created by "Guido".</span></span><br><span class="line"><span class="string">It is free and easy to learn.</span></span><br><span class="line"><span class="string">Let's start learn Python in imooc!'''</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py5-1.png" alt=" "></p>
-<h4 id="二、Unicode字符串"><a href="#二、Unicode字符串" class="headerlink" title="二、Unicode字符串"></a>二、Unicode字符串</h4><p>因为计算机只能处理数字，如果要处理文本，就必须先把文本转换为数字才能处理。最早的计算机在设计时采用8个比特（bit）作为一个字节（byte），所以，一个字节能表示的最大的整数就是255（二进制11111111=十进制255），0 - 255被用来表示大小写英文字母、数字和一些符号，这个编码表被称为ASCII编码，比如大写字母A的编码是65，小写字母z的编码是122。<br>如果要表示中文，显然一个字节是不够的，至少需要两个字节，而且还不能和ASCII编码冲突，所以，中国制定了GB2312编码，用来把中文编进去。<br>类似的，日文和韩文等其他语言也有这个问题。为了统一所有文字的编码，Unicode应运而生。Unicode把所有语言都统一到一套编码里，这样就不会再有乱码问题了。<br>Unicode通常用两个字节表示一个字符，原有的英文编码从单字节变成双字节，只需要把高字节全部填为0就可以。<br>因为Python的诞生比Unicode标准发布的时间还要早，所以最早的Python只支持ASCII编码，普通的字符串’ABC’在Python内部都是ASCII编码的。<br>Python在后来添加了对Unicode的支持，以Unicode表示的字符串用u’…’表示，比如：</p>
+<h4 id="二、Unicode字符串"><a href="#二、Unicode字符串" class="headerlink" title="二、Unicode字符串"></a>二、Unicode字符串</h4><p>因为计算机只能处理数字，如果要处理文本，就必须先把文本转换为数字才能处理。最早的计算机在设计时采用8个比特（bit）作为一个字节（byte），所以，一个字节能表示的最大的整数就是255（二进制11111111=十进制255），0 - 255被用来表示大小写英文字母、数字和一些符号，这个编码表被称为ASCII编码，比如大写字母A的编码是65，小写字母z的编码是122。<br>如果要表示中文，显然一个字节是不够的，至少需要两个字节，而且还不能和ASCII编码冲突，所以，中国制定了GB2312编码，用来把中文编进去。类似的，日文和韩文等其他语言也有这个问题。为了统一所有文字的编码，Unicode应运而生。Unicode把所有语言都统一到一套编码里，这样就不会再有乱码问题了。<br>Unicode通常用两个字节表示一个字符，原有的英文编码从单字节变成双字节，只需要把高字节全部填为0就可以。<br>因为Python的诞生比Unicode标准发布的时间还要早，所以最早的Python只支持ASCII编码，普通的字符&#39;ABC&#39;在Python内部都是ASCII编码的。</p>
+<p>Python在后来添加了对Unicode的支持，以Unicode表示的字符串用u&#39;…&#39;表示，比如：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">u'中文'</span>)</span><br></pre></td></tr></table></figure>
-<p>注意:Python2不加u，中文就不能正常显示。Python3不用加u。<br>Unicode字符串除了多了一个u之外，与普通字符串没啥区别，转义字符和多行表示法仍然有效：<br>转义：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">u'中文\n日文\n韩文'</span></span><br></pre></td></tr></table></figure>
-<p>多行：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">u'''第一行</span></span><br><span class="line"><span class="string">   第二行'''</span></span><br></pre></td></tr></table></figure>
-<p>raw+多行：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">ur'''Python的Unicode字符串支持"中文",</span></span><br><span class="line"><span class="string">   "日文",</span></span><br><span class="line"><span class="string">   "韩文"等多种语言'''</span></span><br></pre></td></tr></table></figure>
-<p><strong>如果中文字符串在Python环境下遇到UnicodeDecodeError，这是因为.py文件保存的格式有问题。可以在第一行添加注释</strong></p>
+<p><strong>注意:Python2不加u，中文就不能正常显示。Python3不用加u。</strong><br>Unicode字符串除了多了一个u之外，与普通字符串没啥区别，转义字符和多行表示法仍然有效：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#转义：</span></span><br><span class="line"><span class="string">u'中文\n日文\n韩文'</span></span><br><span class="line"><span class="comment">#多行：</span></span><br><span class="line"><span class="string">u'''第一行</span></span><br><span class="line"><span class="string">   第二行'''</span></span><br><span class="line"><span class="comment">#raw+多行：</span></span><br><span class="line"><span class="string">ur'''Python的Unicode字符串支持"中文",</span></span><br><span class="line"><span class="string">   "日文",</span></span><br><span class="line"><span class="string">   "韩文"等多种语言'''</span></span><br></pre></td></tr></table></figure>
+<p><strong>如果中文字符串在Python环境下遇到UnicodeDecodeError，这是因为.py文件保存的格式有问题。可以在第一行添加如下注释，让Python解释器，用UTF-8编码读取源代码。</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br></pre></td></tr></table></figure>
-<p><strong>目的是告诉Python解释器，用UTF-8编码读取源代码。然后用Notepad++另存为…并选择UTF-8格式保存。</strong><br></p></font><p></p>
+</font>
 </html>
     </div>
 
@@ -571,7 +569,7 @@ daovoice('update');
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">148k</span>
+    <span title="站点总字数">149k</span>
 </div>
 
         
