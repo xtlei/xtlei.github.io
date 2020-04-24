@@ -67,7 +67,7 @@ daovoice('update');
 <meta property="og:description" content="要生成list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]，可以用range(1, 11)： 12range(1, 11)[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py12-1.png">
-<meta property="og:updated_time" content="2020-03-31T14:17:06.547Z">
+<meta property="og:updated_time" content="2020-04-01T16:06:38.675Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py12-1.png">
 
@@ -260,10 +260,16 @@ daovoice('update');
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-31 22:12:07 / 修改时间：22:17:06" itemprop="dateCreated datePublished" datetime="2020-03-31T22:12:07+08:00">2020-03-31</time>
+              <time title="创建时间：2020-03-31 22:12:07" itemprop="dateCreated datePublished" datetime="2020-03-31T22:12:07+08:00">2020-03-31</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-02 00:06:38" itemprop="dateModified" datetime="2020-04-02T00:06:38+08:00">2020-04-02</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -343,7 +349,7 @@ daovoice('update');
 <p>如果我们只想要偶数的平方，不改动range()的情况下，可以加上if来筛选：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[x * x <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">11</span>) <span class="keyword">if</span> x % <span class="number">2</span> == <span class="number">0</span>]</span><br><span class="line">[<span class="number">4</span>, <span class="number">16</span>, <span class="number">36</span>, <span class="number">64</span>, <span class="number">100</span>]</span><br></pre></td></tr></table></figure>
 <p>有了if条件，只有if判断为True的时候，才把循环的当前元素添加到列表中。</p>
-<p>多层表达式<br>for循环可以嵌套，因此，在列表生成式中，也可以用多层for循环来生成列表。<br>对于字符串’ABC’和’123’，可以使用两层循环，生成全排列：</p>
+<h5 id="多层表达式"><a href="#多层表达式" class="headerlink" title="多层表达式"></a>多层表达式</h5><p>for循环可以嵌套，因此，在列表生成式中，也可以用多层for循环来生成列表。<br>对于字符串’ABC’和’123’，可以使用两层循环，生成全排列：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[m + n <span class="keyword">for</span> m <span class="keyword">in</span> <span class="string">'ABC'</span> <span class="keyword">for</span> n <span class="keyword">in</span> <span class="string">'123'</span>]</span><br><span class="line">[<span class="string">'A1'</span>, <span class="string">'A2'</span>, <span class="string">'A3'</span>, <span class="string">'B1'</span>, <span class="string">'B2'</span>, <span class="string">'B3'</span>, <span class="string">'C1'</span>, <span class="string">'C2'</span>, <span class="string">'C3'</span>]</span><br></pre></td></tr></table></figure>
 <p>翻译成循环代码就像下面这样：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">L = []</span><br><span class="line"><span class="keyword">for</span> m <span class="keyword">in</span> <span class="string">'ABC'</span>:</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> <span class="string">'123'</span>:</span><br><span class="line">        L.append(m + n)</span><br></pre></td></tr></table></figure>
@@ -461,7 +467,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#复杂表达式"><span class="nav-text">复杂表达式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#条件过滤"><span class="nav-text">条件过滤</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#复杂表达式"><span class="nav-text">复杂表达式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#条件过滤"><span class="nav-text">条件过滤</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多层表达式"><span class="nav-text">多层表达式</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 	  
