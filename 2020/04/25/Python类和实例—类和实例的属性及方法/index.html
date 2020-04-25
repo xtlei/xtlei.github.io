@@ -58,15 +58,15 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="类属性和实例属性区别类是模板，而实例则是根据类创建的对象。绑定在一个实例上的属性不会影响其他实例，但是，类本身也是一个对象，如果在类上绑定一个属性，则所有实例都可以访问类的属性，并且，所有实例访问的类属性都是同一个！也就是说，实例属性每个实例各自拥有，互相独立，而类属性有且只有一份，所有实例共同拥有。 123456789101112131415161718# 定义类属性可以直接在class中">
+  <meta name="description" content="类属性和实例属性区别类是模板，而实例则是根据类创建的对象。">
 <meta name="keywords" content="Python进阶,面向对象,类方法,实例方法,类属性,实例属性">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python类和实例—类和实例的属性及方法">
 <meta property="og:url" content="https:&#x2F;&#x2F;xtlei.github.io&#x2F;2020&#x2F;04&#x2F;25&#x2F;Python%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B%E2%80%94%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%B1%9E%E6%80%A7%E5%8F%8A%E6%96%B9%E6%B3%95&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="类属性和实例属性区别类是模板，而实例则是根据类创建的对象。绑定在一个实例上的属性不会影响其他实例，但是，类本身也是一个对象，如果在类上绑定一个属性，则所有实例都可以访问类的属性，并且，所有实例访问的类属性都是同一个！也就是说，实例属性每个实例各自拥有，互相独立，而类属性有且只有一份，所有实例共同拥有。 123456789101112131415161718# 定义类属性可以直接在class中">
+<meta property="og:description" content="类属性和实例属性区别类是模板，而实例则是根据类创建的对象。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-25T03:57:05.678Z">
+<meta property="og:updated_time" content="2020-04-25T04:01:25.861Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://xtlei.github.io/2020/04/25/Python%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B%E2%80%94%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%B1%9E%E6%80%A7%E5%8F%8A%E6%96%B9%E6%B3%95/">
@@ -260,7 +260,7 @@ daovoice('update');
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-04-25 11:45:19 / 修改时间：11:57:05" itemprop="dateCreated datePublished" datetime="2020-04-25T11:45:19+08:00">2020-04-25</time>
+              <time title="创建时间：2020-04-25 11:45:19 / 修改时间：12:01:25" itemprop="dateCreated datePublished" datetime="2020-04-25T11:45:19+08:00">2020-04-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -327,7 +327,7 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<h4 id="类属性和实例属性区别"><a href="#类属性和实例属性区别" class="headerlink" title="类属性和实例属性区别"></a>类属性和实例属性区别</h4><p><strong>类是模板，而实例则是根据类创建的对象</strong>。<br>绑定在一个实例上的属性不会影响其他实例，但是，类本身也是一个对象，如果在类上绑定一个属性，则所有实例都可以访问类的属性，并且，所有实例访问的类属性都是同一个！也就是说，<strong>实例属性每个实例各自拥有，互相独立，而类属性有且只有一份，所有实例共同拥有</strong>。</p>
+<h4 id="类属性和实例属性区别"><a href="#类属性和实例属性区别" class="headerlink" title="类属性和实例属性区别"></a>类属性和实例属性区别</h4><p><strong>类是模板，而实例则是根据类创建的对象</strong>。<a id="more"></a><br>绑定在一个实例上的属性不会影响其他实例，但是，类本身也是一个对象，如果在类上绑定一个属性，则所有实例都可以访问类的属性，并且，所有实例访问的类属性都是同一个！也就是说，<strong>实例属性每个实例各自拥有，互相独立，而类属性有且只有一份，所有实例共同拥有</strong>。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义类属性可以直接在class中定义</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    address = <span class="string">'Earth'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line"><span class="comment"># 因为类属性是直接绑定在类上的，所以，访问类属性不需要创建实例，就可以直接访问</span></span><br><span class="line"><span class="keyword">print</span> Person.address  <span class="comment"># =&gt; Earth</span></span><br><span class="line"><span class="comment"># 对一个实例调用类的属性也是可以访问的，所有实例都可以访问到它所属的类的属性</span></span><br><span class="line">p1 = Person(<span class="string">'Bob'</span>)</span><br><span class="line">p2 = Person(<span class="string">'Alice'</span>)</span><br><span class="line"><span class="keyword">print</span> p1.address  <span class="comment"># =&gt; Earth</span></span><br><span class="line"><span class="keyword">print</span> p2.address  <span class="comment"># =&gt; Earth</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 类属性也是可以动态添加和修改的</span></span><br><span class="line"><span class="comment">#因为类属性只有一份，所以，当Person类的address改变时，所有实例访问到的类属性都改变了</span></span><br><span class="line">Person.address = <span class="string">'China'</span></span><br><span class="line"><span class="keyword">print</span> p1.address  <span class="comment"># =&gt; 'China'</span></span><br><span class="line"><span class="keyword">print</span> p2.address  <span class="comment"># =&gt; 'China'</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="类属性和实例属性冲突"><a href="#类属性和实例属性冲突" class="headerlink" title="类属性和实例属性冲突"></a>类属性和实例属性冲突</h4><p>修改类属性会导致所有实例访问到的类属性全部都受影响，但是，如果在实例变量上修改类属性会发生什么问题呢？</p>
