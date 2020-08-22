@@ -66,7 +66,7 @@ daovoice('update');
 <meta property="og:site_name" content="蟹家之宝树">
 <meta property="og:description" content="Index &amp;amp; View 定义视图V_TCS（定义时不加with check option），存放全部计算机系老师的信息。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-06-17T03:10:37.603Z">
+<meta property="og:updated_time" content="2020-08-22T16:43:44.132Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://xtlei.github.io/2020/06/17/SQL%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E4%B9%8B%E7%B4%A2%E5%BC%95%E8%A7%86%E5%9B%BE%E5%AD%98%E5%82%A8%E8%A7%A6%E5%8F%91%E5%99%A8/">
@@ -258,10 +258,16 @@ daovoice('update');
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-06-17 02:31:51 / 修改时间：11:10:37" itemprop="dateCreated datePublished" datetime="2020-06-17T02:31:51+08:00">2020-06-17</time>
+              <time title="创建时间：2020-06-17 02:31:51" itemprop="dateCreated datePublished" datetime="2020-06-17T02:31:51+08:00">2020-06-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-23 00:43:44" itemprop="dateModified" datetime="2020-08-23T00:43:44+08:00">2020-08-23</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -336,11 +342,8 @@ daovoice('update');
 <li>定义视图V_TCS_ck（定义时加with check option），存放全部计算机系老师的信息，对比该视图与V_TCS在进行数据更新时的差别。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">go</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">view</span> V_TCS_ck</span><br><span class="line"><span class="keyword">as</span> </span><br><span class="line"><span class="keyword">select</span> T.* <span class="keyword">from</span> T <span class="keyword">join</span> D <span class="keyword">on</span> T.dno=D.dno <span class="keyword">where</span> D.dn=<span class="string">'计算机系'</span></span><br><span class="line"><span class="keyword">with</span> <span class="keyword">check</span> <span class="keyword">option</span>;</span><br><span class="line">go</span><br></pre></td></tr></table></figure></li>
 </ol>
 <ul>
-<li><p>在插入时的对比</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- V_TCS_ck：无法插入别的系的老师信息</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> V_TCS_ck <span class="keyword">values</span>(<span class="string">'t10'</span>,<span class="string">'奕迅'</span>,<span class="string">'男'</span>,<span class="string">'40'</span>,<span class="string">'讲师'</span>,<span class="number">1000</span>,<span class="number">2000</span>,<span class="string">'d3'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- V_TCS：可以插入其他系的老师信息，但是查询不出来其他系的老师信息</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> V_TCS <span class="keyword">values</span>(<span class="string">'t12'</span>,<span class="string">'奕迅'</span>,<span class="string">'男'</span>,<span class="string">'40'</span>,<span class="string">'讲师'</span>,<span class="number">1000</span>,<span class="number">2000</span>,<span class="string">'d3'</span>);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在更新时的对比</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- V_TCS_ck：无法将老师信息更新为其他系</span></span><br><span class="line"><span class="keyword">update</span> V_TCS_ck <span class="keyword">set</span> dno=<span class="string">'d3'</span> <span class="keyword">where</span> tno=<span class="string">'t8'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- V_TCS：可以更新为其他系，但是查询视图时查不出该条信息</span></span><br><span class="line"><span class="keyword">update</span> V_TCS <span class="keyword">set</span> dno=<span class="string">'d3'</span> <span class="keyword">where</span> tno=<span class="string">'t8'</span>;</span><br></pre></td></tr></table></figure>
+<li>在插入时的对比<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- V_TCS_ck：无法插入别的系的老师信息</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> V_TCS_ck <span class="keyword">values</span>(<span class="string">'t10'</span>,<span class="string">'奕迅'</span>,<span class="string">'男'</span>,<span class="string">'40'</span>,<span class="string">'讲师'</span>,<span class="number">1000</span>,<span class="number">2000</span>,<span class="string">'d3'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- V_TCS：可以插入其他系的老师信息，但是查询不出来其他系的老师信息</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> V_TCS <span class="keyword">values</span>(<span class="string">'t12'</span>,<span class="string">'奕迅'</span>,<span class="string">'男'</span>,<span class="string">'40'</span>,<span class="string">'讲师'</span>,<span class="number">1000</span>,<span class="number">2000</span>,<span class="string">'d3'</span>);</span><br></pre></td></tr></table></figure></li>
+<li>在更新时的对比<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- V_TCS_ck：无法将老师信息更新为其他系</span></span><br><span class="line"><span class="keyword">update</span> V_TCS_ck <span class="keyword">set</span> dno=<span class="string">'d3'</span> <span class="keyword">where</span> tno=<span class="string">'t8'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- V_TCS：可以更新为其他系，但是查询视图时查不出该条信息</span></span><br><span class="line"><span class="keyword">update</span> V_TCS <span class="keyword">set</span> dno=<span class="string">'d3'</span> <span class="keyword">where</span> tno=<span class="string">'t8'</span>;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <ol start="7">
