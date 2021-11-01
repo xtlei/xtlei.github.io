@@ -66,7 +66,7 @@ daovoice('update');
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py6-1.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py6-2.png">
-<meta property="og:updated_time" content="2020-04-24T08:47:52.812Z">
+<meta property="og:updated_time" content="2021-11-01T04:24:11.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py6-1.png">
 
@@ -267,7 +267,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-24 16:47:52" itemprop="dateModified" datetime="2020-04-24T16:47:52+08:00">2020-04-24</time>
+                <time title="修改时间：2021-11-01 12:24:11" itemprop="dateModified" datetime="2021-11-01T12:24:11+08:00">2021-11-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -306,7 +306,7 @@ daovoice('update');
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -338,8 +338,20 @@ daovoice('update');
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">L = [<span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>]</span><br><span class="line"><span class="keyword">print</span> L[<span class="number">0</span>] <span class="comment"># 要打印第一名同学的名字</span></span><br><span class="line"><span class="keyword">print</span> L[<span class="number">3</span>] <span class="comment"># 打印第四名同学的名字</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">IndexError: list index out of range</span><br></pre></td></tr></table></figure>
 <p>IndexError表示索引超出了范围，因为上面的list只有3个元素，有效的索引是0，1，2。所以，使用索引时，不论正数还是负数索引，注意不要越界。</p>
 <h5 id="list常用方法"><a href="#list常用方法" class="headerlink" title="list常用方法"></a>list常用方法</h5><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py6-2.png" alt=" "></p>
-<p>L.insert(0, &#39;Paul&#39;)的作用是将&#39;Paul&#39;添加到索引为0的位置上（也就是第一个），而原来索引为0的Adam同学，以及后面的所有同学，都自动向后移动一位。<br>pop()方法可以不接受参数直接删掉list的最后一个元素，也可以接受索引号作为参数，删除索引位置上的元素，同时都会返回删除的元素。<br>另外，序列中del()，index()，max()，min()，len()等函数分别用于列表的元素删除，查看元素下标，最大值，最小值，如下。</p>
+<p>L.insert(0, &#39;Paul&#39;)的作用是将&#39;Paul&#39;添加到索引为0的位置上（也就是第一个），而原来索引为0的Adam同学，以及后面的所有同学，都自动向后移动一位。</p>
+<p>pop()方法可以不接受参数直接删掉list的最后一个元素，也可以接受索引号作为参数，删除索引位置上的元素，同时都会返回删除的元素。</p>
+<p>序列中del()，index()，max()，min()，len()等函数分别用于列表的元素删除，查看元素下标，最大值，最小值，如下,</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">L = [<span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>, <span class="string">'Bob'</span>, <span class="string">'Tian'</span>]</span><br><span class="line">L.insert(<span class="number">0</span>, <span class="string">'Paul'</span>)</span><br><span class="line">L.pop(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改第一个元素的值为'Da'</span></span><br><span class="line">L[<span class="number">0</span>] = <span class="string">'Da'</span></span><br><span class="line"><span class="comment"># 删除下标为1的元素</span></span><br><span class="line"><span class="keyword">del</span> L[<span class="number">1</span>]</span><br><span class="line"><span class="comment"># 删除第1-3位置的元素</span></span><br><span class="line"><span class="keyword">del</span> L[<span class="number">1</span>:<span class="number">4</span>]</span><br><span class="line"><span class="comment"># 'Bob'在列表中的索引</span></span><br><span class="line">L.index(<span class="string">'Bob'</span>)</span><br><span class="line"><span class="comment"># 列表长度</span></span><br><span class="line">len(L)</span><br><span class="line"><span class="comment"># 列表最大值</span></span><br><span class="line">max(L)</span><br></pre></td></tr></table></figure>
+<p><strong>+</strong><br><br>组合两个列表生成新的列表。</p>
+<p><strong>extend</strong><br><br>向调用它的列表中添加另外一个列表的元素。</p>
+<p><strong>append、+、extend的区别</strong><br></p>
+<ol>
+<li>append：在列表的末尾添加元素，如果参数是列表，则会把列表整体作为一个元素添加到末尾。</li>
+<li>extend：向调用它的列表中追加另外一个列表中的元素，调用的列表内容会发生变化。</li>
+<li>+：将两个列表中的元素组合，生成一个新的列表，原来的两个列表内容不变。<br></li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">li = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>] </span><br><span class="line">str_li = str(li) </span><br><span class="line">print(li)  <span class="comment"># [1, 2, 3] </span></span><br><span class="line">print(len(li))  <span class="comment"># 3 </span></span><br><span class="line">print(str_li)  <span class="comment"># [1, 2, 3] </span></span><br><span class="line">print(len(str_li))  <span class="comment"># 9</span></span><br></pre></td></tr></table></figure>
+
 </font>
 </html>
     </div>
@@ -490,7 +502,7 @@ daovoice('update');
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-count">94</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
