@@ -58,29 +58,22 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="模块和包的概念">
-<meta name="keywords" content="Python进阶,模块,包,第三方库">
+  <meta name="description" content="面向对象编程简介面向对象编程是一种程序设计范式，把程序看做不同对象的相互调用，对现实世界建立对象模型。">
+<meta name="keywords" content="Python进阶,面向对象,类的定义,实例创建,初始化实例,权限控制">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python模块和包">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;04&#x2F;28&#x2F;Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85&#x2F;index.html">
+<meta property="og:title" content="Python面向对象—类的定义和实例创建">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="模块和包的概念">
+<meta property="og:description" content="面向对象编程简介面向对象编程是一种程序设计范式，把程序看做不同对象的相互调用，对现实世界建立对象模型。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-1.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-2.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-3.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-4.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-5.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-6.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-7.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-8.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-9.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-10.png">
-<meta property="og:updated_time" content="2021-11-02T07:07:07.296Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py14-1.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py14-2.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py14-3.png">
+<meta property="og:updated_time" content="2022-04-05T07:11:53.427Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-1.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py14-1.png">
 
-<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/04/28/Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85/">
+<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA/">
 
 
 <script id="page-configurations">
@@ -94,7 +87,7 @@ daovoice('update');
   };
 </script>
 
-  <title>Python模块和包 | 蟹家之宝树</title>
+  <title>Python面向对象—类的定义和实例创建 | 蟹家之宝树</title>
   
 
 
@@ -247,7 +240,7 @@ daovoice('update');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/04/28/Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -260,7 +253,7 @@ daovoice('update');
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          Python模块和包
+          Python面向对象—类的定义和实例创建
         </h2>
 
         <div class="post-meta">
@@ -270,14 +263,14 @@ daovoice('update');
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-04-28 08:40:31" itemprop="dateCreated datePublished" datetime="2020-04-28T08:40:31+08:00">2020-04-28</time>
+              <time title="创建时间：2020-03-31 15:05:14" itemprop="dateCreated datePublished" datetime="2020-03-31T15:05:14+08:00">2020-03-31</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-11-02 15:07:07" itemprop="dateModified" datetime="2021-11-02T15:07:07+08:00">2021-11-02</time>
+                <time title="修改时间：2022-04-05 15:11:53" itemprop="dateModified" datetime="2022-04-05T15:11:53+08:00">2022-04-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -303,8 +296,8 @@ daovoice('update');
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Advan/Module/" itemprop="url" rel="index">
-                    <span itemprop="name">Module</span>
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Advan/Object-oriented/" itemprop="url" rel="index">
+                    <span itemprop="name">Object-oriented</span>
                   </a>
                 </span>
             </span>
@@ -344,31 +337,28 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<h4 id="模块和包的概念"><a href="#模块和包的概念" class="headerlink" title="模块和包的概念"></a>模块和包的概念<a id="more"></a></h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-1.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-2.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-3.png" alt=" "></p>
-<p>调用模块时，由于同名模块的完整模块名不同（p1.util和p2.util），所以此时同名的模块不产生冲突。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-4.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-5.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-6.png" alt=" "></p>
-<h4 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h4><p>Python使用import语句导入一个模块。例如，导入系统自带的模块math。可以认为math就是一个指向已导入模块的变量，通过该变量，可以访问math模块中所定义的所有公开的函数、变量和类。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line">math.pow(<span class="number">2</span>, <span class="number">0.5</span>) <span class="comment"># pow是函数  # 1.4142135623730951</span></span><br><span class="line">math.pi <span class="comment"># pi是变量  # 3.141592653589793</span></span><br></pre></td></tr></table></figure>
-<p>如果只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句。这样，可以直接引用pow, sin, log这3个函数，但math的其他函数没有导入进来，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> pow, sin, log</span><br><span class="line">pow(<span class="number">2</span>, <span class="number">10</span>)  <span class="comment"># 1024.0</span></span><br><span class="line">sin(<span class="number">3.14</span>)  <span class="comment"># 0.0015926529164868282</span></span><br></pre></td></tr></table></figure>
-<p>如果遇到名字冲突，比如math模块有一个log函数，logging模块也有一个log函数：如果使用import导入模块名，由于必须通过模块名引用函数名，因此不存在冲突；如果使用from…import导入log 函数，势必引起冲突。这时，可以给函数起个“别名”来避免冲突。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math, logging</span><br><span class="line">print(math.log(<span class="number">10</span>))   <span class="comment"># 调用的是math的log函数</span></span><br><span class="line">logging.log(<span class="number">10</span>, <span class="string">'something'</span>)   <span class="comment"># 调用的是logging的log函数</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> log</span><br><span class="line"><span class="keyword">from</span> logging <span class="keyword">import</span> log <span class="keyword">as</span> logger   <span class="comment"># logging的log现在变成了logger</span></span><br><span class="line">print(log(<span class="number">10</span>))   <span class="comment"># 调用的是math的log</span></span><br><span class="line">logger(<span class="number">10</span>, <span class="string">'import from logging'</span>)   <span class="comment"># 调用的是logging的log</span></span><br></pre></td></tr></table></figure>
-<h4 id="动态导入模块"><a href="#动态导入模块" class="headerlink" title="动态导入模块"></a>动态导入模块</h4><p>如果导入的模块不存在，Python解释器会报ImportError错误，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> something</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">ImportError: No module named something</span><br></pre></td></tr></table></figure>
-<p><strong>Python中存在不同模块提供相同的功能</strong>，比如io和cStringIO都提供了StringIO这个功能。这是因为Python是动态语言，解释执行，因此Python代码运行速度慢。如果要提高Python代码的运行速度，最简单的方法是把某些关键函数用C语言重写，这样就能大大提高执行速度。同样的功能，io是纯Python代码编写的，而cStringIO部分函数是C写的，因此cStringIO运行速度更快。<br>利用异常捕捉ImportError错误，可以在Python中动态导入模块，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">from</span> cStringIO <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">except</span> ImportError:</span><br><span class="line">    <span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br></pre></td></tr></table></figure>
-<p>上述代码先尝试从cStringIO导入，如果失败了（比如cStringIO没有被安装），再尝试从io导入。这样，如果cStringIO模块存在，则将获得更快的运行速度，如果cStringIO不存在，则顶多代码运行速度会变慢，但不会影响代码的正常执行。<br><strong>try的作用是捕获错误，并在捕获到指定错误时执行except语句</strong>。</p>
-<h4 id="fulture"><a href="#fulture" class="headerlink" title="__fulture__"></a>__fulture__</h4><p>Python的新版本会引入新的功能，但是，实际上这些功能可能在上一个版本中就已经存在了。要在旧版本“试用”某一新的特性，可以通过导入__future__模块的某些功能来实现。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python 2.7的整数除法运算结果仍是整数</span></span><br><span class="line"><span class="number">10</span> / <span class="number">3</span>  <span class="comment"># 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Python 3.x已经改进了整数的除法运算，“/”除将得到浮点数，“//”除才仍是整数</span></span><br><span class="line"><span class="number">10</span> / <span class="number">3</span>  <span class="comment"># 3.3333333333333335</span></span><br><span class="line"><span class="number">10</span> // <span class="number">3</span>  <span class="comment"># 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 要在Python 2.7中引入3.x的除法规则，导入__future__的division</span></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> division</span><br><span class="line"><span class="keyword">print</span> <span class="number">10</span> / <span class="number">3</span>  <span class="comment"># 3.3333333333333335</span></span><br></pre></td></tr></table></figure>
-<p><strong>当新版本的一个特性与旧版本不兼容时，该特性将会在旧版本中添加到__future__中，以便旧的代码能在旧版本中测试新特性</strong>。</p>
-<h4 id="第三方库的安装"><a href="#第三方库的安装" class="headerlink" title="第三方库的安装"></a>第三方库的安装</h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-7.png" alt=" "></p>
-<p><strong>常用的pip命令</strong><br>pip install &lt;第三方库名&gt;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;安装指定的第三方库<br>pip install -U &lt;第三方库名&gt;&emsp;&emsp;&emsp;&emsp;使用-U标签更新已安装的指定第三方库<br>pip uninstall &lt;第三方库名&gt;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;卸载指定的第三方库<br>pip show &lt;第三方库名&gt;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;列出某个指定第三方库的详细信息<br>pip search &lt;关键词&gt;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;根据关键词在名称和介绍中搜索第三方库<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-8.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-9.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-10.png" alt=" "></p>
-<p>注：某些第三方库提供下载的不是可执行文件，而是源文件。这时需要下载后需要在本地环境编译后安装，而由于本地环境的问题，常常发生安装失败，这时可以使用文件安装方法。<br></p></font><p></p>
+<h4 id="面向对象编程简介"><a href="#面向对象编程简介" class="headerlink" title="面向对象编程简介"></a>面向对象编程简介</h4><p>面向对象编程是一种程序设计范式，把程序看做不同对象的相互调用，对现实世界建立对象模型。<a id="more"></a><br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py14-1.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py14-2.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py14-3.png" alt=" "></p>
+<h4 id="定义类并创建实例"><a href="#定义类并创建实例" class="headerlink" title="定义类并创建实例"></a>定义类并创建实例</h4><h5 id="类的定义"><a href="#类的定义" class="headerlink" title="类的定义"></a>类的定义</h5><p>在Python中，类通过class关键字定义。以Person为例，定义一个Person类如下，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+<p>按照Python的编程习惯，类名以大写字母开头，紧接着是(object)，表示该类是从哪个类继承下来的。根据现有类创建实例如下，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xiaoming = Person()</span><br><span class="line">xiaohong = Person()</span><br></pre></td></tr></table></figure>
+<h5 id="创建实例属性"><a href="#创建实例属性" class="headerlink" title="创建实例属性"></a>创建实例属性</h5><p>每一个实例，都可以直接给它们的属性赋不同的值，实例的属性可以像普通变量一样进行操作，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 给xiaoming加上name、gender和birth属性</span></span><br><span class="line">xiaoming = Person()</span><br><span class="line">xiaoming.name = <span class="string">'Xiao Ming'</span></span><br><span class="line">xiaoming.gender = <span class="string">'Male'</span></span><br><span class="line">xiaoming.birth = <span class="string">'1990-1-1'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 给xiaohong加上的属性不一定要和xiaoming相同</span></span><br><span class="line">xiaohong = Person()</span><br><span class="line">xiaohong.name = <span class="string">'Xiao Hong'</span></span><br><span class="line">xiaohong.school = <span class="string">'No. 1 High School'</span></span><br><span class="line">xiaohong.grade = <span class="number">2</span></span><br><span class="line"></span><br><span class="line">xiaohong.grade = xiaohong.grade + <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h4 id="初始化实例属性"><a href="#初始化实例属性" class="headerlink" title="初始化实例属性"></a>初始化实例属性</h4><p>在定义Person类时，可以为Person类添加一个特殊的__init__()方法。当创建实例时，__init__()方法被自动调用，就能为每个实例都统一加上某些属性，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender, birth)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line">        self.birth = birth</span><br></pre></td></tr></table></figure>
+<p><strong>__init__()方法的第一个参数必须是self（也可以用别的名字，但建议使用习惯用法），后续参数则可以自由指定，和定义函数没有任何区别</strong>。<br>相应地，创建实例时，就必须要提供除self以外的参数，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xiaoming = Person(<span class="string">'Xiao Ming'</span>, <span class="string">'Male'</span>, <span class="string">'1991-1-1'</span>)</span><br><span class="line">xiaohong = Person(<span class="string">'Xiao Hong'</span>, <span class="string">'Female'</span>, <span class="string">'1992-2-2'</span>)</span><br></pre></td></tr></table></figure>
+<p>有了上述__init__()方法，每个Person实例在创建时，都会有name、gender和birth这3个属性，并且，被赋予不同的属性值，访问属性使用“.”操作符，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(xiaoming.name)  <span class="comment"># 输出 'Xiao Ming'</span></span><br><span class="line">print(xiaohong.birth)  <span class="comment"># 输出 '1992-2-2'</span></span><br></pre></td></tr></table></figure>
+<p>要特别注意的是，定义__init__()方法一定不能忘记self参数，否则会导致创建失败或运行不正常，因为第一个参数name被Python解释器传入了实例的引用，从而导致整个方法的调用参数位置全部没有对上。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">     <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(name, gender, birth)</span>:</span></span><br><span class="line">         <span class="keyword">pass</span></span><br><span class="line">xiaoming = Person(<span class="string">'Xiao Ming'</span>, <span class="string">'Male'</span>, <span class="string">'1990-1-1'</span>)</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: __init__() takes exactly <span class="number">3</span> arguments (<span class="number">4</span> given)</span><br></pre></td></tr></table></figure>
+<p>如果要接受任意关键字参数，允许把其作为属性赋值给实例，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name,gender,birth,**kw)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line">        self.birth = birth</span><br><span class="line">        <span class="keyword">for</span> k,v <span class="keyword">in</span> kw.items():</span><br><span class="line">            setattr(self,k,v)</span><br><span class="line"></span><br><span class="line">xiaoming = Person(<span class="string">'Xiao Ming'</span>, <span class="string">'Male'</span>, <span class="string">'1990-1-1'</span>, job=<span class="string">'Student'</span>)</span><br><span class="line"></span><br><span class="line">print(xiaoming.name)</span><br><span class="line">print(xiaoming.job)</span><br></pre></td></tr></table></figure>
+<h4 id="访问限制"><a href="#访问限制" class="headerlink" title="访问限制"></a>访问限制</h4><p><strong>Python对属性权限的控制是通过属性名来实现的，如果一个属性由双下划线开头(__)，该属性就无法被外部访问</strong>。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self._title = <span class="string">'Mr'</span></span><br><span class="line">        self.__job = <span class="string">'Student'</span></span><br><span class="line">p = Person(<span class="string">'Bob'</span>)</span><br><span class="line"><span class="keyword">print</span> p.name  <span class="comment"># =&gt; Bob</span></span><br><span class="line"><span class="keyword">print</span> p._title  <span class="comment"># =&gt; Mr</span></span><br><span class="line"><span class="keyword">print</span> p.__job  <span class="comment"># =&gt; Error</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AttributeError: <span class="string">'Person'</span> object has no attribute <span class="string">'__job'</span></span><br></pre></td></tr></table></figure>
+<p>可见，只有以双下划线开头的&quot;__job&quot;不能直接被外部访问。但是，<strong>如果一个属性以&quot;__xxx__&quot;的形式定义，那它又可以被外部访问了，以&quot;__xxx__&quot;定义的属性在Python的类中被称为特殊属性，有很多预定义的特殊属性可以使用，通常不要把普通属性用&quot;__xxx__&quot;定义</strong>。<strong>以单下划线开头的属性&quot;_xxx&quot;虽然也可以被外部访问，但是，按照习惯，它们不应该被外部访问</strong>。<br></p></font><p></p>
 </html>
     </div>
 
@@ -424,25 +414,27 @@ daovoice('update');
           
           <div class="post-tags">
               <a href="/tags/Python%E8%BF%9B%E9%98%B6/" rel="tag"><i class="fa fa-tag"></i> Python进阶</a>
-              <a href="/tags/%E6%A8%A1%E5%9D%97/" rel="tag"><i class="fa fa-tag"></i> 模块</a>
-              <a href="/tags/%E5%8C%85/" rel="tag"><i class="fa fa-tag"></i> 包</a>
-              <a href="/tags/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/" rel="tag"><i class="fa fa-tag"></i> 第三方库</a>
+              <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" rel="tag"><i class="fa fa-tag"></i> 面向对象</a>
+              <a href="/tags/%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89/" rel="tag"><i class="fa fa-tag"></i> 类的定义</a>
+              <a href="/tags/%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA/" rel="tag"><i class="fa fa-tag"></i> 实例创建</a>
+              <a href="/tags/%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AE%9E%E4%BE%8B/" rel="tag"><i class="fa fa-tag"></i> 初始化实例</a>
+              <a href="/tags/%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" rel="tag"><i class="fa fa-tag"></i> 权限控制</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2020/04/25/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%B1%9E%E6%80%A7%E5%8F%8A%E6%96%B9%E6%B3%95/" rel="next" title="Python面向对象—类和实例的属性及方法">
-                  <i class="fa fa-chevron-left"></i> Python面向对象—类和实例的属性及方法
+                <a href="/2020/03/31/Python%E5%88%97%E8%A1%A8%E7%94%9F%E6%88%90%E5%BC%8F/" rel="next" title="Python列表生成式">
+                  <i class="fa fa-chevron-left"></i> Python列表生成式
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2020/04/28/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%BB%A7%E6%89%BF%E5%92%8C%E5%A4%9A%E6%80%81/" rel="prev" title="Python面向对象—继承和多态">
-                  Python面向对象—继承和多态 <i class="fa fa-chevron-right"></i>
+                <a href="/2020/03/31/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%B1%9E%E6%80%A7%E5%8F%8A%E6%96%B9%E6%B3%95/" rel="prev" title="Python面向对象—类和实例的属性及方法">
+                  Python面向对象—类和实例的属性及方法 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -487,7 +479,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#模块和包的概念"><span class="nav-text">模块和包的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导入模块"><span class="nav-text">导入模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态导入模块"><span class="nav-text">动态导入模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fulture"><span class="nav-text">__fulture__</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三方库的安装"><span class="nav-text">第三方库的安装</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象编程简介"><span class="nav-text">面向对象编程简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义类并创建实例"><span class="nav-text">定义类并创建实例</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#类的定义"><span class="nav-text">类的定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建实例属性"><span class="nav-text">创建实例属性</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化实例属性"><span class="nav-text">初始化实例属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问限制"><span class="nav-text">访问限制</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 	  
@@ -663,7 +655,7 @@ daovoice('update');
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/04/28/Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA/',]
       });
       });
   </script>

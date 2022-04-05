@@ -58,18 +58,22 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="Python中对象包含的三个基本要素：id(身份标识)、type(数据类型)和value(值)。 ==是python标准操作符中的比较操作符，比较两个对象的value(值)是否相等，例如， 123a = &amp;apos;cheesezh&amp;apos;b = &amp;apos;cheesezh&amp;apos;a == b  # True">
-<meta name="keywords" content="Python基础,is,==">
+  <meta name="description" content="一、整数Python可以处理任意大小的整数，当然包括负整数，在Python程序中，整数的表示方法和数学上的写法一模一样，例如：1，100，-8080，0，等等。">
+<meta name="keywords" content="Python基础,数据类型">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python中is和==的区别">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2021&#x2F;10&#x2F;31&#x2F;Python%E4%B8%ADis%E5%92%8C==%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;index.html">
+<meta property="og:title" content="Python数据类型">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="Python中对象包含的三个基本要素：id(身份标识)、type(数据类型)和value(值)。 ==是python标准操作符中的比较操作符，比较两个对象的value(值)是否相等，例如， 123a = &amp;apos;cheesezh&amp;apos;b = &amp;apos;cheesezh&amp;apos;a == b  # True">
+<meta property="og:description" content="一、整数Python可以处理任意大小的整数，当然包括负整数，在Python程序中，整数的表示方法和数学上的写法一模一样，例如：1，100，-8080，0，等等。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-11-01T02:50:34.676Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;python1.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;python2.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;python3.png">
+<meta property="og:updated_time" content="2022-04-05T07:09:22.972Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;python1.png">
 
-<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2021/10/31/Python%E4%B8%ADis%E5%92%8C==%E7%9A%84%E5%8C%BA%E5%88%AB/">
+<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -83,7 +87,7 @@ daovoice('update');
   };
 </script>
 
-  <title>Python中is和==的区别 | 蟹家之宝树</title>
+  <title>Python数据类型 | 蟹家之宝树</title>
   
 
 
@@ -236,7 +240,7 @@ daovoice('update');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2021/10/31/Python%E4%B8%ADis%E5%92%8C==%E7%9A%84%E5%8C%BA%E5%88%AB/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -249,7 +253,7 @@ daovoice('update');
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          Python中is和==的区别
+          Python数据类型
         </h2>
 
         <div class="post-meta">
@@ -259,14 +263,14 @@ daovoice('update');
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-10-31 18:06:01" itemprop="dateCreated datePublished" datetime="2021-10-31T18:06:01+08:00">2021-10-31</time>
+              <time title="创建时间：2020-03-31 15:05:05" itemprop="dateCreated datePublished" datetime="2020-03-31T15:05:05+08:00">2020-03-31</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-11-01 10:50:34" itemprop="dateModified" datetime="2021-11-01T10:50:34+08:00">2021-11-01</time>
+                <time title="修改时间：2022-04-05 15:09:22" itemprop="dateModified" datetime="2022-04-05T15:09:22+08:00">2022-04-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -305,14 +309,14 @@ daovoice('update');
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
+              <span>1.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -327,22 +331,34 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<p>Python中对象包含的三个基本要素：<strong>id(身份标识)</strong>、<strong>type(数据类型)</strong>和<strong>value(值)</strong>。</p>
-<p>==是python标准操作符中的比较操作符，比较两个对象的value(值)是否相等，例如，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">'cheesezh'</span></span><br><span class="line">b = <span class="string">'cheesezh'</span></span><br><span class="line">a == b  <span class="comment"># True</span></span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>is运算符比较对象间的唯一身份标识，也就是id是否相同。例如，
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">x = y = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">z = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">x == y  <span class="comment"># True</span></span><br><span class="line">x <span class="keyword">is</span> y  <span class="comment"># True</span></span><br><span class="line">x == z  <span class="comment"># True</span></span><br><span class="line">x <span class="keyword">is</span> z  <span class="comment"># False</span></span><br><span class="line"></span><br><span class="line">print(id(x))  <span class="comment"># 3075326572</span></span><br><span class="line">print(id(y))  <span class="comment"># 3075326572</span></span><br><span class="line">print(id(z))  <span class="comment"># 3075328140</span></span><br></pre></td></tr></table></figure>
-
-<p>同一类型下赋值相同的a和b，a==b结果都为True，而a is b结果如下，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># a, b为数值类型</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">1</span></span><br><span class="line">print(a == b)  <span class="comment"># True</span></span><br><span class="line">print(a <span class="keyword">is</span> b)  <span class="comment"># True</span></span><br><span class="line">print(id(a) == id(b))  <span class="comment"># Ture</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a, b为字符串（str）类型</span></span><br><span class="line">a = <span class="string">'abcdefg'</span></span><br><span class="line">b = <span class="string">'abcdefg'</span></span><br><span class="line">print(a == b)  <span class="comment"># True</span></span><br><span class="line">print(a <span class="keyword">is</span> b)  <span class="comment"># True</span></span><br><span class="line">print(id(a) == id(b))  <span class="comment"># True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a, b为元组（tuple）类型</span></span><br><span class="line">a = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">b = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">print(a == b)  <span class="comment"># True</span></span><br><span class="line">print(a <span class="keyword">is</span> b)  <span class="comment"># True</span></span><br><span class="line">print(id(a) == id(b))  <span class="comment"># True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a, b为列表（list）类型</span></span><br><span class="line">a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">b = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">print(a == b)  <span class="comment"># True</span></span><br><span class="line">print(a <span class="keyword">is</span> b)  <span class="comment"># False</span></span><br><span class="line">print(id(a) == id(b))  <span class="comment"># False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a, b为集合（set）类型</span></span><br><span class="line">a = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;</span><br><span class="line">b = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;</span><br><span class="line">print(a == b)  <span class="comment"># True</span></span><br><span class="line">print(a <span class="keyword">is</span> b)  <span class="comment"># False</span></span><br><span class="line">print(id(a) == id(b))  <span class="comment"># False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a, b为字典（dict）类型</span></span><br><span class="line">a = &#123;<span class="number">1</span>: <span class="string">'aaa'</span>, <span class="number">2</span>: <span class="string">'bbb'</span>, <span class="number">3</span>: <span class="string">"ccc"</span>&#125;</span><br><span class="line">b = &#123;<span class="number">1</span>: <span class="string">'aaa'</span>, <span class="number">2</span>: <span class="string">'bbb'</span>, <span class="number">3</span>: <span class="string">"ccc"</span>&#125;</span><br><span class="line">print(a == b)  <span class="comment"># True</span></span><br><span class="line">print(a <span class="keyword">is</span> b)  <span class="comment"># False</span></span><br><span class="line">print(id(a) == id(b))  <span class="comment"># False</span></span><br></pre></td></tr></table></figure>
-
+<h4 id="一、整数"><a href="#一、整数" class="headerlink" title="一、整数"></a>一、整数</h4><p>Python可以处理任意大小的整数，当然包括负整数，在Python程序中，整数的表示方法和数学上的写法一模一样，例如：1，100，-8080，0，等等。</p>
+<a id="more"></a>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/python1.png" alt=" "></p>
+<h4 id="二、浮点数"><a href="#二、浮点数" class="headerlink" title="二、浮点数"></a>二、浮点数</h4><p>浮点数也就是小数，之所以称为浮点数，是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的，比如，1.23x10^9和12.3x10^8是相等的。浮点数可以用数学写法，如1.23，3.14，-9.01等等。但是对于很大或很小的浮点数，就必须用科学计数法表示，把10用e替代，1.23x10^9就是1.23e9，或者12.3e8，0.000012可以写成1.2e-5，等等。</p>
+<p>整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的，而浮点数运算则可能会有四舍五入的误差。<strong>浮点数运算存在不确定尾数</strong>，运算的结果不一定精确。因为计算机内存再大，也无法精确表示出无限循环小数，比如 0.1 换成二进制表示就是无限循环小数。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/python2.png" alt=" "></p>
+<p><strong>Python的整数运算结果仍然是整数，浮点数运算结果仍然是浮点数，但是整数和浮点数混合运算的结果就变成浮点数了</strong>：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">1</span> + <span class="number">2</span>)    <span class="comment"># ==&gt; 整数 3 </span></span><br><span class="line">print(<span class="number">1.0</span> + <span class="number">2.0</span>)    <span class="comment"># ==&gt; 浮点数 3.0 </span></span><br><span class="line">print(<span class="number">0.1</span> + <span class="number">0.2</span> == <span class="number">0.3</span>)    <span class="comment"># ==&gt; False </span></span><br><span class="line">print(round(<span class="number">0.1</span> + <span class="number">0.2</span>, <span class="number">1</span>) == <span class="number">0.3</span>)     <span class="comment"># ==&gt; True</span></span><br><span class="line">print(<span class="number">1</span> + <span class="number">2.0</span>)    <span class="comment"># ==&gt; 浮点数 3.0</span></span><br></pre></td></tr></table></figure>
+<p>Python整数除法除不尽的结果是浮点类型，同时提供了整数除“//”实现余数直接丢掉。Python提供了一个求余的运算%可以计算余数：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">11</span> // <span class="number">3</span>)    <span class="comment"># ==&gt; 3 </span></span><br><span class="line">print(<span class="number">11</span> / <span class="number">3</span>)     <span class="comment"># ==&gt; 3.6666666666666665 </span></span><br><span class="line">print(<span class="number">11</span> % <span class="number">3</span>)    <span class="comment"># ==&gt; 2 </span></span><br><span class="line">print(<span class="number">11.0</span> / <span class="number">3</span>)   <span class="comment"># ==&gt; 3.0 </span></span><br><span class="line">print(<span class="number">11</span> ** <span class="number">2</span>)    <span class="comment"># ==&gt; 121 </span></span><br><span class="line">print(<span class="number">10</span> ** <span class="number">0.5</span>) <span class="comment"># ==&gt; 3.1622776601683795</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/python3.png" alt=" "></p>
+<h4 id="三、字符串"><a href="#三、字符串" class="headerlink" title="三、字符串"></a>三、字符串</h4><p>字符串是以&#39;或&quot;括起来的任意文本，比如&#39;abc&#39;，&quot;xyz&quot;等等。请注意，&#39;或&quot;本身只是一种表示方式，不是字符串的一部分，因此，字符串&#39;abc&#39;只有a，b，c这3个字符。（注意：<strong>Python不区分单引号和双引号</strong>）</p>
+<h4 id="四、布尔值"><a href="#四、布尔值" class="headerlink" title="四、布尔值"></a>四、布尔值</h4><p>布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False，<strong>在Python中，可以直接用True、False表示布尔值</strong>，也可以通过布尔运算计算出来。</p>
 <ul>
-<li>同一类型下赋值相同的a和b，a==b结果都为True，即value相同；</li>
-<li>在变量a和b是数值、字符串str和元组tuple类型时，a is b为True，即id相同；当变量a和b是列表list，字典dict或集合set类型时，a is b为False，即id不同。</li>
-<li>id相同则value相同，即a is b则a == b；value相同但id不一定相同，即a==b但a is b不一定为True。</li>
-<li>定义两个相同大小的可变类型变量，内存开辟两个空间，分别存储两个值，所以两个变量value相同但id不同；定义两个相同大小的不可变类型的变量，内存只开辟一个空间，存储一个值，两个变量引用同一个空间，所以两个变量value和id都相同。</li>
+<li>and运算（与运算），只有所有都为True，and运算结果才是True。</li>
+<li>or运算（或运算），只要其中有一个为True，or运算结果就是True。</li>
+<li>not运算（非运算），把True变成False，False变成 True。 </li>
 </ul>
+<p>在Python中，布尔类型还可以与其他数据类型做and、or和not运算：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="literal">True</span> </span><br><span class="line"><span class="keyword">print</span> (a <span class="keyword">and</span> <span class="string">'a=T'</span> <span class="keyword">or</span> <span class="string">'a=F'</span>)  <span class="comment"># a=T </span></span><br><span class="line">print(<span class="literal">True</span> <span class="keyword">and</span> &#123;<span class="string">'tom'</span>&#125;)  <span class="comment">#&#123;'tom'&#125;</span></span><br></pre></td></tr></table></figure>
+<p>布尔类型和其他类型运算的结果可能不是布尔类型，因为<strong>Python把0、空字符串’’和None看成False，其他数值和非空字符串都看成True</strong>，所以True and &#39;a=T&#39;计算结果是&#39;a=T&#39;，继续计算&#39;a=T&#39; or &#39;a=F&#39;计算结果还是&#39;a=T&#39;。</p>
+<p>要解释上述结果，又涉及到<strong>and和or运算的一条重要法则：短路计算。</strong></p>
+<ol>
+<li>在计算a and b时，如果a是False，则根据与运算法则，整个结果必定为 False，因此返回a；如果a是True，则整个计算结果必定取决与b，因此返回b。</li>
+<li>在计算a or b时，如果a是True，则根据或运算法则，整个计算结果必定为 True，因此返回a；如果a是False，则整个计算结果必定取决于b，因此返回 b。</li>
+</ol>
+<p><strong>Python解释器在做布尔运算时，只要能提前确定计算结果，它就不会往后算了，直接返回结果。需要注意的是，字典和集合类型不能进行布尔测试，但是上述代码第三行在进行布尔运算时，会产生误导结果。</strong></p>
+<h4 id="五、空值"><a href="#五、空值" class="headerlink" title="五、空值"></a>五、空值</h4><p><strong>空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。</strong></p>
+<p>此外，Python还提供了复数类型、列表、字典等多种数据类型，还允许创建自定义数据类型。</p>
 </font>
 </html>
     </div>
@@ -399,24 +415,23 @@ daovoice('update');
           
           <div class="post-tags">
               <a href="/tags/Python%E5%9F%BA%E7%A1%80/" rel="tag"><i class="fa fa-tag"></i> Python基础</a>
-              <a href="/tags/is/" rel="tag"><i class="fa fa-tag"></i> is</a>
-              <a href="/tags/" rel="tag"><i class="fa fa-tag"></i> ==</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" rel="tag"><i class="fa fa-tag"></i> 数据类型</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2020/06/17/SQL%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E4%B9%8B%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/" rel="next" title="SQL实践—Creat&Insert&Update&Delete">
-                  <i class="fa fa-chevron-left"></i> SQL实践—Creat&Insert&Update&Delete
+                <a href="/2020/03/31/Python%E5%87%BD%E6%95%B0/" rel="next" title="Python函数">
+                  <i class="fa fa-chevron-left"></i> Python函数
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2021/10/31/Python%E4%B8%AD=%E3%80%81copy()%E5%92%8Cdeepcopy()%E7%9A%84%E5%8C%BA%E5%88%AB/" rel="prev" title="Python中=、copy()和deepcopy()的区别">
-                  Python中=、copy()和deepcopy()的区别 <i class="fa fa-chevron-right"></i>
+                <a href="/2020/03/31/Python%E5%AD%97%E7%AC%A6%E4%B8%B2/" rel="prev" title="Python字符串">
+                  Python字符串 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -461,6 +476,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、整数"><span class="nav-text">一、整数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、浮点数"><span class="nav-text">二、浮点数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、字符串"><span class="nav-text">三、字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、布尔值"><span class="nav-text">四、布尔值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、空值"><span class="nav-text">五、空值</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 	  
@@ -636,7 +652,7 @@ daovoice('update');
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2021/10/31/Python%E4%B8%ADis%E5%92%8C==%E7%9A%84%E5%8C%BA%E5%88%AB/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/',]
       });
       });
   </script>

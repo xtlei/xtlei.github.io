@@ -58,22 +58,29 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="特殊方法简介Python之所以能把把任意变量变成str输出，因为任何数据类型的实例都有一个特殊方法str()。">
-<meta name="keywords" content="Python进阶,特殊方法">
+  <meta name="description" content="模块和包的概念">
+<meta name="keywords" content="Python进阶,模块,包,第三方库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python特殊方法">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;04&#x2F;28&#x2F;Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95&#x2F;index.html">
+<meta property="og:title" content="Python模块和包">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="特殊方法简介Python之所以能把把任意变量变成str输出，因为任何数据类型的实例都有一个特殊方法str()。">
+<meta property="og:description" content="模块和包的概念">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-16.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-17.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-18.png">
-<meta property="og:updated_time" content="2021-11-02T07:01:45.108Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-1.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-2.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-3.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-4.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-5.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-6.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-7.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-8.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-9.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-10.png">
+<meta property="og:updated_time" content="2022-04-05T07:13:18.078Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-16.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-1.png">
 
-<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/04/28/Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/">
+<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85/">
 
 
 <script id="page-configurations">
@@ -87,7 +94,7 @@ daovoice('update');
   };
 </script>
 
-  <title>Python特殊方法 | 蟹家之宝树</title>
+  <title>Python模块和包 | 蟹家之宝树</title>
   
 
 
@@ -240,7 +247,7 @@ daovoice('update');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/04/28/Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -253,7 +260,7 @@ daovoice('update');
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          Python特殊方法
+          Python模块和包
         </h2>
 
         <div class="post-meta">
@@ -263,14 +270,14 @@ daovoice('update');
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-04-28 10:27:12" itemprop="dateCreated datePublished" datetime="2020-04-28T10:27:12+08:00">2020-04-28</time>
+              <time title="创建时间：2020-03-31 15:05:17" itemprop="dateCreated datePublished" datetime="2020-03-31T15:05:17+08:00">2020-03-31</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-11-02 15:01:45" itemprop="dateModified" datetime="2021-11-02T15:01:45+08:00">2021-11-02</time>
+                <time title="修改时间：2022-04-05 15:13:18" itemprop="dateModified" datetime="2022-04-05T15:13:18+08:00">2022-04-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -296,8 +303,8 @@ daovoice('update');
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Advan/Object-oriented/" itemprop="url" rel="index">
-                    <span itemprop="name">Object-oriented</span>
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Advan/Module/" itemprop="url" rel="index">
+                    <span itemprop="name">Module</span>
                   </a>
                 </span>
             </span>
@@ -337,24 +344,31 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<h4 id="特殊方法简介"><a href="#特殊方法简介" class="headerlink" title="特殊方法简介"></a>特殊方法简介</h4><p>Python之所以能把把任意变量变成str输出，因为任何数据类型的实例都有一个特殊方法<strong>str</strong>()。<a id="more"></a><br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-16.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-17.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-18.png" alt=" "></p>
-<h4 id="常用特殊方法举例"><a href="#常用特殊方法举例" class="headerlink" title="常用特殊方法举例"></a>常用特殊方法举例</h4><h5 id="str"><a href="#str" class="headerlink" title="__str()__"></a>__str()__</h5><p>如果要把一个类的实例变成str，需要实现特殊方法__str__()，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'(Person: %s, %s)'</span> % (self.name, self.gender)</span><br><span class="line"></span><br><span class="line">p = Person(<span class="string">'Bob'</span>, <span class="string">'male'</span>)</span><br><span class="line">print(p)  <span class="comment"># (Person: Bob, male)</span></span><br></pre></td></tr></table></figure>
-<h5 id="cmp"><a href="#cmp" class="headerlink" title="__cmp()__"></a>__cmp()__</h5><p>对int、str等内置数据类型排序时，Python的sorted()函数按照默认的比较函数cmp排序，但是，如果对一组Student类的实例排序时，就必须实现特殊方法__cmp__()，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, score)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.score = score</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'(%s: %s)'</span> % (self.name, self.score)</span><br><span class="line">    __repr__ = __str__</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__cmp__</span><span class="params">(self, s)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.name &lt; s.name:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">        <span class="keyword">elif</span> self.name &gt; s.name:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">L = [Student(<span class="string">'Tim'</span>, <span class="number">99</span>), Student(<span class="string">'Bob'</span>, <span class="number">88</span>), Student(<span class="string">'Alice'</span>, <span class="number">77</span>)]</span><br><span class="line"><span class="keyword">print</span> sorted(L)  <span class="comment"># [(Alice: 77), (Bob: 88), (Tim: 99)]</span></span><br></pre></td></tr></table></figure>
-<p>上述Student类实现了__cmp__()方法，__cmp__用实例自身self和传入的实例s进行比较，如果self应该排在前面，就返回-1，如果s应该排在前面，就返回1，如果两者相当，返回0。<br>注意: 如果list不仅仅包含Student类，则__cmp__可能会报错。<strong>Python3已经取消该函数</strong>。</p>
-<h5 id="len"><a href="#len" class="headerlink" title="__len()__"></a>__len()__</h5><p>如果一个类表现得像一个list，要获取有多少个元素，就得用len()函数。要让len()函数工作正常，类必须提供一个特殊方法__len__()，它返回元素的个数。<br>例如，写一个Students类，把名字传进去，只要正确实现了__len__()方法，就可以用len()函数返回Students实例的“长度”,</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Students</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, *args)</span>:</span></span><br><span class="line">        self.names = args</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> len(self.names)</span><br><span class="line"></span><br><span class="line">ss = Students(<span class="string">'Bob'</span>, <span class="string">'Alice'</span>, <span class="string">'Tim'</span>)</span><br><span class="line"><span class="keyword">print</span> len(ss)  <span class="comment"># 3</span></span><br></pre></td></tr></table></figure>
-<h5 id="slots"><a href="#slots" class="headerlink" title="__slots__"></a>__slots__</h5><p>由于Python是动态语言，任何实例在运行期都可以动态地添加属性。<br>如果要限制添加的属性，例如，Student类只允许添加name、gender和score这3个属性，可以利用Python的__slots__来实现。__slots__是指一个类允许的属性列表，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">    __slots__ = (<span class="string">'name'</span>, <span class="string">'gender'</span>, <span class="string">'score'</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender, score)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line">        self.score = score</span><br><span class="line"></span><br><span class="line">s = Student(<span class="string">'Bob'</span>, <span class="string">'male'</span>, <span class="number">59</span>)</span><br><span class="line">s.name = <span class="string">'Tim'</span> <span class="comment"># OK</span></span><br><span class="line">s.score = <span class="number">99</span> <span class="comment"># OK</span></span><br><span class="line">.grade = <span class="string">'A'</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  ...</span><br><span class="line">AttributeError: <span class="string">'Student'</span> object has no attribute <span class="string">'grade'</span></span><br></pre></td></tr></table></figure>
-<p><strong>__slots__的目的是限制当前类所能拥有的属性</strong>，如果不需要添加任意动态的属性，使用__slots__也能节省内存。<strong><strong>slots</strong>定义的属性仅对当前类实例起作用，对继承的子类是不起作用的</strong>。</p>
-<h5 id="call"><a href="#call" class="headerlink" title="__call()__"></a>__call()__</h5><p>在Python中，函数其实是一个对象。如下，由于f可以被调用，所以，f被称为可调用对象。<strong>所有的函数都是可调用对象</strong>。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f = abs</span><br><span class="line">print(f.__name__)  <span class="comment"># 'abs'</span></span><br><span class="line">print(f(<span class="number">-123</span>))  <span class="comment"># 123</span></span><br></pre></td></tr></table></figure>
-<p>一个类实例也可以变成一个可调用对象，只需要实现一个特殊方法__call__()。该函数在调用类的实例时自动调用。把Person类变成一个可调用对象如下，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, friend)</span>:</span></span><br><span class="line">        print(<span class="string">'My name is %s...'</span> % self.name)</span><br><span class="line">        print(<span class="string">'My friend is %s...'</span> % friend)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以对Person实例直接调用：</span></span><br><span class="line">p = Person(<span class="string">'Bob'</span>, <span class="string">'male'</span>)</span><br><span class="line">p(<span class="string">'Tim'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># My name is Bob...</span></span><br><span class="line"><span class="comment"># My friend is Tim...</span></span><br></pre></td></tr></table></figure>
-<p>单看p(&#39;Tim&#39;)无法确定p是一个函数还是一个类实例，所以，<strong>在Python中，函数也是对象，对象和函数的区别并不显著</strong>。<br></p></font><p></p>
+<h4 id="模块和包的概念"><a href="#模块和包的概念" class="headerlink" title="模块和包的概念"></a>模块和包的概念<a id="more"></a></h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-1.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-2.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-3.png" alt=" "></p>
+<p>调用模块时，由于同名模块的完整模块名不同（p1.util和p2.util），所以此时同名的模块不产生冲突。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-4.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-5.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-6.png" alt=" "></p>
+<h4 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h4><p>Python使用import语句导入一个模块。例如，导入系统自带的模块math。可以认为math就是一个指向已导入模块的变量，通过该变量，可以访问math模块中所定义的所有公开的函数、变量和类。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line">math.pow(<span class="number">2</span>, <span class="number">0.5</span>) <span class="comment"># pow是函数  # 1.4142135623730951</span></span><br><span class="line">math.pi <span class="comment"># pi是变量  # 3.141592653589793</span></span><br></pre></td></tr></table></figure>
+<p>如果只希望导入用到的math模块的某几个函数，而不是所有函数，可以用下面的语句。这样，可以直接引用pow, sin, log这3个函数，但math的其他函数没有导入进来，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> pow, sin, log</span><br><span class="line">pow(<span class="number">2</span>, <span class="number">10</span>)  <span class="comment"># 1024.0</span></span><br><span class="line">sin(<span class="number">3.14</span>)  <span class="comment"># 0.0015926529164868282</span></span><br></pre></td></tr></table></figure>
+<p>如果遇到名字冲突，比如math模块有一个log函数，logging模块也有一个log函数：如果使用import导入模块名，由于必须通过模块名引用函数名，因此不存在冲突；如果使用from…import导入log 函数，势必引起冲突。这时，可以给函数起个“别名”来避免冲突。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math, logging</span><br><span class="line">print(math.log(<span class="number">10</span>))   <span class="comment"># 调用的是math的log函数</span></span><br><span class="line">logging.log(<span class="number">10</span>, <span class="string">'something'</span>)   <span class="comment"># 调用的是logging的log函数</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> log</span><br><span class="line"><span class="keyword">from</span> logging <span class="keyword">import</span> log <span class="keyword">as</span> logger   <span class="comment"># logging的log现在变成了logger</span></span><br><span class="line">print(log(<span class="number">10</span>))   <span class="comment"># 调用的是math的log</span></span><br><span class="line">logger(<span class="number">10</span>, <span class="string">'import from logging'</span>)   <span class="comment"># 调用的是logging的log</span></span><br></pre></td></tr></table></figure>
+<h4 id="动态导入模块"><a href="#动态导入模块" class="headerlink" title="动态导入模块"></a>动态导入模块</h4><p>如果导入的模块不存在，Python解释器会报ImportError错误，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> something</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">ImportError: No module named something</span><br></pre></td></tr></table></figure>
+<p><strong>Python中存在不同模块提供相同的功能</strong>，比如io和cStringIO都提供了StringIO这个功能。这是因为Python是动态语言，解释执行，因此Python代码运行速度慢。如果要提高Python代码的运行速度，最简单的方法是把某些关键函数用C语言重写，这样就能大大提高执行速度。同样的功能，io是纯Python代码编写的，而cStringIO部分函数是C写的，因此cStringIO运行速度更快。<br>利用异常捕捉ImportError错误，可以在Python中动态导入模块，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">from</span> cStringIO <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">except</span> ImportError:</span><br><span class="line">    <span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br></pre></td></tr></table></figure>
+<p>上述代码先尝试从cStringIO导入，如果失败了（比如cStringIO没有被安装），再尝试从io导入。这样，如果cStringIO模块存在，则将获得更快的运行速度，如果cStringIO不存在，则顶多代码运行速度会变慢，但不会影响代码的正常执行。<br><strong>try的作用是捕获错误，并在捕获到指定错误时执行except语句</strong>。</p>
+<h4 id="fulture"><a href="#fulture" class="headerlink" title="__fulture__"></a>__fulture__</h4><p>Python的新版本会引入新的功能，但是，实际上这些功能可能在上一个版本中就已经存在了。要在旧版本“试用”某一新的特性，可以通过导入__future__模块的某些功能来实现。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python 2.7的整数除法运算结果仍是整数</span></span><br><span class="line"><span class="number">10</span> / <span class="number">3</span>  <span class="comment"># 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Python 3.x已经改进了整数的除法运算，“/”除将得到浮点数，“//”除才仍是整数</span></span><br><span class="line"><span class="number">10</span> / <span class="number">3</span>  <span class="comment"># 3.3333333333333335</span></span><br><span class="line"><span class="number">10</span> // <span class="number">3</span>  <span class="comment"># 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 要在Python 2.7中引入3.x的除法规则，导入__future__的division</span></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> division</span><br><span class="line"><span class="keyword">print</span> <span class="number">10</span> / <span class="number">3</span>  <span class="comment"># 3.3333333333333335</span></span><br></pre></td></tr></table></figure>
+<p><strong>当新版本的一个特性与旧版本不兼容时，该特性将会在旧版本中添加到__future__中，以便旧的代码能在旧版本中测试新特性</strong>。</p>
+<h4 id="第三方库的安装"><a href="#第三方库的安装" class="headerlink" title="第三方库的安装"></a>第三方库的安装</h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-7.png" alt=" "></p>
+<p><strong>常用的pip命令</strong><br>pip install &lt;第三方库名&gt;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;安装指定的第三方库<br>pip install -U &lt;第三方库名&gt;&emsp;&emsp;&emsp;&emsp;使用-U标签更新已安装的指定第三方库<br>pip uninstall &lt;第三方库名&gt;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;卸载指定的第三方库<br>pip show &lt;第三方库名&gt;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;列出某个指定第三方库的详细信息<br>pip search &lt;关键词&gt;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;根据关键词在名称和介绍中搜索第三方库<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-8.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-9.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-10.png" alt=" "></p>
+<p>注：某些第三方库提供下载的不是可执行文件，而是源文件。这时需要下载后需要在本地环境编译后安装，而由于本地环境的问题，常常发生安装失败，这时可以使用文件安装方法。<br></p></font><p></p>
 </html>
     </div>
 
@@ -410,14 +424,16 @@ daovoice('update');
           
           <div class="post-tags">
               <a href="/tags/Python%E8%BF%9B%E9%98%B6/" rel="tag"><i class="fa fa-tag"></i> Python进阶</a>
-              <a href="/tags/%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 特殊方法</a>
+              <a href="/tags/%E6%A8%A1%E5%9D%97/" rel="tag"><i class="fa fa-tag"></i> 模块</a>
+              <a href="/tags/%E5%8C%85/" rel="tag"><i class="fa fa-tag"></i> 包</a>
+              <a href="/tags/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/" rel="tag"><i class="fa fa-tag"></i> 第三方库</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2020/04/28/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%BB%A7%E6%89%BF%E5%92%8C%E5%A4%9A%E6%80%81/" rel="next" title="Python面向对象—继承和多态">
+                <a href="/2020/03/31/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%BB%A7%E6%89%BF%E5%92%8C%E5%A4%9A%E6%80%81/" rel="next" title="Python面向对象—继承和多态">
                   <i class="fa fa-chevron-left"></i> Python面向对象—继承和多态
                 </a>
             </div>
@@ -425,8 +441,8 @@ daovoice('update');
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2020/04/30/Python%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/" rel="prev" title="Python高阶函数">
-                  Python高阶函数 <i class="fa fa-chevron-right"></i>
+                <a href="/2020/03/31/Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD/" rel="prev" title="Python文件打开和关闭">
+                  Python文件打开和关闭 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -471,7 +487,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#特殊方法简介"><span class="nav-text">特殊方法简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用特殊方法举例"><span class="nav-text">常用特殊方法举例</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#str"><span class="nav-text">__str()__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cmp"><span class="nav-text">__cmp()__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#len"><span class="nav-text">__len()__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#slots"><span class="nav-text">__slots__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#call"><span class="nav-text">__call()__</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#模块和包的概念"><span class="nav-text">模块和包的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导入模块"><span class="nav-text">导入模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态导入模块"><span class="nav-text">动态导入模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fulture"><span class="nav-text">__fulture__</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三方库的安装"><span class="nav-text">第三方库的安装</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 	  
@@ -647,7 +663,7 @@ daovoice('update');
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/04/28/Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85/',]
       });
       });
   </script>

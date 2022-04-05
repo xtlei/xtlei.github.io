@@ -58,24 +58,29 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="文件的理解文件是数据的抽象和集合，是存储在辅助存储器上的数据序列，是数据存储的一种形式。">
-<meta name="keywords" content="Python进阶,文件打开,文件关闭">
+  <meta name="description" content="文件内容读取">
+<meta name="keywords" content="Python进阶,文件读取,文件写入,数据格式化处理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python文件打开和关闭">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;04&#x2F;25&#x2F;Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD&#x2F;index.html">
+<meta property="og:title" content="Python文件读写">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Python%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="文件的理解文件是数据的抽象和集合，是存储在辅助存储器上的数据序列，是数据存储的一种形式。">
+<meta property="og:description" content="文件内容读取">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-1.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-4.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-5.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-6.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-7.png">
-<meta property="og:updated_time" content="2021-11-02T07:01:54.057Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-9.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-10.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-11.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-12.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-13.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-14.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-15.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-16.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-17.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-18.png">
+<meta property="og:updated_time" content="2022-04-05T07:13:49.023Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-1.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-9.png">
 
-<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/04/25/Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD/">
+<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/">
 
 
 <script id="page-configurations">
@@ -89,7 +94,7 @@ daovoice('update');
   };
 </script>
 
-  <title>Python文件打开和关闭 | 蟹家之宝树</title>
+  <title>Python文件读写 | 蟹家之宝树</title>
   
 
 
@@ -242,7 +247,7 @@ daovoice('update');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/04/25/Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -255,7 +260,7 @@ daovoice('update');
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          Python文件打开和关闭
+          Python文件读写
         </h2>
 
         <div class="post-meta">
@@ -265,14 +270,14 @@ daovoice('update');
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-04-25 10:16:51" itemprop="dateCreated datePublished" datetime="2020-04-25T10:16:51+08:00">2020-04-25</time>
+              <time title="创建时间：2020-03-31 15:05:19" itemprop="dateCreated datePublished" datetime="2020-03-31T15:05:19+08:00">2020-03-31</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-11-02 15:01:54" itemprop="dateModified" datetime="2021-11-02T15:01:54+08:00">2021-11-02</time>
+                <time title="修改时间：2022-04-05 15:13:49" itemprop="dateModified" datetime="2022-04-05T15:13:49+08:00">2022-04-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -317,7 +322,7 @@ daovoice('update');
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>281</span>
+              <span>948</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -339,13 +344,22 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<h4 id="文件的理解"><a href="#文件的理解" class="headerlink" title="文件的理解"></a>文件的理解</h4><p>文件是数据的抽象和集合，是存储在辅助存储器上的数据序列，是数据存储的一种形式。<a id="more"></a><br><strong>文件展现形态：文本文件和二进制文件</strong>。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-1.png" alt=" "></p>
-<p><strong>文本文件</strong>：由单一特定编码组成的文件，如UTF-8编码；由于存在编码，也被看成是存储着的长字符串；适用于例如：.txt文件、.py文件等。<br><strong>二进制文件</strong>：直接由比特0和1组成，没有统一的字符编码；一般存在二进制0和1的组织结构，即文件格式；适用于例如：.png文件、.avi文件等。</p>
-<h4 id="文件的打开和关闭"><a href="#文件的打开和关闭" class="headerlink" title="文件的打开和关闭"></a>文件的打开和关闭</h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-4.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-5.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-6.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-7.png" alt=" "></p>
-<p><strong>文件关闭：&lt;变量名&gt;.close()</strong><br>注意调用close()方法将文件及时关闭，如果没有关闭，Python在程序正常关闭时也会关闭文件。</p>
+<h4 id="文件内容读取"><a href="#文件内容读取" class="headerlink" title="文件内容读取"></a>文件内容读取</h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-9.png" alt=" "></p>
+<a id="more"></a>
+<p>&lt;f&gt;.readline(size=-1) 读入文件一行，如果给定参数，输出文件前size行内容<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-10.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-11.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-12.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-13.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-14.png" alt=" "></p>
+<h4 id="文件内容写入"><a href="#文件内容写入" class="headerlink" title="文件内容写入"></a>文件内容写入</h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-15.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-16.png" alt=" "></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fo = open(<span class="string">"D:/test.txt"</span>, <span class="string">"w+"</span>)</span><br><span class="line">list = [<span class="string">'中国'</span>, <span class="string">'法国'</span>, <span class="string">'美国'</span>]</span><br><span class="line">fo.writelines(list)</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> fo:</span><br><span class="line">    print(line)</span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
+<p>以上代码，创建文件test.txt，并写入内容“中国法国美国”，但是没有读取文件内容。因为在向文件写入数据后，文件操作指针移动到文件末尾，而读取文件操作是读取从指针当前位置到文件末尾的内容，所以读取不到内容。使用seek()函数，改变当前指针位置到文件开头，如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fo = open(<span class="string">"D:/test.txt"</span>, <span class="string">"w+"</span>)</span><br><span class="line">list = [<span class="string">'中国'</span>, <span class="string">'法国'</span>, <span class="string">'美国'</span>]</span><br><span class="line">fo.writelines(list)</span><br><span class="line">fo.seek(<span class="number">0</span>)</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> fo:</span><br><span class="line">    print(line)</span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
+<h4 id="数据的表示和处理"><a href="#数据的表示和处理" class="headerlink" title="数据的表示和处理"></a>数据的表示和处理</h4><h5 id="一维数据格式化处理"><a href="#一维数据格式化处理" class="headerlink" title="一维数据格式化处理"></a>一维数据格式化处理</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fo = open(<span class="string">"D:/test.txt"</span>, <span class="string">"w+"</span>)</span><br><span class="line">list = [<span class="string">'中国'</span>, <span class="string">'法国'</span>, <span class="string">'美国'</span>]</span><br><span class="line">fo.writelines(list)</span><br><span class="line">fo.seek(<span class="number">0</span>)</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> fo:</span><br><span class="line">    print(line)</span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
+<h5 id="二维数据格式化处理"><a href="#二维数据格式化处理" class="headerlink" title="二维数据格式化处理"></a>二维数据格式化处理</h5><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-17.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-18.png" alt=" "></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 从csv文件中读取二维数据存储到二维列表中</span></span><br><span class="line">fo = open(<span class="string">"test.txt"</span>, <span class="string">'r'</span>, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">ls = []</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> fo</span><br><span class="line">    line = line.replace(<span class="string">"\n"</span>, <span class="string">''</span>)</span><br><span class="line">    ls.append(line.split(<span class="string">","</span>))</span><br><span class="line">fo.close()</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 将列表中的二维数据写入到csv格式的文件中</span></span><br><span class="line">ls = [[<span class="number">1</span>,<span class="number">2</span>], [<span class="number">3</span>,<span class="number">4</span>], [<span class="number">5</span>,<span class="number">6</span>]]</span><br><span class="line">fo = open(<span class="string">"test.txt"</span>, <span class="string">"w"</span>, encoding=<span class="string">"utf-8"</span>)</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> ls:</span><br><span class="line">    f.write(<span class="string">","</span>.join(item) + <span class="string">'\n'</span>)</span><br><span class="line">fo.close()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 二维数据的遍历</span></span><br><span class="line">ls = [[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>]]</span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> ls:</span><br><span class="line">    print(row)</span><br><span class="line">    <span class="keyword">for</span> column <span class="keyword">in</span> row:</span><br><span class="line">        print(column)</span><br></pre></td></tr></table></figure>
 </font>
 </html>
     </div>
@@ -402,24 +416,25 @@ daovoice('update');
           
           <div class="post-tags">
               <a href="/tags/Python%E8%BF%9B%E9%98%B6/" rel="tag"><i class="fa fa-tag"></i> Python进阶</a>
-              <a href="/tags/%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80/" rel="tag"><i class="fa fa-tag"></i> 文件打开</a>
-              <a href="/tags/%E6%96%87%E4%BB%B6%E5%85%B3%E9%97%AD/" rel="tag"><i class="fa fa-tag"></i> 文件关闭</a>
+              <a href="/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/" rel="tag"><i class="fa fa-tag"></i> 文件读取</a>
+              <a href="/tags/%E6%96%87%E4%BB%B6%E5%86%99%E5%85%A5/" rel="tag"><i class="fa fa-tag"></i> 文件写入</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%A4%84%E7%90%86/" rel="tag"><i class="fa fa-tag"></i> 数据格式化处理</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2020/03/31/Python%E5%88%97%E8%A1%A8%E7%94%9F%E6%88%90%E5%BC%8F/" rel="next" title="Python列表生成式">
-                  <i class="fa fa-chevron-left"></i> Python列表生成式
+                <a href="/2020/03/31/Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD/" rel="next" title="Python文件打开和关闭">
+                  <i class="fa fa-chevron-left"></i> Python文件打开和关闭
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2020/04/25/Python%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/" rel="prev" title="Python文件读写">
-                  Python文件读写 <i class="fa fa-chevron-right"></i>
+                <a href="/2020/03/31/Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/" rel="prev" title="Python特殊方法">
+                  Python特殊方法 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -464,7 +479,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#文件的理解"><span class="nav-text">文件的理解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文件的打开和关闭"><span class="nav-text">文件的打开和关闭</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#文件内容读取"><span class="nav-text">文件内容读取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文件内容写入"><span class="nav-text">文件内容写入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据的表示和处理"><span class="nav-text">数据的表示和处理</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一维数据格式化处理"><span class="nav-text">一维数据格式化处理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二维数据格式化处理"><span class="nav-text">二维数据格式化处理</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 	  
@@ -640,7 +655,7 @@ daovoice('update');
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/04/25/Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/',]
       });
       });
   </script>

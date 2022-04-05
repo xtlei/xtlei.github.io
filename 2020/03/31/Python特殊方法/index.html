@@ -58,22 +58,22 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="面向对象编程简介面向对象编程是一种程序设计范式，把程序看做不同对象的相互调用，对现实世界建立对象模型。">
-<meta name="keywords" content="Python进阶,面向对象,类的定义,实例创建,初始化实例,权限控制">
+  <meta name="description" content="特殊方法简介Python之所以能把把任意变量变成str输出，因为任何数据类型的实例都有一个特殊方法str()。">
+<meta name="keywords" content="Python进阶,特殊方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python面向对象—类的定义和实例创建">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;04&#x2F;25&#x2F;Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA&#x2F;index.html">
+<meta property="og:title" content="Python特殊方法">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="面向对象编程简介面向对象编程是一种程序设计范式，把程序看做不同对象的相互调用，对现实世界建立对象模型。">
+<meta property="og:description" content="特殊方法简介Python之所以能把把任意变量变成str输出，因为任何数据类型的实例都有一个特殊方法str()。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py14-1.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py14-2.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py14-3.png">
-<meta property="og:updated_time" content="2021-11-02T07:02:20.154Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-16.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-17.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-18.png">
+<meta property="og:updated_time" content="2022-04-05T07:14:07.283Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py14-1.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py15-16.png">
 
-<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/04/25/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA/">
+<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -87,7 +87,7 @@ daovoice('update');
   };
 </script>
 
-  <title>Python面向对象—类的定义和实例创建 | 蟹家之宝树</title>
+  <title>Python特殊方法 | 蟹家之宝树</title>
   
 
 
@@ -240,7 +240,7 @@ daovoice('update');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/04/25/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -253,7 +253,7 @@ daovoice('update');
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          Python面向对象—类的定义和实例创建
+          Python特殊方法
         </h2>
 
         <div class="post-meta">
@@ -263,14 +263,14 @@ daovoice('update');
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-04-25 11:16:11" itemprop="dateCreated datePublished" datetime="2020-04-25T11:16:11+08:00">2020-04-25</time>
+              <time title="创建时间：2020-03-31 15:05:20" itemprop="dateCreated datePublished" datetime="2020-03-31T15:05:20+08:00">2020-03-31</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-11-02 15:02:20" itemprop="dateModified" datetime="2021-11-02T15:02:20+08:00">2021-11-02</time>
+                <time title="修改时间：2022-04-05 15:14:07" itemprop="dateModified" datetime="2022-04-05T15:14:07+08:00">2022-04-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -337,28 +337,24 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<h4 id="面向对象编程简介"><a href="#面向对象编程简介" class="headerlink" title="面向对象编程简介"></a>面向对象编程简介</h4><p>面向对象编程是一种程序设计范式，把程序看做不同对象的相互调用，对现实世界建立对象模型。<a id="more"></a><br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py14-1.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py14-2.png" alt=" "></p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py14-3.png" alt=" "></p>
-<h4 id="定义类并创建实例"><a href="#定义类并创建实例" class="headerlink" title="定义类并创建实例"></a>定义类并创建实例</h4><h5 id="类的定义"><a href="#类的定义" class="headerlink" title="类的定义"></a>类的定义</h5><p>在Python中，类通过class关键字定义。以Person为例，定义一个Person类如下，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-<p>按照Python的编程习惯，类名以大写字母开头，紧接着是(object)，表示该类是从哪个类继承下来的。根据现有类创建实例如下，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xiaoming = Person()</span><br><span class="line">xiaohong = Person()</span><br></pre></td></tr></table></figure>
-<h5 id="创建实例属性"><a href="#创建实例属性" class="headerlink" title="创建实例属性"></a>创建实例属性</h5><p>每一个实例，都可以直接给它们的属性赋不同的值，实例的属性可以像普通变量一样进行操作，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 给xiaoming加上name、gender和birth属性</span></span><br><span class="line">xiaoming = Person()</span><br><span class="line">xiaoming.name = <span class="string">'Xiao Ming'</span></span><br><span class="line">xiaoming.gender = <span class="string">'Male'</span></span><br><span class="line">xiaoming.birth = <span class="string">'1990-1-1'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 给xiaohong加上的属性不一定要和xiaoming相同</span></span><br><span class="line">xiaohong = Person()</span><br><span class="line">xiaohong.name = <span class="string">'Xiao Hong'</span></span><br><span class="line">xiaohong.school = <span class="string">'No. 1 High School'</span></span><br><span class="line">xiaohong.grade = <span class="number">2</span></span><br><span class="line"></span><br><span class="line">xiaohong.grade = xiaohong.grade + <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<h4 id="初始化实例属性"><a href="#初始化实例属性" class="headerlink" title="初始化实例属性"></a>初始化实例属性</h4><p>在定义Person类时，可以为Person类添加一个特殊的__init__()方法。当创建实例时，__init__()方法被自动调用，就能为每个实例都统一加上某些属性，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender, birth)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line">        self.birth = birth</span><br></pre></td></tr></table></figure>
-<p><strong>__init__()方法的第一个参数必须是self（也可以用别的名字，但建议使用习惯用法），后续参数则可以自由指定，和定义函数没有任何区别</strong>。<br>相应地，创建实例时，就必须要提供除self以外的参数，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xiaoming = Person(<span class="string">'Xiao Ming'</span>, <span class="string">'Male'</span>, <span class="string">'1991-1-1'</span>)</span><br><span class="line">xiaohong = Person(<span class="string">'Xiao Hong'</span>, <span class="string">'Female'</span>, <span class="string">'1992-2-2'</span>)</span><br></pre></td></tr></table></figure>
-<p>有了上述__init__()方法，每个Person实例在创建时，都会有name、gender和birth这3个属性，并且，被赋予不同的属性值，访问属性使用“.”操作符，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(xiaoming.name)  <span class="comment"># 输出 'Xiao Ming'</span></span><br><span class="line">print(xiaohong.birth)  <span class="comment"># 输出 '1992-2-2'</span></span><br></pre></td></tr></table></figure>
-<p>要特别注意的是，定义__init__()方法一定不能忘记self参数，否则会导致创建失败或运行不正常，因为第一个参数name被Python解释器传入了实例的引用，从而导致整个方法的调用参数位置全部没有对上。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">     <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(name, gender, birth)</span>:</span></span><br><span class="line">         <span class="keyword">pass</span></span><br><span class="line">xiaoming = Person(<span class="string">'Xiao Ming'</span>, <span class="string">'Male'</span>, <span class="string">'1990-1-1'</span>)</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: __init__() takes exactly <span class="number">3</span> arguments (<span class="number">4</span> given)</span><br></pre></td></tr></table></figure>
-<p>如果要接受任意关键字参数，允许把其作为属性赋值给实例，</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name,gender,birth,**kw)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line">        self.birth = birth</span><br><span class="line">        <span class="keyword">for</span> k,v <span class="keyword">in</span> kw.items():</span><br><span class="line">            setattr(self,k,v)</span><br><span class="line"></span><br><span class="line">xiaoming = Person(<span class="string">'Xiao Ming'</span>, <span class="string">'Male'</span>, <span class="string">'1990-1-1'</span>, job=<span class="string">'Student'</span>)</span><br><span class="line"></span><br><span class="line">print(xiaoming.name)</span><br><span class="line">print(xiaoming.job)</span><br></pre></td></tr></table></figure>
-<h4 id="访问限制"><a href="#访问限制" class="headerlink" title="访问限制"></a>访问限制</h4><p><strong>Python对属性权限的控制是通过属性名来实现的，如果一个属性由双下划线开头(__)，该属性就无法被外部访问</strong>。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self._title = <span class="string">'Mr'</span></span><br><span class="line">        self.__job = <span class="string">'Student'</span></span><br><span class="line">p = Person(<span class="string">'Bob'</span>)</span><br><span class="line"><span class="keyword">print</span> p.name  <span class="comment"># =&gt; Bob</span></span><br><span class="line"><span class="keyword">print</span> p._title  <span class="comment"># =&gt; Mr</span></span><br><span class="line"><span class="keyword">print</span> p.__job  <span class="comment"># =&gt; Error</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AttributeError: <span class="string">'Person'</span> object has no attribute <span class="string">'__job'</span></span><br></pre></td></tr></table></figure>
-<p>可见，只有以双下划线开头的&quot;__job&quot;不能直接被外部访问。但是，<strong>如果一个属性以&quot;__xxx__&quot;的形式定义，那它又可以被外部访问了，以&quot;__xxx__&quot;定义的属性在Python的类中被称为特殊属性，有很多预定义的特殊属性可以使用，通常不要把普通属性用&quot;__xxx__&quot;定义</strong>。<strong>以单下划线开头的属性&quot;_xxx&quot;虽然也可以被外部访问，但是，按照习惯，它们不应该被外部访问</strong>。<br></p></font><p></p>
+<h4 id="特殊方法简介"><a href="#特殊方法简介" class="headerlink" title="特殊方法简介"></a>特殊方法简介</h4><p>Python之所以能把把任意变量变成str输出，因为任何数据类型的实例都有一个特殊方法<strong>str</strong>()。<a id="more"></a><br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-16.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-17.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py15-18.png" alt=" "></p>
+<h4 id="常用特殊方法举例"><a href="#常用特殊方法举例" class="headerlink" title="常用特殊方法举例"></a>常用特殊方法举例</h4><h5 id="str"><a href="#str" class="headerlink" title="__str()__"></a>__str()__</h5><p>如果要把一个类的实例变成str，需要实现特殊方法__str__()，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'(Person: %s, %s)'</span> % (self.name, self.gender)</span><br><span class="line"></span><br><span class="line">p = Person(<span class="string">'Bob'</span>, <span class="string">'male'</span>)</span><br><span class="line">print(p)  <span class="comment"># (Person: Bob, male)</span></span><br></pre></td></tr></table></figure>
+<h5 id="cmp"><a href="#cmp" class="headerlink" title="__cmp()__"></a>__cmp()__</h5><p>对int、str等内置数据类型排序时，Python的sorted()函数按照默认的比较函数cmp排序，但是，如果对一组Student类的实例排序时，就必须实现特殊方法__cmp__()，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, score)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.score = score</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'(%s: %s)'</span> % (self.name, self.score)</span><br><span class="line">    __repr__ = __str__</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__cmp__</span><span class="params">(self, s)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.name &lt; s.name:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">        <span class="keyword">elif</span> self.name &gt; s.name:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">L = [Student(<span class="string">'Tim'</span>, <span class="number">99</span>), Student(<span class="string">'Bob'</span>, <span class="number">88</span>), Student(<span class="string">'Alice'</span>, <span class="number">77</span>)]</span><br><span class="line"><span class="keyword">print</span> sorted(L)  <span class="comment"># [(Alice: 77), (Bob: 88), (Tim: 99)]</span></span><br></pre></td></tr></table></figure>
+<p>上述Student类实现了__cmp__()方法，__cmp__用实例自身self和传入的实例s进行比较，如果self应该排在前面，就返回-1，如果s应该排在前面，就返回1，如果两者相当，返回0。<br>注意: 如果list不仅仅包含Student类，则__cmp__可能会报错。<strong>Python3已经取消该函数</strong>。</p>
+<h5 id="len"><a href="#len" class="headerlink" title="__len()__"></a>__len()__</h5><p>如果一个类表现得像一个list，要获取有多少个元素，就得用len()函数。要让len()函数工作正常，类必须提供一个特殊方法__len__()，它返回元素的个数。<br>例如，写一个Students类，把名字传进去，只要正确实现了__len__()方法，就可以用len()函数返回Students实例的“长度”,</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Students</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, *args)</span>:</span></span><br><span class="line">        self.names = args</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> len(self.names)</span><br><span class="line"></span><br><span class="line">ss = Students(<span class="string">'Bob'</span>, <span class="string">'Alice'</span>, <span class="string">'Tim'</span>)</span><br><span class="line"><span class="keyword">print</span> len(ss)  <span class="comment"># 3</span></span><br></pre></td></tr></table></figure>
+<h5 id="slots"><a href="#slots" class="headerlink" title="__slots__"></a>__slots__</h5><p>由于Python是动态语言，任何实例在运行期都可以动态地添加属性。<br>如果要限制添加的属性，例如，Student类只允许添加name、gender和score这3个属性，可以利用Python的__slots__来实现。__slots__是指一个类允许的属性列表，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">    __slots__ = (<span class="string">'name'</span>, <span class="string">'gender'</span>, <span class="string">'score'</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender, score)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line">        self.score = score</span><br><span class="line"></span><br><span class="line">s = Student(<span class="string">'Bob'</span>, <span class="string">'male'</span>, <span class="number">59</span>)</span><br><span class="line">s.name = <span class="string">'Tim'</span> <span class="comment"># OK</span></span><br><span class="line">s.score = <span class="number">99</span> <span class="comment"># OK</span></span><br><span class="line">.grade = <span class="string">'A'</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  ...</span><br><span class="line">AttributeError: <span class="string">'Student'</span> object has no attribute <span class="string">'grade'</span></span><br></pre></td></tr></table></figure>
+<p><strong>__slots__的目的是限制当前类所能拥有的属性</strong>，如果不需要添加任意动态的属性，使用__slots__也能节省内存。<strong><strong>slots</strong>定义的属性仅对当前类实例起作用，对继承的子类是不起作用的</strong>。</p>
+<h5 id="call"><a href="#call" class="headerlink" title="__call()__"></a>__call()__</h5><p>在Python中，函数其实是一个对象。如下，由于f可以被调用，所以，f被称为可调用对象。<strong>所有的函数都是可调用对象</strong>。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f = abs</span><br><span class="line">print(f.__name__)  <span class="comment"># 'abs'</span></span><br><span class="line">print(f(<span class="number">-123</span>))  <span class="comment"># 123</span></span><br></pre></td></tr></table></figure>
+<p>一个类实例也可以变成一个可调用对象，只需要实现一个特殊方法__call__()。该函数在调用类的实例时自动调用。把Person类变成一个可调用对象如下，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, gender)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.gender = gender</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, friend)</span>:</span></span><br><span class="line">        print(<span class="string">'My name is %s...'</span> % self.name)</span><br><span class="line">        print(<span class="string">'My friend is %s...'</span> % friend)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以对Person实例直接调用：</span></span><br><span class="line">p = Person(<span class="string">'Bob'</span>, <span class="string">'male'</span>)</span><br><span class="line">p(<span class="string">'Tim'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># My name is Bob...</span></span><br><span class="line"><span class="comment"># My friend is Tim...</span></span><br></pre></td></tr></table></figure>
+<p>单看p(&#39;Tim&#39;)无法确定p是一个函数还是一个类实例，所以，<strong>在Python中，函数也是对象，对象和函数的区别并不显著</strong>。<br></p></font><p></p>
 </html>
     </div>
 
@@ -414,18 +410,14 @@ daovoice('update');
           
           <div class="post-tags">
               <a href="/tags/Python%E8%BF%9B%E9%98%B6/" rel="tag"><i class="fa fa-tag"></i> Python进阶</a>
-              <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" rel="tag"><i class="fa fa-tag"></i> 面向对象</a>
-              <a href="/tags/%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89/" rel="tag"><i class="fa fa-tag"></i> 类的定义</a>
-              <a href="/tags/%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA/" rel="tag"><i class="fa fa-tag"></i> 实例创建</a>
-              <a href="/tags/%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AE%9E%E4%BE%8B/" rel="tag"><i class="fa fa-tag"></i> 初始化实例</a>
-              <a href="/tags/%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" rel="tag"><i class="fa fa-tag"></i> 权限控制</a>
+              <a href="/tags/%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 特殊方法</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2020/04/25/Python%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/" rel="next" title="Python文件读写">
+                <a href="/2020/03/31/Python%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/" rel="next" title="Python文件读写">
                   <i class="fa fa-chevron-left"></i> Python文件读写
                 </a>
             </div>
@@ -433,8 +425,8 @@ daovoice('update');
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2020/04/25/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%B1%9E%E6%80%A7%E5%8F%8A%E6%96%B9%E6%B3%95/" rel="prev" title="Python面向对象—类和实例的属性及方法">
-                  Python面向对象—类和实例的属性及方法 <i class="fa fa-chevron-right"></i>
+                <a href="/2020/03/31/Python%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/" rel="prev" title="Python高阶函数">
+                  Python高阶函数 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -479,7 +471,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象编程简介"><span class="nav-text">面向对象编程简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义类并创建实例"><span class="nav-text">定义类并创建实例</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#类的定义"><span class="nav-text">类的定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建实例属性"><span class="nav-text">创建实例属性</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化实例属性"><span class="nav-text">初始化实例属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问限制"><span class="nav-text">访问限制</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#特殊方法简介"><span class="nav-text">特殊方法简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用特殊方法举例"><span class="nav-text">常用特殊方法举例</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#str"><span class="nav-text">__str()__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cmp"><span class="nav-text">__cmp()__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#len"><span class="nav-text">__len()__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#slots"><span class="nav-text">__slots__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#call"><span class="nav-text">__call()__</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 	  
@@ -655,7 +647,7 @@ daovoice('update');
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/04/25/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E2%80%94%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/',]
       });
       });
   </script>

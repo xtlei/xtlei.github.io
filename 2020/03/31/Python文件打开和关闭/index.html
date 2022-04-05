@@ -58,16 +58,24 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="浮生若梦总关情，半世平凡是无常">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蟹家之宝树">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;archives&#x2F;2021&#x2F;10&#x2F;index.html">
+  <meta name="description" content="文件的理解文件是数据的抽象和集合，是存储在辅助存储器上的数据序列，是数据存储的一种形式。">
+<meta name="keywords" content="Python进阶,文件打开,文件关闭">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python文件打开和关闭">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="浮生若梦总关情，半世平凡是无常">
+<meta property="og:description" content="文件的理解文件是数据的抽象和集合，是存储在辅助存储器上的数据序列，是数据存储的一种形式。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-1.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-4.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-5.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-6.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-7.png">
+<meta property="og:updated_time" content="2022-04-05T07:13:38.240Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;python&#x2F;py13-1.png">
 
-<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/archives/2021/10/">
+<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD/">
 
 
 <script id="page-configurations">
@@ -75,13 +83,13 @@ daovoice('update');
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>归档 | 蟹家之宝树</title>
+  <title>Python文件打开和关闭 | 蟹家之宝树</title>
   
 
 
@@ -229,74 +237,209 @@ daovoice('update');
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        
-        <span class="collection-header">还行! 目前共计 48 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="XTLei">
+      <meta itemprop="description" content="浮生若梦总关情，半世平凡是无常">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蟹家之宝树">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          Python文件打开和关闭
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-31 15:05:18" itemprop="dateCreated datePublished" datetime="2020-03-31T15:05:18+08:00">2020-03-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-05 15:13:38" itemprop="dateModified" datetime="2022-04-05T15:13:38+08:00">2022-04-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" itemprop="url" rel="index">
+                    <span itemprop="name">软件开发</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Advan/" itemprop="url" rel="index">
+                    <span itemprop="name">Advan</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python/Advan/File-Data/" itemprop="url" rel="index">
+                    <span itemprop="name">File & Data</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>281</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h2 class="collection-header">2021</h2>
+        <html>
+<font face="Times New Roman,宋体" size="4">
+
+<h4 id="文件的理解"><a href="#文件的理解" class="headerlink" title="文件的理解"></a>文件的理解</h4><p>文件是数据的抽象和集合，是存储在辅助存储器上的数据序列，是数据存储的一种形式。<a id="more"></a><br><strong>文件展现形态：文本文件和二进制文件</strong>。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-1.png" alt=" "></p>
+<p><strong>文本文件</strong>：由单一特定编码组成的文件，如UTF-8编码；由于存在编码，也被看成是存储着的长字符串；适用于例如：.txt文件、.py文件等。<br><strong>二进制文件</strong>：直接由比特0和1组成，没有统一的字符编码；一般存在二进制0和1的组织结构，即文件格式；适用于例如：.png文件、.avi文件等。</p>
+<h4 id="文件的打开和关闭"><a href="#文件的打开和关闭" class="headerlink" title="文件的打开和关闭"></a>文件的打开和关闭</h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-4.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-5.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-6.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/python/py13-7.png" alt=" "></p>
+<p><strong>文件关闭：&lt;变量名&gt;.close()</strong><br>注意调用close()方法将文件及时关闭，如果没有关闭，Python在程序正常关闭时也会关闭文件。</p>
+</font>
+</html>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-10-31T18:40:37+08:00"
-              content="2021-10-31">
-          10-31
-        </time>
+    
+    
+    
+        <div class="reward-container">
+  <div>天生我材必有用，千金散尽还复来~</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="XTLei 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="XTLei 支付宝">
+        <p>支付宝</p>
       </div>
 
-      <h3 class="post-title">
-          <a class="post-title-link" href="/2021/10/31/Python%E4%B8%AD=%E3%80%81copy()%E5%92%8Cdeepcopy()%E7%9A%84%E5%8C%BA%E5%88%AB/" itemprop="url">
-            <span itemprop="name">Python中=、copy()和deepcopy()的区别</span>
-          </a>
-      </h3>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-10-31T18:06:01+08:00"
-              content="2021-10-31">
-          10-31
-        </time>
-      </div>
-
-      <h3 class="post-title">
-          <a class="post-title-link" href="/2021/10/31/Python%E4%B8%ADis%E5%92%8C==%E7%9A%84%E5%8C%BA%E5%88%AB/" itemprop="url">
-            <span itemprop="name">Python中is和==的区别</span>
-          </a>
-      </h3>
-
-    </header>
-  </article>
-
-
-    </div>
   </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>XTLei
+  </li>
+
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+	  
+		<div>
+		  
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:18px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		  
+		</div>
+		
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Python%E8%BF%9B%E9%98%B6/" rel="tag"><i class="fa fa-tag"></i> Python进阶</a>
+              <a href="/tags/%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80/" rel="tag"><i class="fa fa-tag"></i> 文件打开</a>
+              <a href="/tags/%E6%96%87%E4%BB%B6%E5%85%B3%E9%97%AD/" rel="tag"><i class="fa fa-tag"></i> 文件关闭</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2020/03/31/Python%E6%A8%A1%E5%9D%97%E5%92%8C%E5%8C%85/" rel="next" title="Python模块和包">
+                  <i class="fa fa-chevron-left"></i> Python模块和包
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2020/03/31/Python%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/" rel="prev" title="Python文件读写">
+                  Python文件读写 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
   
   
   
 
-  
-
+  </div>
 
 
           </div>
           
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NzU4NC8yNDA4NA=="></div>
+  </div>
+  
 
         </div>
           
@@ -321,6 +464,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#文件的理解"><span class="nav-text">文件的理解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文件的打开和关闭"><span class="nav-text">文件的打开和关闭</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 	  
@@ -490,7 +634,30 @@ daovoice('update');
   
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout: 3000,
+        priority: true,
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E5%92%8C%E5%85%B3%E9%97%AD/',]
+      });
+      });
+  </script>
 
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
 
   
   
