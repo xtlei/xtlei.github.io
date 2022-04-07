@@ -714,11 +714,11 @@
     
       <category term="Python基础" scheme="https://github.com/xtlei/xtlei.github.io/tags/Python%E5%9F%BA%E7%A1%80/"/>
     
-      <category term="序列" scheme="https://github.com/xtlei/xtlei.github.io/tags/%E5%BA%8F%E5%88%97/"/>
-    
       <category term="tuple" scheme="https://github.com/xtlei/xtlei.github.io/tags/tuple/"/>
     
       <category term="元组" scheme="https://github.com/xtlei/xtlei.github.io/tags/%E5%85%83%E7%BB%84/"/>
+    
+      <category term="序列" scheme="https://github.com/xtlei/xtlei.github.io/tags/%E5%BA%8F%E5%88%97/"/>
     
   </entry>
   
@@ -750,11 +750,11 @@
     
       <category term="Python基础" scheme="https://github.com/xtlei/xtlei.github.io/tags/Python%E5%9F%BA%E7%A1%80/"/>
     
+      <category term="序列" scheme="https://github.com/xtlei/xtlei.github.io/tags/%E5%BA%8F%E5%88%97/"/>
+    
       <category term="list" scheme="https://github.com/xtlei/xtlei.github.io/tags/list/"/>
     
       <category term="列表" scheme="https://github.com/xtlei/xtlei.github.io/tags/%E5%88%97%E8%A1%A8/"/>
-    
-      <category term="序列" scheme="https://github.com/xtlei/xtlei.github.io/tags/%E5%BA%8F%E5%88%97/"/>
     
   </entry>
   

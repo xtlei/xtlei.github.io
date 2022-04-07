@@ -66,7 +66,7 @@ daovoice('update');
 <meta property="og:site_name" content="蟹家之宝树">
 <meta property="og:description" content="输入print语句可以向屏幕上输出指定的文字。在Python2和Python3中都提供print()方法来打印信息，但两个版本间的print稍微有差异。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2022-04-07T02:02:00.818Z">
+<meta property="og:updated_time" content="2022-04-07T02:44:05.418Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
@@ -266,7 +266,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-07 10:02:00" itemprop="dateModified" datetime="2022-04-07T10:02:00+08:00">2022-04-07</time>
+                <time title="修改时间：2022-04-07 10:44:05" itemprop="dateModified" datetime="2022-04-07T10:44:05+08:00">2022-04-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -344,7 +344,7 @@ daovoice('update');
 <li><p>end表示字符串结尾添加什么字符，指点该参数就可以设置打印不换行。</p>
 </li>
 </ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"python"</span>, <span class="string">"tab"</span>, <span class="string">".com"</span>, sep=<span class="string">''</span>, end=<span class="string">''</span>)  <span class="comment"># 就可以实现打印出来不换行</span></span><br><span class="line">pythontab.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"python"</span>, <span class="string">"tab"</span>, <span class="string">".com"</span>, sep=<span class="string">''</span>, end=<span class="string">''</span>)  <span class="comment"># 就可以实现打印出来不换行</span></span><br><span class="line"><span class="comment"># pythontab.com</span></span><br></pre></td></tr></table></figure>
 <p>Python2.x下的print语句在输出字符串之后会默认换行，如果不希望换行，只要在语句最后加一个“,”即可。</p>
 <p><strong>Python2加括号，解释器可能会把它当成创建tuple</strong>，比如:print (&#39;hhh&#39;,&#39;ggg&#39;)，对于这个，Python2打印的是(&#39;hhh&#39;,&#39;ggg&#39;)，而Python3打印的是hhh ggg。除非括号里只有一个字符串，比如，print (&#39;hhh&#39;)在Python2和Python3中都是打印hhh，毕竟(&#39;hhh&#39;)==&#39;hhh&#39;，所以Python2才会视它为字符串而不是元组。</p>
 <h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>Python3.x中input()函数接受一个标准输入数据，返回为string类型。<br>注意：在Python3.x中raw_input()和input()进行了整合，去除了raw_input()，仅保留了input()函数，其接收任意输入，将所有输入默认为字符串处理，并返回字符串类型。</p>
