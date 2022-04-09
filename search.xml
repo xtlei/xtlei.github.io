@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>机器学习笔记——概述</title>
-      <link href="/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%BB%AA%E8%AE%BA/"/>
-      <url>/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%BB%AA%E8%AE%BA/</url>
+      <title>机器学习笔记——评价指标</title>
+      <link href="/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/"/>
+      <url>/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/</url>
       
-        <content type="html"><![CDATA[<html><font face="Times New Roman,宋体" size="4"><h4 id="机器学习研究内容"><a href="#机器学习研究内容" class="headerlink" title="机器学习研究内容"></a><strong>机器学习研究内容</strong></h4><p>机器学习研究的主要内容是<strong>从数据中产生“模型”的算法</strong>，即学习算法。</p><p><strong>“模型”</strong>泛指从数据中学得的结果。</p><a id="more"></a><p>从数据中学得模型的过程称为“学习”或“训练”，这个过程通过执行某个学习算法来完成。训练过程中使用的数据称为“训练数据”，其中每个样本称为“训练样本”，训练样本组成“训练集”。</p><p><strong>机器学习的前提：</strong></p><ul><li>数据中存在模式</li><li>模式无法形式化描述</li><li>有充分的数据</li></ul><p><strong>以此来讲，机器学习是基于一定的假设，从数据中学习出模式的过程。</strong></p><p><strong>机器学习的目标</strong>是使学得的模型能很好的适用于“新样本”，而不是仅仅在训练样本上工作的很好；即便对聚类这样的无监督学习任务，我们也希望学得的簇划分能适用于没在训练集中出现的样本。学得模型适用于新样本的能力，称为<strong>“泛化”（generalization）能力</strong>。</p><h4 id="学习的可行性"><a href="#学习的可行性" class="headerlink" title="学习的可行性"></a><strong>学习的可行性</strong></h4><p>样本和整体的关系</p><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_1.png" alt=" "></p><ul><li>在大样本的场景下，样本频率v可以任意精度逼近总体概率u</li><li>Hoeffding不等式</li></ul><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_2.png" alt=" "></p><ul><li>Bound与u无关</li><li>无分布假设</li><li>数据量足够大，就可以用样本估计值代表真实值</li></ul><h4 id="机器学习问题分类"><a href="#机器学习问题分类" class="headerlink" title="机器学习问题分类"></a><strong>机器学习问题分类</strong></h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_5.png" alt=" "></p><p><strong>监督学习（supervised learning）</strong>：训练数据有标记（label）信息。</p><p>在监督学习下，输入数据称为“训练数据”，每组训练数据都有明确的标识或结果，如反垃圾邮件系统中的“垃圾邮件”和“非垃圾邮件”，手写数字识别中的“1”、“2”、“3”、“4”。在建立预测模型时，监督学习建立学习过程，将预测结果与“训练数据”的实际结果进行比较，并不断调整预测模型，直到模型的预测结果达到预期的准确率。</p><p>预测的是离散值，此类学习任务称为<strong>“分类”（classification）</strong></p><p>涉及两个类别分类时：“二分类”（binary classification）任务</p><p>涉及多个类别分类时：“多分类”（multi-class classification）任务</p><p>预测的是连续值，此类学习任务称为<strong>“回归”（regression）</strong></p><p>常见的算法包括逻辑回归和反向传播神经网络。</p><p><strong>无监督学习（unsupervised learning）</strong>：训练数据无标记信息。</p><p>在无监督学习中，数据不是特别确定的，学习模型是为了推断数据的一些内部结构。常见的应用场景包括学习关联规则和聚类。常见的算法包括Apriori算法和k均值算法。</p><p><strong>“聚类”（clustering）</strong>将训练集中的数据分成若干组，每组称为一个“簇”（cluster）</p><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_3.png" alt=" "></p><p><strong>半监督学习</strong></p><p>在这种学习模式下，输入数据部分被识别，部分不被识别。这种学习模型可以用于预测，但是该模型首先需要学习数据的内部结构，以便合理地组织用于预测的数据。应用场景包括分类和回归。该算法包括一些常用监督学习算法的扩展。这些算法首先尝试对未标记数据建模，然后预测标记数据。图形推理或拉普拉斯SVM等。</p><p><strong>强化学习</strong></p><p>在这种学习模式中，输入数据被用作模型的反馈，与监督模型不同，输入数据仅被用作检查模型是对还是错的一种方式。在强化学习下，输入数据直接反馈给模型，模型必须立即进行调整。常见的应用场景包括动态系统和机器人控制。常见的算法包括问学习和时间差学习</p><p>在企业数据应用的背景下，监督学习和非监督学习的模型可能是最常用的。在图像识别等领域，由于存在大量未标记数据和少量可识别数据，半监督学习是目前研究的热点。然而，强化学习更多地应用于机器人控制和其他需要系统控制的领域。</p><h4 id="模型参数"><a href="#模型参数" class="headerlink" title="模型参数"></a><strong>模型参数</strong></h4><ul><li><strong>模型自身参数</strong>：通过样本学习得到的参数，如：逻辑回归及神经网络中的权重及偏置的学习等；</li><li><strong>超参数</strong>：模型框架的参数，如kmeans中的k，神经网络中的网络层数及每层的节点个数，通常由手工设定。</li></ul><h4 id="机器学习步骤"><a href="#机器学习步骤" class="headerlink" title="机器学习步骤"></a><strong>机器学习步骤</strong></h4><p>定义函数（选择算法）→定义函数优劣（评价指标）→选择最优函数</p></font></html>]]></content>
+        <content type="html"><![CDATA[<html><font face="Times New Roman,宋体" size="4"><ul><li><strong>衡量模型泛化能力的评价标准是性能度量（评价指标）</strong>。</li><li>不同的应用有着不同的目标，不同的<strong>评价指标</strong>。<a id="more"></a></li></ul><p>准确率（accuracy）是最常见的一种评价指标。但是准确率越高，模型就越好么？假设，在1000个样本中，有999个正样本，1个负样本（不均衡数据集） 如果全部预测正样本，就可以得到准确率99.9%！这样的场景有：信用卡欺 诈检测，离职员工检测等。有些任务更关心的是某个类的准确率，而非整体的准确率。</p><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_10.png" alt=" "></p><h4 id="回归模型中常用的评价指标（损失函数）"><a href="#回归模型中常用的评价指标（损失函数）" class="headerlink" title="回归模型中常用的评价指标（损失函数）"></a><strong>回归模型中常用的评价指标（损失函数）</strong></h4><ul><li><strong>sklearn.metrics.r2_score()                    R2决定系数</strong></li><li><strong>sklearn.metrics.mean_absolute_error()        MAE平均绝对误差</strong></li><li><strong>sklearn.metrics.mean_squared_error()        MSE均方误差</strong></li><li><strong>np.sqrt(metrics.mean_squared_error())        RMSE均方根误差</strong></li><li><strong>sklearn.metrics.mean_absolute_percentage_error()    MAPE平均绝对百分比误差</strong></li><li><strong>sklearn.metrics.median_absolute_error()</strong>        <strong>中值绝对误差</strong></li></ul><p>更多评价指标：<a href="http://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank" rel="noopener">http://scikit-learn.org/stable/modules/model_evaluation.html</a></p><h4 id="分类模型评价指标"><a href="#分类模型评价指标" class="headerlink" title="分类模型评价指标"></a><strong>分类模型评价指标</strong></h4><h5 id="错误率和精度"><a href="#错误率和精度" class="headerlink" title="错误率和精度"></a><strong>错误率和精度</strong></h5><p>分类错误的样本数占样本总数的比例称为“<strong>错误率</strong>”</p><p><strong>精度</strong>=1-错误率。</p><ul><li>真正例(TP)，预测值是1，真实值是1。被正确分类的正例样本。 </li><li>假正例(FP)，预测值是1，但真实值是0。</li><li>真反例(TN)，预测值是0，真实值是0。</li><li>假反例(FN)，预测值是0，但真实值是1。 </li></ul><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_11.png" alt=" "></p><ul><li><strong>TPR(Recall**</strong>，查全率/召回率<strong>**)</strong>：TP/(TP + FN)。在所有实际值为1的样本中，被预测为1的比例。</li><li><strong>Precision**</strong>(查准率)**：TP/(TP + FP)。在所有预测值为1的样本中，实际值为1的比例。</li><li><strong>FPR</strong>：FP/(TN+FP)，在所有实际值是0的样本中，被预测为1的比例。</li></ul><h5 id="F1值"><a href="#F1值" class="headerlink" title="F1值"></a><strong>F1值</strong></h5><p>将查全率和查准率用一个数值表示：</p><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_12.png" alt="img"></p><ul><li><p>sklearn.metrics中包含常用的评价指标 </p></li><li><p><strong>accuracy_score</strong></p></li><li><p><strong>precision_score</strong></p></li><li><p><strong>recall_score</strong></p></li><li><p><strong>f1_score</strong></p></li></ul><h5 id="Precision-Recall-Curve（PR曲线）"><a href="#Precision-Recall-Curve（PR曲线）" class="headerlink" title="Precision-Recall Curve（PR曲线）"></a>Precision-Recall Curve（PR曲线）</h5><ul><li>x轴：recall，y轴：precision（可交换）</li><li>右上角是“最理想”的点，precision=1.0，recall=1.0</li><li><strong>sklearn.metrics.precision_recall_curve()</strong></li></ul><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_13.png" alt=" "></p><h6 id="Receiver-Operating-Characteristic-Curve（ROC曲线）"><a href="#Receiver-Operating-Characteristic-Curve（ROC曲线）" class="headerlink" title="Receiver Operating Characteristic Curve（ROC曲线）"></a><strong>Receiver Operating Characteristic Curve（ROC曲线）</strong></h6><ul><li>x轴：FPR，y轴：TPR </li><li>左上角是“最理想”的点，FPR=0.0，TPR=1.0 </li><li><strong>sklearn.metrics.roc_curve()</strong></li></ul><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_14.png" alt=" "></p><p>AUC的值就是ROC曲线下的面积：</p><ul><li>AUC在0~1之间。</li><li>0.5 &lt; AUC &lt; 1，优于随机猜测。这个分类器（模型）妥善设定阈值的话，能有预测价值。</li><li>AUC = 0.5，跟随机猜测一样（例：丢铜板），模型没有预测价值。</li><li>AUC &lt; 0.5，比随机猜测还差；但只要总是反预测而行，就优于随机猜测。</li></ul><h5 id="混淆矩阵（confusion-matrix）"><a href="#混淆矩阵（confusion-matrix）" class="headerlink" title="混淆矩阵（confusion matrix）"></a><strong>混淆矩阵（confusion matrix）</strong></h5><ul><li>可用于多分类模型的评价</li><li><strong>sklearn.metrics.confusion_matrix()</strong></li></ul><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_15.png" alt=" "></p></font></html>]]></content>
       
       
       <categories>
@@ -24,6 +24,108 @@
       
         <tags>
             
+            <tag> 人工智能 </tag>
+            
+            <tag> 机器学习ML </tag>
+            
+            <tag> 评价指标 </tag>
+            
+            <tag> 性能度量 </tag>
+            
+            <tag> 损失函数 </tag>
+            
+            <tag> F1 </tag>
+            
+            <tag> 查准率 </tag>
+            
+            <tag> 查全率 </tag>
+            
+            <tag> MSE </tag>
+            
+            <tag> MAE </tag>
+            
+            <tag> MAPE </tag>
+            
+            <tag> R2 </tag>
+            
+            <tag> RMSE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>机器学习笔记——模型评估</title>
+      <link href="/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/"/>
+      <url>/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/</url>
+      
+        <content type="html"><![CDATA[<html><font face="Times New Roman,宋体" size="4"><h4 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a><strong>模型评估</strong></h4><p><strong>衡量模型的泛化能力通过模型评估方法获取具体的评价指标。</strong>在模型评估中，要对数据集进行划分，数据集划分通常要保证两个条件：</p><ul><li>训练集和测试集的分布要与样本真实分布一致，即训练集和测试集都要保证是从样本真实分布中独立同分布采样而得；</li><li>训练集和测试集要互斥，即两个子集之间没有交集。<a id="more"></a></li></ul><p>基于划分方式的不同，评估方法可以分为：留出法，交叉验证法及自助法；</p><h5 id="1-留出法"><a href="#1-留出法" class="headerlink" title="1. 留出法"></a><strong>1.</strong> <strong>留出法</strong></h5><p>直接将数据集D划分为两个相斥的集合，其中一个集合作为训练集S，另一个作为测试集T，即D=S∪T，S∩T=∅。在S上训练出模型后，用T来评估其测试误差，作为泛化误差的估计。<strong>适用于大数据量。</strong></p><p>常见做法是将大约2/3~4/5的样本用于训练，剩余样本用于测试。</p><p>根据《统计学习方法》中的观点：“如果给定的样本数据充足，进行模型选择的一种简单方法是随机地将数据集切分成三部分，分别为训练集（training set）、验证集（validation set）和测试集（test set）。训练集用来训练模型，验证集用来模型选择，而测试集用于最终对学习方法的评估。”</p><ul><li>如果数据集较小时，一般采用简单交叉验证的方法，即不设置验证集，而只设置训练集和测试集，根据西瓜书的观点，训练集和测试集的比例设置一般为2:1 ~ 4:1。目前大多数人将比例设置为7:3。</li><li>如果数据量较大时（数据集以万为单位），一般训练集、验证集、测试集的分配比例为6:2:2。</li><li>如果数据量更大时，例如百万级的数据集，一般划分比例在98:1:1以上（即根据情况再提高训练集的占比）。</li></ul><h5 id="2-交叉验证法"><a href="#2-交叉验证法" class="headerlink" title="2. 交叉验证法"></a><strong>2.</strong> <strong>交叉验证法</strong></h5><p>先将数据集D划分为k个大小相同的互斥子集，即D=D1∪D2∪…∪Dk, Di∩Dj=∅(i≠j)。每个子集Di都尽可能保持数据分布的一致性，即从D中分层得到。然后每次用k-1个子集的并集作为训练集，余下的那个子集作为测试集；这样就可获得k组训练/测试集，从而可进行k次训练和测试，最终返回的是这k个测试结果的均值。通常把交叉验证法称为“k折交叉验证”，k最常用的取值是10、5、20。<strong>适用于中等数据量。</strong></p><p><strong>交叉验证本质上是要解决方差估计问题，是**</strong>bias-var<strong>**思想的一种实现。</strong></p><p><strong>交叉验证</strong> <strong>sklearn.model_selection.cross_val_score()</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line"></span><br><span class="line">k_range = [<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">15</span>]</span><br><span class="line">cv_scores = []</span><br><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> k_range:</span><br><span class="line">    knn = KNeighborsClassifier(n_neighbors=k)</span><br><span class="line">    scores = cross_val_score(knn, X_train, y_train, cv=<span class="number">5</span>)</span><br><span class="line">    cv_score = np.mean(scores)</span><br><span class="line">    print(<span class="string">'k=&#123;&#125;，验证集上的准确率=&#123;:.3f&#125;'</span>.format(k, cv_score))</span><br><span class="line">    cv_scores.append(cv_score)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># k=1，验证集上的准确率=0.947 </span></span><br><span class="line"><span class="comment"># k=5，验证集上的准确率=0.955 </span></span><br><span class="line"><span class="comment"># k=9，验证集上的准确率=0.964 </span></span><br><span class="line"><span class="comment"># k=15，验证集上的准确率=0.964</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">best_k = k_range[np.argmax(cv_scores)]</span><br><span class="line">best_knn = KNeighborsClassifier(n_neighbors=best_k)</span><br><span class="line">best_knn.fit(X_train, y_train)</span><br><span class="line">print(<span class="string">'测试集准确率：'</span>, best_knn.score(X_test, y_test))</span><br><span class="line"><span class="comment"># 测试集准确率：0.9736842105263158</span></span><br></pre></td></tr></table></figure><p><strong>网格搜索</strong> <strong>sklearn.model_selection.GridSearchCV()</strong></p><p>GridSearchCV根据给定的模型自动进行交叉验证，通过调节每一个参数来跟踪评分结果。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier</span><br><span class="line"></span><br><span class="line">parameters = &#123;<span class="string">'max_depth'</span>:[<span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>], <span class="string">'min_samples_leaf'</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]&#125;</span><br><span class="line">clf = GridSearchCV(DecisionTreeClassifier(), parameters, cv=<span class="number">5</span>, scoring=<span class="string">'accuracy'</span>)</span><br><span class="line">clf.fit(X_train, y_train)</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">GridSearchCV(cv=<span class="number">5</span>, error_score=<span class="string">'raise'</span>,</span><br><span class="line">       estimator=DecisionTreeClassifier(class_weight=<span class="literal">None</span>, criterion=<span class="string">'gini'</span>, max_depth=<span class="literal">None</span>,</span><br><span class="line">            max_features=<span class="literal">None</span>, max_leaf_nodes=<span class="literal">None</span>,</span><br><span class="line">            min_impurity_decrease=<span class="number">0.0</span>, min_impurity_split=<span class="literal">None</span>,</span><br><span class="line">            min_samples_leaf=<span class="number">1</span>, min_samples_split=<span class="number">2</span>,</span><br><span class="line">            min_weight_fraction_leaf=<span class="number">0.0</span>, presort=<span class="literal">False</span>, random_state=<span class="literal">None</span>,</span><br><span class="line">            splitter=<span class="string">'best'</span>),</span><br><span class="line">       fit_params=<span class="literal">None</span>, iid=<span class="literal">True</span>, n_jobs=<span class="number">1</span>,</span><br><span class="line">       param_grid=&#123;<span class="string">'max_depth'</span>: [<span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>], <span class="string">'min_samples_leaf'</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]&#125;,</span><br><span class="line">       pre_dispatch=<span class="string">'2*n_jobs'</span>, refit=<span class="literal">True</span>, return_train_score=<span class="literal">True</span>,</span><br><span class="line">       scoring=<span class="string">'accuracy'</span>, verbose=<span class="number">0</span>)</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'最优参数：'</span>, clf.best_params_)</span><br><span class="line">print(<span class="string">'验证集最高得分：'</span>, clf.best_score_)</span><br><span class="line"><span class="comment"># 最优参数：&#123;'max_depth': 5, 'min_samples_leaf': 2&#125;</span></span><br><span class="line"><span class="comment"># 验证集最高得分：0.9553571428571429</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取最优模型</span></span><br><span class="line">best_model = clf.best_estimator_</span><br><span class="line">print(<span class="string">'测试集上准确率：'</span>, best_model.score(X_test, y_test))</span><br><span class="line"><span class="comment"># 测试集上准确率：0.9473684210526315</span></span><br></pre></td></tr></table></figure><h5 id="3-自助法"><a href="#3-自助法" class="headerlink" title="3. 自助法"></a><strong>3.</strong> <strong>自助法</strong></h5><p>给定包含m个样本的数据集D，对它进行采样产生D’：每次随机从D中挑选一个样本，将其拷贝放入D’，然后再将样本放回初始数据集D中，使得该样本在下次采样时仍有可能被采到；这个过程重复执行m次后，得到包含m个样本的数据集D’。将D’用作训练集，D-D∩D’用作测试集。</p><p>自助法<strong>常用于小数据量，</strong>因为<strong>其产生的数据集改变了初始数据集的分布，会引入估计偏差。</strong> </p><h4 id="模型持久化（model-persistence）"><a href="#模型持久化（model-persistence）" class="headerlink" title="模型持久化（model persistence）"></a><strong>模型持久化（model persistence）</strong></h4><h5 id="pickle"><a href="#pickle" class="headerlink" title="pickle"></a><strong>pickle</strong></h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用pickle</span></span><br><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line">model_path1 = <span class="string">'./trained_model1.pkl'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存模型到硬盘</span></span><br><span class="line"><span class="keyword">with</span> open(model_path1, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    pickle.dump(best_model, f)</span><br><span class="line"><span class="comment"># 加载保存的模型</span></span><br><span class="line"><span class="keyword">with</span> open(model_path1, <span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    model = pickle.load(f)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 预测</span></span><br><span class="line">print(<span class="string">'预测值为'</span>, model.predict([X_test[<span class="number">0</span>, :]]))</span><br><span class="line">print(<span class="string">'真实值为'</span>, y_test[<span class="number">0</span>])</span><br><span class="line"><span class="comment"># 预测值为[2]</span></span><br><span class="line"><span class="comment"># 真实值为2</span></span><br></pre></td></tr></table></figure><h5 id="joblib"><a href="#joblib" class="headerlink" title="joblib"></a><strong>joblib</strong></h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用joblib</span></span><br><span class="line"><span class="keyword">from</span> sklearn.externals <span class="keyword">import</span> joblib</span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存模型到硬盘</span></span><br><span class="line">model_path2 = <span class="string">'./trained_model2.pkl'</span></span><br><span class="line">joblib.dump(best_model, model_path2) </span><br><span class="line"><span class="comment"># ['./trained_model2.pkl']</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 加载保存的模型</span></span><br><span class="line">model = joblib.load(model_path2) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 预测</span></span><br><span class="line">print(<span class="string">'预测值为'</span>, model.predict([X_test[<span class="number">0</span>, :]]))</span><br><span class="line">print(<span class="string">'真实值为'</span>, y_test[<span class="number">0</span>])</span><br><span class="line"><span class="comment"># 预测值为[2]</span></span><br><span class="line"><span class="comment"># 真实值为2</span></span><br></pre></td></tr></table></figure></font></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 人工智能 </category>
+          
+          <category> Machine Learning </category>
+          
+          <category> Theoretical Basis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 人工智能 </tag>
+            
+            <tag> 机器学习ML </tag>
+            
+            <tag> 模型评估 </tag>
+            
+            <tag> 留出法 </tag>
+            
+            <tag> 网格搜索 </tag>
+            
+            <tag> 交叉检验 </tag>
+            
+            <tag> 自助法 </tag>
+            
+            <tag> 模型持久化 </tag>
+            
+            <tag> pickle </tag>
+            
+            <tag> joblib </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>机器学习笔记——概述</title>
+      <link href="/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A6%82%E8%AE%BA/"/>
+      <url>/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A6%82%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<html><font face="Times New Roman,宋体" size="4"><h4 id="机器学习研究内容"><a href="#机器学习研究内容" class="headerlink" title="机器学习研究内容"></a><strong>机器学习研究内容</strong></h4><p>机器学习研究的主要内容是<strong>从数据中产生“模型”的算法</strong>，即学习算法。</p><p><strong>“模型”</strong>泛指从数据中学得的结果。</p><a id="more"></a><p>从数据中学得模型的过程称为“学习”或“训练”，这个过程通过执行某个学习算法来完成。训练过程中使用的数据称为“训练数据”，其中每个样本称为“训练样本”，训练样本组成“训练集”。</p><p><strong>机器学习的前提：</strong></p><ul><li>数据中存在模式</li><li>模式无法形式化描述</li><li>有充分的数据</li></ul><p><strong>以此来讲，机器学习是基于一定的假设，从数据中学习出模式的过程。</strong></p><p><strong>机器学习的目标</strong>是使学得的模型能很好的适用于“新样本”，而不是仅仅在训练样本上工作的很好；即便对聚类这样的无监督学习任务，我们也希望学得的簇划分能适用于没在训练集中出现的样本。学得模型适用于新样本的能力，称为<strong>“泛化”（generalization）能力</strong>。</p><h4 id="学习的可行性"><a href="#学习的可行性" class="headerlink" title="学习的可行性"></a><strong>学习的可行性</strong></h4><p>样本和整体的关系</p><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_1.png" alt=" "></p><ul><li>在大样本的场景下，样本频率v可以任意精度逼近总体概率u</li><li>Hoeffding不等式</li></ul><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_2.png" alt=" "></p><ul><li>Bound与u无关</li><li>无分布假设</li><li>数据量足够大，就可以用样本估计值代表真实值</li></ul><h4 id="机器学习问题分类"><a href="#机器学习问题分类" class="headerlink" title="机器学习问题分类"></a><strong>机器学习问题分类</strong></h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_5.png" alt=" "></p><p><strong>监督学习（supervised learning）</strong>：训练数据有标记（label）信息。</p><p>在监督学习下，输入数据称为“训练数据”，每组训练数据都有明确的标识或结果，如反垃圾邮件系统中的“垃圾邮件”和“非垃圾邮件”，手写数字识别中的“1”、“2”、“3”、“4”。在建立预测模型时，监督学习建立学习过程，将预测结果与“训练数据”的实际结果进行比较，并不断调整预测模型，直到模型的预测结果达到预期的准确率。</p><ul><li>预测的是离散值，此类学习任务称为<strong>“分类”（classification）</strong><ul><li>涉及两个类别分类时：“二分类”（binary classification）任务</li><li>涉及多个类别分类时：“多分类”（multi-class classification）任务</li></ul></li><li>预测的是连续值，此类学习任务称为<strong>“回归”（regression）</strong><ul><li>常见的算法包括逻辑回归和反向传播神经网络。</li></ul></li></ul><p><strong>无监督学习（unsupervised learning）</strong>：训练数据无标记信息。</p><p>在无监督学习中，数据不是特别确定的，学习模型是为了推断数据的一些内部结构。常见的应用场景包括学习关联规则和聚类。常见的算法包括Apriori算法和k均值算法。</p><p><strong>“聚类”（clustering）</strong>将训练集中的数据分成若干组，每组称为一个“簇”（cluster）</p><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_3.png" alt=" "></p><p><strong>半监督学习</strong></p><p>在这种学习模式下，输入数据部分被识别，部分不被识别。这种学习模型可以用于预测，但是该模型首先需要学习数据的内部结构，以便合理地组织用于预测的数据。应用场景包括分类和回归。该算法包括一些常用监督学习算法的扩展。这些算法首先尝试对未标记数据建模，然后预测标记数据。图形推理或拉普拉斯SVM等。</p><p><strong>强化学习</strong></p><p>在这种学习模式中，输入数据被用作模型的反馈，与监督模型不同，输入数据仅被用作检查模型是对还是错的一种方式。在强化学习下，输入数据直接反馈给模型，模型必须立即进行调整。常见的应用场景包括动态系统和机器人控制。常见的算法包括问学习和时间差学习</p><p>在企业数据应用的背景下，监督学习和非监督学习的模型可能是最常用的。在图像识别等领域，由于存在大量未标记数据和少量可识别数据，半监督学习是目前研究的热点。然而，强化学习更多地应用于机器人控制和其他需要系统控制的领域。</p><h4 id="模型参数"><a href="#模型参数" class="headerlink" title="模型参数"></a><strong>模型参数</strong></h4><ul><li><strong>模型自身参数</strong>：通过样本学习得到的参数，如：逻辑回归及神经网络中的权重及偏置的学习等；</li><li><strong>超参数</strong>：模型框架的参数，如kmeans中的k，神经网络中的网络层数及每层的节点个数，通常由手工设定。</li></ul><h4 id="机器学习步骤"><a href="#机器学习步骤" class="headerlink" title="机器学习步骤"></a><strong>机器学习步骤</strong></h4><p>定义函数（选择算法）→定义函数优劣（评价指标）→选择最优函数</p><h4 id="经验误差与过拟合"><a href="#经验误差与过拟合" class="headerlink" title="经验误差与过拟合"></a><strong>经验误差与过拟合</strong></h4><p>一般地，把学习器实际预的测输出与样本的真实输出之间的差异称为“<strong>误差</strong>”，在训练集上的误差称为“<strong>训练误差</strong>”或“<strong>经验误差</strong>”，在测试集合上的误差称为“<strong>泛化误差</strong>”。</p><p>我们希望得到泛化误差小的学习器，但是由于事先不知道新样本的状态，只能努力使经验误差最小化。</p><p>我们实际希望的是，是在新样本上表现得很好的学习器。为达到这个目的，应该从训练样本中尽可能学出适用于所有潜在样本的“普遍规律”，这样才能在遇到新样本时做出正确的判别。然而，当学习器把训练样本学得“太好”了的时候，很可能已经把训练样本自身的一些特点当作了所有潜在样本都会具有的一般性质，这样就会导致泛化性能下降。这样的现象在及其学习中称为“<strong>过拟合</strong>”。与“过拟合”相对的是“<strong>欠拟合</strong>”，这是指对训练样本的一般性质尚未学好。</p><p>过拟合是无法彻底避免的。</p><p><strong>过拟合的含义：</strong></p><ul><li><ul><li><strong>过度关注训练集（VC维过大）</strong></li><li><strong>对抗变化能力差（泛化能力差）</strong></li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加载鸢尾花数据集</span></span><br><span class="line">​iris = load_iris()</span><br><span class="line"></span><br><span class="line">X = iris.data</span><br><span class="line">y = iris.target</span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="number">1</span>/<span class="number">4</span>, random_state=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'数据集样本数：&#123;&#125;，训练集样本数：&#123;&#125;，测试集样本数：&#123;&#125;'</span>.format(len(X), len(X_train), len(X_test)))</span><br><span class="line"><span class="comment"># 数据集样本数：150，训练集样本数：112，测试集#样本数：38</span></span><br></pre></td></tr></table></figure><h4 id="假设空间"><a href="#假设空间" class="headerlink" title="假设空间"></a><strong>假设空间</strong></h4><p>归纳和演绎是科学推理的两大基本手段。</p><p>归纳是从特殊到一般的“泛化”过程，即从具体的事实归结出一般性规律。比如，“从样例中学习”的模型训练过程。</p><p>演绎是从一般到特殊的“特化”过程，即从基础原理推演出具体状况。比如，基于一组公理和推理规则推导出与之相恰的定理。</p><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_6.png" alt=" "></p><p>把学习过程看作一个在所有假设组成的空间中进行搜索的过程，搜索目标是找到与训练集相匹配的假设，即能够将训练集的标记判断正确的假设。</p><p><strong>假设的表示（模型的形式）一旦确定，假设空间及其规模大小就确定</strong>了，可以利用各种策略对这个假设空间进行搜索，搜索过程中可以不断删除与样本集“样本-标记”不一致的假设，最终会获得与训练集一致（即对所有训练样本能够进行正确判断）的假设，此时剩下的假设空间就是学得的结果。</p><p>现实问题中我们常面临很大的假设空间，但学习过程是基于有限样本训练集进行的，因此，可能有多个假设与训练集一致，即存在着一个与训练集一致的“<strong>假设集合</strong>”，称之为<strong>“版本空间”（version space）</strong>。</p><h4 id="归纳偏好（如何衡量一个假设空间？）"><a href="#归纳偏好（如何衡量一个假设空间？）" class="headerlink" title="归纳偏好（如何衡量一个假设空间？）"></a><strong>归纳偏好（如何衡量一个假设空间？）</strong></h4><p><strong>归纳偏好</strong>可以看做学习算法自身在一个可能很庞大的假设空间中对假设进行选择的启发式或“价值观”。</p><p>归纳偏好对应了学习算法本身所做出的的关于“什么样的模型更好”的假设。在具体问题中，这个假设是否成立，即算法的归纳偏好是否与问题本身匹配，大多数时候直接决定了算法能否取得好的性能。</p><p>“没有免费的午餐”（No Free Lunch Theorem, NFL）定理表明无论学习算法多好或者坏，它们的期望性能是相同的。</p><p>NFL定理最重要的意义，是让我们清楚地认识到，脱离具体问题，空泛地谈什么算法更好是没有意义的，每种算法都有自己的适用范围，针对自己的实际问题，根据算法自身的归纳偏好，找到匹配当前问题的局部最优解，该解可能在其他问题上表现不尽如人意，但是这就足够了。</p><p><strong>假设空间的衡量：</strong></p><ul><li><strong>衡量一类模型的分类能力：VC Dimension</strong></li></ul><p><strong>VC维：假设空间能shatter（对数据任意组合分类）的最大</strong>数据量</p><p>平面中线性模型的VC维等于3，也就是平面中任意3个点（无论如何取值）总能被一条直线分开。</p><ul><li><ul><li><p>VC维要足够大</p></li><li><ul><li>用来拟合足够复杂的数据</li><li>VC维和参数量大致相等</li><li>复杂模型、更多参数需要更大的VC维</li></ul></li><li><p>VC维要被制衡（不能太大）</p></li><li><ul><li>用来保证训练集以外的效果</li><li><strong>正则化</strong>制衡VC维</li></ul></li></ul></li><li><p><strong>衡量一类模型对抗变化的能力（泛化能力）</strong></p></li></ul><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_7.png" alt=" "></p><h4 id="正则化"><a href="#正则化" class="headerlink" title="正则化"></a>正则化</h4><ul><li><p>正则化核心思想是<strong>通过限制假设空间，制衡VC维，以控制模型复杂度</strong>。因为模型复杂度越高，越容易过拟合。</p></li><li><ul><li><p>线性模型</p></li><li><ul><li>L1、L2</li><li>限制参数大小、数量</li></ul></li><li><p>树模型</p></li><li><ul><li>限制深度</li><li>限制数量</li><li>限制分列条件</li></ul></li></ul></li><li><p><strong>平衡（通过λ实现平衡）损失函数和模型复杂度（模型学习到的权重越大，模型复杂度越高</strong>，以权重表示模型的复杂度）。</p></li></ul><p>&emsp;&emsp;<strong>minimize: Loss(Data|Model) + complexity(Model)</strong></p><p>&emsp;&emsp;例如，L2正则化损失函数</p><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_8.png" alt=" "></p><ul><li><ul><li>λ值越大，正则化越强，表示需要更多关注模型的复杂度，适用于测试集中的样本与训练集中的样本相差比较大时；</li><li>λ值越小，正则化越弱，表示需要更多关注损失函数，适用于测试集中的样本与 训练集中的样本相差不是很大。</li></ul></li></ul><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_9.png" alt=" "></p><p>L1正则化是通过计算权重的曼哈顿距离，L2正则化是通过计算权重的欧氏距离表示模型的复杂度。如上图所示，正则化要平衡损失和模型复杂度，人为的让权重不仅获得较小的损失，还要满足正则规则，即由上图中<em>θ</em>转移到绿色的点。</p></font></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 人工智能 </category>
+          
+          <category> Machine Learning </category>
+          
+          <category> Theoretical Basis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 人工智能 </tag>
+            
             <tag> 机器学习ML </tag>
             
             <tag> 监督学习 </tag>
@@ -35,6 +137,14 @@
             <tag> 分类 </tag>
             
             <tag> 回归 </tag>
+            
+            <tag> 假设空间 </tag>
+            
+            <tag> 归纳偏好 </tag>
+            
+            <tag> VC维 </tag>
+            
+            <tag> 正则化 </tag>
             
         </tags>
       
@@ -709,11 +819,11 @@
             
             <tag> Python基础 </tag>
             
+            <tag> 序列 </tag>
+            
             <tag> tuple </tag>
             
             <tag> 元组 </tag>
-            
-            <tag> 序列 </tag>
             
         </tags>
       
@@ -744,11 +854,11 @@
             
             <tag> Python基础 </tag>
             
-            <tag> 序列 </tag>
-            
             <tag> list </tag>
             
             <tag> 列表 </tag>
+            
+            <tag> 序列 </tag>
             
         </tags>
       
@@ -1235,7 +1345,9 @@
       
         <tags>
             
-            <tag> 知识图谱 </tag>
+            <tag> 人工智能 </tag>
+            
+            <tag> 知识图谱KG </tag>
             
         </tags>
       

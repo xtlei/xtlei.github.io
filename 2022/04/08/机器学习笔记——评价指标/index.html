@@ -58,23 +58,25 @@ daovoice('update');
   };
 </script>
 
-  <meta name="description" content="机器学习研究内容机器学习研究的主要内容是从数据中产生“模型”的算法，即学习算法。 “模型”泛指从数据中学得的结果。">
-<meta name="keywords" content="机器学习ML,监督学习,无监督学习,聚类,分类,回归">
+  <meta name="description" content="衡量模型泛化能力的评价标准是性能度量（评价指标）。 不同的应用有着不同的目标，不同的评价指标。">
+<meta name="keywords" content="人工智能,机器学习ML,评价指标,性能度量,损失函数,F1,查准率,查全率,MSE,MAE,MAPE,R2,RMSE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="机器学习笔记——概述">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2022&#x2F;04&#x2F;08&#x2F;%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%BB%AA%E8%AE%BA&#x2F;index.html">
+<meta property="og:title" content="机器学习笔记——评价指标">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2022&#x2F;04&#x2F;08&#x2F;%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87&#x2F;index.html">
 <meta property="og:site_name" content="蟹家之宝树">
-<meta property="og:description" content="机器学习研究内容机器学习研究的主要内容是从数据中产生“模型”的算法，即学习算法。 “模型”泛指从数据中学得的结果。">
+<meta property="og:description" content="衡量模型泛化能力的评价标准是性能度量（评价指标）。 不同的应用有着不同的目标，不同的评价指标。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_1.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_2.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_5.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_3.png">
-<meta property="og:updated_time" content="2022-04-08T15:10:03.716Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_10.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_11.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_12.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_13.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_14.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_15.png">
+<meta property="og:updated_time" content="2022-04-09T08:40:26.550Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_1.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_10.png">
 
-<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%BB%AA%E8%AE%BA/">
+<link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/">
 
 
 <script id="page-configurations">
@@ -88,7 +90,7 @@ daovoice('update');
   };
 </script>
 
-  <title>机器学习笔记——概述 | 蟹家之宝树</title>
+  <title>机器学习笔记——评价指标 | 蟹家之宝树</title>
   
 
 
@@ -241,7 +243,7 @@ daovoice('update');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%BB%AA%E8%AE%BA/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/xtlei/xtlei.github.io/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -254,7 +256,7 @@ daovoice('update');
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          机器学习笔记——概述
+          机器学习笔记——评价指标
         </h2>
 
         <div class="post-meta">
@@ -263,10 +265,16 @@ daovoice('update');
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-04-08 19:48:00 / 修改时间：23:10:03" itemprop="dateCreated datePublished" datetime="2022-04-08T19:48:00+08:00">2022-04-08</time>
+              <time title="创建时间：2022-04-08 19:48:02" itemprop="dateCreated datePublished" datetime="2022-04-08T19:48:02+08:00">2022-04-08</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-09 16:40:26" itemprop="dateModified" datetime="2022-04-09T16:40:26+08:00">2022-04-09</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -304,7 +312,7 @@ daovoice('update');
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.5k</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -326,53 +334,73 @@ daovoice('update');
         <html>
 <font face="Times New Roman,宋体" size="4">
 
-<h4 id="机器学习研究内容"><a href="#机器学习研究内容" class="headerlink" title="机器学习研究内容"></a><strong>机器学习研究内容</strong></h4><p>机器学习研究的主要内容是<strong>从数据中产生“模型”的算法</strong>，即学习算法。</p>
-<p><strong>“模型”</strong>泛指从数据中学得的结果。</p>
-<a id="more"></a>
-
-<p>从数据中学得模型的过程称为“学习”或“训练”，这个过程通过执行某个学习算法来完成。训练过程中使用的数据称为“训练数据”，其中每个样本称为“训练样本”，训练样本组成“训练集”。</p>
-<p><strong>机器学习的前提：</strong></p>
 <ul>
-<li>数据中存在模式</li>
-<li>模式无法形式化描述</li>
-<li>有充分的数据</li>
+<li><strong>衡量模型泛化能力的评价标准是性能度量（评价指标）</strong>。</li>
+<li>不同的应用有着不同的目标，不同的<strong>评价指标</strong>。<a id="more"></a></li>
 </ul>
-<p><strong>以此来讲，机器学习是基于一定的假设，从数据中学习出模式的过程。</strong></p>
-<p><strong>机器学习的目标</strong>是使学得的模型能很好的适用于“新样本”，而不是仅仅在训练样本上工作的很好；即便对聚类这样的无监督学习任务，我们也希望学得的簇划分能适用于没在训练集中出现的样本。学得模型适用于新样本的能力，称为<strong>“泛化”（generalization）能力</strong>。</p>
-<h4 id="学习的可行性"><a href="#学习的可行性" class="headerlink" title="学习的可行性"></a><strong>学习的可行性</strong></h4><p>样本和整体的关系</p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_1.png" alt=" "></p>
+<p>准确率（accuracy）是最常见的一种评价指标。但是准确率越高，模型就越好么？假设，在1000个样本中，有999个正样本，1个负样本（不均衡数据集） 如果全部预测正样本，就可以得到准确率99.9%！这样的场景有：信用卡欺 诈检测，离职员工检测等。有些任务更关心的是某个类的准确率，而非整体的准确率。</p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_10.png" alt=" "></p>
+<h4 id="回归模型中常用的评价指标（损失函数）"><a href="#回归模型中常用的评价指标（损失函数）" class="headerlink" title="回归模型中常用的评价指标（损失函数）"></a><strong>回归模型中常用的评价指标（损失函数）</strong></h4><ul>
+<li><strong>sklearn.metrics.r2_score()                    R2决定系数</strong></li>
+<li><strong>sklearn.metrics.mean_absolute_error()        MAE平均绝对误差</strong></li>
+<li><strong>sklearn.metrics.mean_squared_error()        MSE均方误差</strong></li>
+<li><strong>np.sqrt(metrics.mean_squared_error())        RMSE均方根误差</strong></li>
+<li><strong>sklearn.metrics.mean_absolute_percentage_error()    MAPE平均绝对百分比误差</strong></li>
+<li><strong>sklearn.metrics.median_absolute_error()</strong>        <strong>中值绝对误差</strong></li>
+</ul>
+<p>更多评价指标：<a href="http://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank" rel="noopener">http://scikit-learn.org/stable/modules/model_evaluation.html</a></p>
+<h4 id="分类模型评价指标"><a href="#分类模型评价指标" class="headerlink" title="分类模型评价指标"></a><strong>分类模型评价指标</strong></h4><h5 id="错误率和精度"><a href="#错误率和精度" class="headerlink" title="错误率和精度"></a><strong>错误率和精度</strong></h5><p>分类错误的样本数占样本总数的比例称为“<strong>错误率</strong>”</p>
+<p><strong>精度</strong>=1-错误率。</p>
 <ul>
-<li>在大样本的场景下，样本频率v可以任意精度逼近总体概率u</li>
-<li>Hoeffding不等式</li>
+<li>真正例(TP)，预测值是1，真实值是1。被正确分类的正例样本。 </li>
+<li>假正例(FP)，预测值是1，但真实值是0。</li>
+<li>真反例(TN)，预测值是0，真实值是0。</li>
+<li>假反例(FN)，预测值是0，但真实值是1。 </li>
 </ul>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_2.png" alt=" "></p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_11.png" alt=" "></p>
 <ul>
-<li>Bound与u无关</li>
-<li>无分布假设</li>
-<li>数据量足够大，就可以用样本估计值代表真实值</li>
+<li><strong>TPR(Recall**</strong>，查全率/召回率<strong>**)</strong>：TP/(TP + FN)。在所有实际值为1的样本中，被预测为1的比例。</li>
+<li><strong>Precision**</strong>(查准率)**：TP/(TP + FP)。在所有预测值为1的样本中，实际值为1的比例。</li>
+<li><strong>FPR</strong>：FP/(TN+FP)，在所有实际值是0的样本中，被预测为1的比例。</li>
 </ul>
-<h4 id="机器学习问题分类"><a href="#机器学习问题分类" class="headerlink" title="机器学习问题分类"></a><strong>机器学习问题分类</strong></h4><p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_5.png" alt=" "></p>
-<p><strong>监督学习（supervised learning）</strong>：训练数据有标记（label）信息。</p>
-<p>在监督学习下，输入数据称为“训练数据”，每组训练数据都有明确的标识或结果，如反垃圾邮件系统中的“垃圾邮件”和“非垃圾邮件”，手写数字识别中的“1”、“2”、“3”、“4”。在建立预测模型时，监督学习建立学习过程，将预测结果与“训练数据”的实际结果进行比较，并不断调整预测模型，直到模型的预测结果达到预期的准确率。</p>
-<p>预测的是离散值，此类学习任务称为<strong>“分类”（classification）</strong></p>
-<p>涉及两个类别分类时：“二分类”（binary classification）任务</p>
-<p>涉及多个类别分类时：“多分类”（multi-class classification）任务</p>
-<p>预测的是连续值，此类学习任务称为<strong>“回归”（regression）</strong></p>
-<p>常见的算法包括逻辑回归和反向传播神经网络。</p>
-<p><strong>无监督学习（unsupervised learning）</strong>：训练数据无标记信息。</p>
-<p>在无监督学习中，数据不是特别确定的，学习模型是为了推断数据的一些内部结构。常见的应用场景包括学习关联规则和聚类。常见的算法包括Apriori算法和k均值算法。</p>
-<p><strong>“聚类”（clustering）</strong>将训练集中的数据分成若干组，每组称为一个“簇”（cluster）</p>
-<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_3.png" alt=" "></p>
-<p><strong>半监督学习</strong></p>
-<p>在这种学习模式下，输入数据部分被识别，部分不被识别。这种学习模型可以用于预测，但是该模型首先需要学习数据的内部结构，以便合理地组织用于预测的数据。应用场景包括分类和回归。该算法包括一些常用监督学习算法的扩展。这些算法首先尝试对未标记数据建模，然后预测标记数据。图形推理或拉普拉斯SVM等。</p>
-<p><strong>强化学习</strong></p>
-<p>在这种学习模式中，输入数据被用作模型的反馈，与监督模型不同，输入数据仅被用作检查模型是对还是错的一种方式。在强化学习下，输入数据直接反馈给模型，模型必须立即进行调整。常见的应用场景包括动态系统和机器人控制。常见的算法包括问学习和时间差学习</p>
-<p>在企业数据应用的背景下，监督学习和非监督学习的模型可能是最常用的。在图像识别等领域，由于存在大量未标记数据和少量可识别数据，半监督学习是目前研究的热点。然而，强化学习更多地应用于机器人控制和其他需要系统控制的领域。</p>
-<h4 id="模型参数"><a href="#模型参数" class="headerlink" title="模型参数"></a><strong>模型参数</strong></h4><ul>
-<li><strong>模型自身参数</strong>：通过样本学习得到的参数，如：逻辑回归及神经网络中的权重及偏置的学习等；</li>
-<li><strong>超参数</strong>：模型框架的参数，如kmeans中的k，神经网络中的网络层数及每层的节点个数，通常由手工设定。</li>
+<h5 id="F1值"><a href="#F1值" class="headerlink" title="F1值"></a><strong>F1值</strong></h5><p>将查全率和查准率用一个数值表示：</p>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_12.png" alt="img"></p>
+<ul>
+<li><p>sklearn.metrics中包含常用的评价指标 </p>
+</li>
+<li><p><strong>accuracy_score</strong></p>
+</li>
+<li><p><strong>precision_score</strong></p>
+</li>
+<li><p><strong>recall_score</strong></p>
+</li>
+<li><p><strong>f1_score</strong></p>
+</li>
 </ul>
-<h4 id="机器学习步骤"><a href="#机器学习步骤" class="headerlink" title="机器学习步骤"></a><strong>机器学习步骤</strong></h4><p>定义函数（选择算法）→定义函数优劣（评价指标）→选择最优函数</p>
+<h5 id="Precision-Recall-Curve（PR曲线）"><a href="#Precision-Recall-Curve（PR曲线）" class="headerlink" title="Precision-Recall Curve（PR曲线）"></a>Precision-Recall Curve（PR曲线）</h5><ul>
+<li>x轴：recall，y轴：precision（可交换）</li>
+<li>右上角是“最理想”的点，precision=1.0，recall=1.0</li>
+<li><strong>sklearn.metrics.precision_recall_curve()</strong></li>
+</ul>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_13.png" alt=" "></p>
+<h6 id="Receiver-Operating-Characteristic-Curve（ROC曲线）"><a href="#Receiver-Operating-Characteristic-Curve（ROC曲线）" class="headerlink" title="Receiver Operating Characteristic Curve（ROC曲线）"></a><strong>Receiver Operating Characteristic Curve（ROC曲线）</strong></h6><ul>
+<li>x轴：FPR，y轴：TPR </li>
+<li>左上角是“最理想”的点，FPR=0.0，TPR=1.0 </li>
+<li><strong>sklearn.metrics.roc_curve()</strong></li>
+</ul>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_14.png" alt=" "></p>
+<p>AUC的值就是ROC曲线下的面积：</p>
+<ul>
+<li>AUC在0~1之间。</li>
+<li>0.5 &lt; AUC &lt; 1，优于随机猜测。这个分类器（模型）妥善设定阈值的话，能有预测价值。</li>
+<li>AUC = 0.5，跟随机猜测一样（例：丢铜板），模型没有预测价值。</li>
+<li>AUC &lt; 0.5，比随机猜测还差；但只要总是反预测而行，就优于随机猜测。</li>
+</ul>
+<h5 id="混淆矩阵（confusion-matrix）"><a href="#混淆矩阵（confusion-matrix）" class="headerlink" title="混淆矩阵（confusion matrix）"></a><strong>混淆矩阵（confusion matrix）</strong></h5><ul>
+<li>可用于多分类模型的评价</li>
+<li><strong>sklearn.metrics.confusion_matrix()</strong></li>
+</ul>
+<p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_15.png" alt=" "></p>
 </font>
 </html>
     </div>
@@ -428,20 +456,27 @@ daovoice('update');
       <footer class="post-footer">
           
           <div class="post-tags">
+              <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" rel="tag"><i class="fa fa-tag"></i> 人工智能</a>
               <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0ML/" rel="tag"><i class="fa fa-tag"></i> 机器学习ML</a>
-              <a href="/tags/%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 监督学习</a>
-              <a href="/tags/%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 无监督学习</a>
-              <a href="/tags/%E8%81%9A%E7%B1%BB/" rel="tag"><i class="fa fa-tag"></i> 聚类</a>
-              <a href="/tags/%E5%88%86%E7%B1%BB/" rel="tag"><i class="fa fa-tag"></i> 分类</a>
-              <a href="/tags/%E5%9B%9E%E5%BD%92/" rel="tag"><i class="fa fa-tag"></i> 回归</a>
+              <a href="/tags/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/" rel="tag"><i class="fa fa-tag"></i> 评价指标</a>
+              <a href="/tags/%E6%80%A7%E8%83%BD%E5%BA%A6%E9%87%8F/" rel="tag"><i class="fa fa-tag"></i> 性能度量</a>
+              <a href="/tags/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/" rel="tag"><i class="fa fa-tag"></i> 损失函数</a>
+              <a href="/tags/F1/" rel="tag"><i class="fa fa-tag"></i> F1</a>
+              <a href="/tags/%E6%9F%A5%E5%87%86%E7%8E%87/" rel="tag"><i class="fa fa-tag"></i> 查准率</a>
+              <a href="/tags/%E6%9F%A5%E5%85%A8%E7%8E%87/" rel="tag"><i class="fa fa-tag"></i> 查全率</a>
+              <a href="/tags/MSE/" rel="tag"><i class="fa fa-tag"></i> MSE</a>
+              <a href="/tags/MAE/" rel="tag"><i class="fa fa-tag"></i> MAE</a>
+              <a href="/tags/MAPE/" rel="tag"><i class="fa fa-tag"></i> MAPE</a>
+              <a href="/tags/R2/" rel="tag"><i class="fa fa-tag"></i> R2</a>
+              <a href="/tags/RMSE/" rel="tag"><i class="fa fa-tag"></i> RMSE</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2020/06/17/SQL%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E4%B9%8B%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/" rel="next" title="SQL实践—Creat&Insert&Update&Delete">
-                  <i class="fa fa-chevron-left"></i> SQL实践—Creat&Insert&Update&Delete
+                <a href="/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/" rel="next" title="机器学习笔记——模型评估">
+                  <i class="fa fa-chevron-left"></i> 机器学习笔记——模型评估
                 </a>
             </div>
 
@@ -491,7 +526,7 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#机器学习研究内容"><span class="nav-text">机器学习研究内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习的可行性"><span class="nav-text">学习的可行性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#机器学习问题分类"><span class="nav-text">机器学习问题分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模型参数"><span class="nav-text">模型参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#机器学习步骤"><span class="nav-text">机器学习步骤</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#回归模型中常用的评价指标（损失函数）"><span class="nav-text">回归模型中常用的评价指标（损失函数）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分类模型评价指标"><span class="nav-text">分类模型评价指标</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#错误率和精度"><span class="nav-text">错误率和精度</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#F1值"><span class="nav-text">F1值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Precision-Recall-Curve（PR曲线）"><span class="nav-text">Precision-Recall Curve（PR曲线）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Receiver-Operating-Characteristic-Curve（ROC曲线）"><span class="nav-text">Receiver Operating Characteristic Curve（ROC曲线）</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#混淆矩阵（confusion-matrix）"><span class="nav-text">混淆矩阵（confusion matrix）</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 	  
@@ -509,7 +544,7 @@ daovoice('update');
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-count">51</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -522,7 +557,7 @@ daovoice('update');
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">100</span>
+        <span class="site-state-item-count">124</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -596,7 +631,7 @@ daovoice('update');
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">191k</span>
+    <span title="站点总字数">198k</span>
 </div>
 
         
@@ -667,7 +702,7 @@ daovoice('update');
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%BB%AA%E8%AE%BA/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://github.com/xtlei/xtlei.github.io/2022/04/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/',]
       });
       });
   </script>
