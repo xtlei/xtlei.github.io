@@ -74,7 +74,7 @@ daovoice('update');
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_7.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_8.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_9.png">
-<meta property="og:updated_time" content="2022-04-09T08:47:52.447Z">
+<meta property="og:updated_time" content="2022-04-10T10:12:39.033Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;machine_learning&#x2F;ml_0_1.png">
 
@@ -275,7 +275,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-09 16:47:52" itemprop="dateModified" datetime="2022-04-09T16:47:52+08:00">2022-04-09</time>
+                <time title="修改时间：2022-04-10 18:12:39" itemprop="dateModified" datetime="2022-04-10T18:12:39+08:00">2022-04-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -395,11 +395,8 @@ daovoice('update');
 <p>过拟合是无法彻底避免的。</p>
 <p><strong>过拟合的含义：</strong></p>
 <ul>
-<li><ul>
 <li><strong>过度关注训练集（VC维过大）</strong></li>
 <li><strong>对抗变化能力差（泛化能力差）</strong></li>
-</ul>
-</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加载鸢尾花数据集</span></span><br><span class="line">​iris = load_iris()</span><br><span class="line"></span><br><span class="line">X = iris.data</span><br><span class="line">y = iris.target</span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="number">1</span>/<span class="number">4</span>, random_state=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'数据集样本数：&#123;&#125;，训练集样本数：&#123;&#125;，测试集样本数：&#123;&#125;'</span>.format(len(X), len(X_train), len(X_test)))</span><br><span class="line"><span class="comment"># 数据集样本数：150，训练集样本数：112，测试集#样本数：38</span></span><br></pre></td></tr></table></figure>
 
@@ -415,66 +412,51 @@ daovoice('update');
 <p>“没有免费的午餐”（No Free Lunch Theorem, NFL）定理表明无论学习算法多好或者坏，它们的期望性能是相同的。</p>
 <p>NFL定理最重要的意义，是让我们清楚地认识到，脱离具体问题，空泛地谈什么算法更好是没有意义的，每种算法都有自己的适用范围，针对自己的实际问题，根据算法自身的归纳偏好，找到匹配当前问题的局部最优解，该解可能在其他问题上表现不尽如人意，但是这就足够了。</p>
 <p><strong>假设空间的衡量：</strong></p>
-<ul>
-<li><strong>衡量一类模型的分类能力：VC Dimension</strong></li>
-</ul>
-<p><strong>VC维：假设空间能shatter（对数据任意组合分类）的最大</strong>数据量</p>
+<p><strong>衡量一类模型的分类能力：VC Dimension</strong></p>
+<p><strong>VC维：假设空间能shatter（对数据任意组合分类）的最大数据量</strong></p>
 <p>平面中线性模型的VC维等于3，也就是平面中任意3个点（无论如何取值）总能被一条直线分开。</p>
 <ul>
-<li><ul>
 <li><p>VC维要足够大</p>
 </li>
-<li><ul>
-<li>用来拟合足够复杂的数据</li>
+<li><p>用来拟合足够复杂的数据</p>
+<ul>
 <li>VC维和参数量大致相等</li>
 <li>复杂模型、更多参数需要更大的VC维</li>
 </ul>
 </li>
 <li><p>VC维要被制衡（不能太大）</p>
-</li>
-<li><ul>
+<ul>
 <li>用来保证训练集以外的效果</li>
 <li><strong>正则化</strong>制衡VC维</li>
 </ul>
 </li>
 </ul>
-</li>
-<li><p><strong>衡量一类模型对抗变化的能力（泛化能力）</strong></p>
-</li>
-</ul>
+<p><strong>衡量一类模型对抗变化的能力（泛化能力）</strong></p>
 <p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_7.png" alt=" "></p>
-<h4 id="正则化"><a href="#正则化" class="headerlink" title="正则化"></a>正则化</h4><ul>
-<li><p>正则化核心思想是<strong>通过限制假设空间，制衡VC维，以控制模型复杂度</strong>。因为模型复杂度越高，越容易过拟合。</p>
-</li>
-<li><ul>
+<h4 id="正则化"><a href="#正则化" class="headerlink" title="正则化"></a>正则化</h4><p>正则化核心思想是<strong>通过限制假设空间，制衡VC维，以控制模型复杂度</strong>。因为模型复杂度越高，越容易过拟合。</p>
+<ul>
 <li><p>线性模型</p>
-</li>
-<li><ul>
+<ul>
 <li>L1、L2</li>
 <li>限制参数大小、数量</li>
 </ul>
 </li>
 <li><p>树模型</p>
-</li>
-<li><ul>
+<ul>
 <li>限制深度</li>
 <li>限制数量</li>
 <li>限制分列条件</li>
 </ul>
 </li>
 </ul>
-</li>
-<li><p><strong>平衡（通过λ实现平衡）损失函数和模型复杂度（模型学习到的权重越大，模型复杂度越高</strong>，以权重表示模型的复杂度）。</p>
-</li>
-</ul>
+<p><strong>平衡（通过λ实现平衡）损失函数和模型复杂度（模型学习到的权重越大，模型复杂度越高</strong>，以权重表示模型的复杂度）。</p>
 <p>&emsp;&emsp;<strong>minimize: Loss(Data|Model) + complexity(Model)</strong></p>
 <p>&emsp;&emsp;例如，L2正则化损失函数</p>
 <p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_8.png" alt=" "></p>
 <ul>
-<li><ul>
-<li>λ值越大，正则化越强，表示需要更多关注模型的复杂度，适用于测试集中的样本与训练集中的样本相差比较大时；</li>
-<li>λ值越小，正则化越弱，表示需要更多关注损失函数，适用于测试集中的样本与 训练集中的样本相差不是很大。</li>
-</ul>
+<li><p>λ值越大，正则化越强，表示需要更多关注模型的复杂度，适用于测试集中的样本与训练集中的样本相差比较大时；</p>
+</li>
+<li><p>λ值越小，正则化越弱，表示需要更多关注损失函数，适用于测试集中的样本与 训练集中的样本相差不是很大。</p>
 </li>
 </ul>
 <p><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/machine_learning/ml_0_9.png" alt=" "></p>
