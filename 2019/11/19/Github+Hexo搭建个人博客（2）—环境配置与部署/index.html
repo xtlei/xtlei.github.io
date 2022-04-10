@@ -59,7 +59,7 @@ daovoice('update');
 </script>
 
   <meta name="description" content="本地环境搭建1.Git环境">
-<meta name="keywords" content="github,hexo,git,blog">
+<meta name="keywords" content="github,hexo,blog,git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Github+Hexo搭建博客(2)—环境配置与部署">
 <meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;xtlei&#x2F;xtlei.github.io&#x2F;2019&#x2F;11&#x2F;19&#x2F;Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%882%EF%BC%89%E2%80%94%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E4%B8%8E%E9%83%A8%E7%BD%B2&#x2F;index.html">
@@ -76,7 +76,7 @@ daovoice('update');
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;1_8.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;1_10.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;1_11.png">
-<meta property="og:updated_time" content="2022-04-10T02:41:33.729Z">
+<meta property="og:updated_time" content="2022-04-10T03:45:34.268Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;xtlei.oss-cn-hongkong.aliyuncs.com&#x2F;xtlei&#x2F;1_1.png">
 
@@ -277,7 +277,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-10 10:41:33" itemprop="dateModified" datetime="2022-04-10T10:41:33+08:00">2022-04-10</time>
+                <time title="修改时间：2022-04-10 11:45:34" itemprop="dateModified" datetime="2022-04-10T11:45:34+08:00">2022-04-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -339,20 +339,24 @@ daovoice('update');
 <font face="Times New Roman,宋体" size="4">
 
 <h4 id="本地环境搭建"><a href="#本地环境搭建" class="headerlink" title="本地环境搭建"></a>本地环境搭建</h4><h5 id="1-Git环境"><a href="#1-Git环境" class="headerlink" title="1.Git环境"></a>1.Git环境<a id="more"></a></h5><p>1.注册并登录Github<a href="https://github.com/"><strong>点我进入</strong></a><br>2.Git下载安装<a href="http://xietonglei.xyz/2019/11/19/Github+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%881%EF%BC%89%E2%80%94Git%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" target="_blank" rel="noopener"><strong>点我查看教程</strong></a></p>
-<h5 id="2-Node环境"><a href="#2-Node环境" class="headerlink" title="2.Node环境"></a>2.Node环境</h5><p>1.安装Node.js<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener"><strong>点我下载</strong></a>同样选择适合自己计算机系统的版本下载安装即可。<br>2.安装完毕后，测试是否安装成功，打开命令终端，win+r输入cmd进入终端，键入命令node -v或者直接输入node回车即可，如果出现下图则说明node环境安装成功：<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_1.png" alt=" "></p>
+<h5 id="2-Node环境"><a href="#2-Node环境" class="headerlink" title="2.Node环境"></a>2.Node环境</h5><p>1.安装Node.js<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener"><strong>点我下载</strong></a>同样选择适合自己计算机系统的版本下载安装即可。<br>2.安装完毕后，测试是否安装成功，打开命令终端， win+r 输入cmd进入终端，键入命令 node -v 或者直接输入node回车即可，如果出现下图则说明node环境安装成功：<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_1.png" alt=" "></p>
 <p>node中集成了npm包安装工具，输入命令npm -v查看版本号，如图：<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_2.png" alt=" "></p>
-<h5 id="3-Hexo环境"><a href="#3-Hexo环境" class="headerlink" title="3.Hexo环境"></a>3.Hexo环境</h5><p>Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br><strong>1.安装hexo-cli</strong>：命令行键入命令cnpm i hexo-cli -g或者npm i hexo-cli -g，其中 \‘cnpm\’ 代替 npm，安装速度更快；\‘i\’表示install，\‘-g\’表示全局安装 （注意：如果安装失败，建议在管理者模式下安装）。 <img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_3.png" alt=" "></p>
-<p><strong>2.初始化</strong>：在本地合适的位置创建一个文件夹用作Blog环境，比如，在D盘Github目录下创建了一个myblog文件夹，进入此目录，按住shift键同时点击鼠标右键打开Powershell终端，键入命令hexo init进行初始化，出现下图表示安装成功。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_4.png" alt=" "></p>
+<h5 id="3-Hexo环境"><a href="#3-Hexo环境" class="headerlink" title="3.Hexo环境"></a>3.Hexo环境</h5><p>Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown（或其他渲染引擎）解析文章，几秒即可利用主题生成静态网页。</p>
+<p><strong>1.安装hexo-cli</strong>：命令行键入命令 cnpm i hexo-cli -g 或者 npm i hexo-cli -g ，其中cnpm安装速度更快；&#39;i&#39;表示install，&#39;-g&#39;表示全局安装 （注意：如果安装失败，建议在管理者模式下安装）。 <img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_3.png" alt=" "></p>
+<p><strong>2.初始化</strong>：在本地合适的位置创建一个文件夹用作Blog环境，比如，在D盘Github目录下创建了一个myblog文件夹，进入此目录，按住shift键同时点击鼠标右键打开Powershell终端，键入命令 hexo init 进行初始化，出现下图表示安装成功。<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_4.png" alt=" "></p>
 <p>完毕后发现空目录多出很多文件，如下图：<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_5.png" alt=" "></p>
-<p>这里的node_modules是项目依赖，在初始化的时候已经下载完成，不必运行hexo i（安装依赖）。</p>
-<h5 id="4-测试本地运行"><a href="#4-测试本地运行" class="headerlink" title="4.测试本地运行"></a>4.测试本地运行</h5><p>上述环境完成后，就可以在本地预览blog了。<br>1.键入命令hexo generate生成静态文件，简写为hexo g； 2.键入命令hexo server在本地运行， 简写为hexo s； 注意要保证PowerShell当前目录仍为myblog，出现下图则表示成功，<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_6.png" alt=" "></p>
-<p>打开浏览器，地址栏键入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可进行预览，效果如下<img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_7.png" alt=" "></p>
+<p>其中，node_modules是项目依赖，在初始化时已下载完成，不再运行hexo i（安装依赖）。</p>
+<h5 id="4-测试本地运行"><a href="#4-测试本地运行" class="headerlink" title="4.测试本地运行"></a>4.测试本地运行</h5><p>上述环境完成后，就可以在本地预览blog了。</p>
+<p>1.键入命令 hexo generate 生成静态文件，简写为 hexo g ； </p>
+<p>2.键入命令 hexo server 在本地运行， 简写为 hexo s ； </p>
+<p>注意要保证PowerShell当前目录仍为myblog，出现下图则表示成功。<img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_6.png" alt=" "></p>
+<p>打开浏览器，地址栏键入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可进行预览，效果如下。<img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_7.png" alt=" "></p>
 <h4 id="Github部署"><a href="#Github部署" class="headerlink" title="Github部署"></a>Github部署</h4><h5 id="1-在github上创建一个仓库"><a href="#1-在github上创建一个仓库" class="headerlink" title="1.在github上创建一个仓库"></a>1.在github上创建一个仓库</h5><p>注意此仓库的名称格式是：你的github用户名.github.io（其中用户名不区分大小写）<img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_8.png" alt=" "></p>
 <h5 id="2-修改hexo文件配置"><a href="#2-修改hexo文件配置" class="headerlink" title="2.修改hexo文件配置"></a>2.修改hexo文件配置</h5><p>1.要想部署到github，需要对本地myblog文件夹下的_config.yml文件进行配置；</p>
-<p>2.用编译器打开该文件，拉到最后，找到deploy选项，作如下配置:</p>
+<p>2.用编译器打开该文件，拉到最后，找到deploy选项，作如下配置；</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:  </span><br><span class="line">    type: &apos;git&apos;  </span><br><span class="line">    repo: git@github.com:xtlei/xtlei.github.io.git  </span><br><span class="line">    baranch:master</span><br></pre></td></tr></table></figure>
 <p>其中，repo填写github创建的仓库的地址，点进你的仓库，<img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_10.png" alt=" "></p>
-<h5 id="3-部署"><a href="#3-部署" class="headerlink" title="3.部署"></a>3.部署</h5><p>部署之前，需要安装git部署插件<br>1.打开myblog文件夹，调出Powershell终端，键入cnpm i hexo-deployer-git -S安装插件<br>2.安装完毕后，键入命令hexo g生成静态文件<br>3.键入命令hexo d完成部署<br>4.再进入到github，进入io仓库，点击setting进入设置，往下拉至GitHub Pages看到如图<br><img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_11.png" alt=" "></p>
+<h5 id="3-部署"><a href="#3-部署" class="headerlink" title="3.部署"></a>3.部署</h5><p>部署之前，需要安装git部署插件<br>1.打开myblog文件夹，调出Powershell终端，键入 cnpm i hexo-deployer-git -S 安装插件<br>2.安装完毕后，键入命令 hexo g 生成静态文件<br>3.键入命令 hexo d 完成部署<br>4.再进入到github仓库，点击setting进入设置，往下拉至GitHub Pages如图，<img src="https://xtlei.oss-cn-hongkong.aliyuncs.com/xtlei/1_11.png" alt=" "></p>
 <p>在地址栏中输入xtlei.github.io（GitHub Pages中部署地址）即可访问部署成功的Blog。</p>
 <p>原文链接：<a href="https://rosesnow.github.io" target="_blank" rel="noopener">https://rosesnow.github.io</a><br></p></font><p></p>
 </html>
@@ -413,8 +417,8 @@ daovoice('update');
           <div class="post-tags">
               <a href="/tags/github/" rel="tag"><i class="fa fa-tag"></i> github</a>
               <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
               <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
           </div>
 
         
