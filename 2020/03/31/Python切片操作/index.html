@@ -66,7 +66,7 @@ daovoice('update');
 <meta property="og:site_name" content="蟹家之宝树">
 <meta property="og:description" content="list切片Python提供了切片（Slice）操作符“:”，简化取指定索引范围的操作。L = [&amp;#39;Adam&amp;#39;, &amp;#39;Lisa&amp;#39;, &amp;#39;Bart&amp;#39;, &amp;#39;Paul&amp;#39;]取前3个元素，用L[0:3]实现，表示从索引0开始取，直到索引3为止，但不包括索引3。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2022-04-26T14:17:05.676Z">
+<meta property="og:updated_time" content="2022-04-26T14:20:01.227Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://github.com/xtlei/xtlei.github.io/2020/03/31/Python%E5%88%87%E7%89%87%E6%93%8D%E4%BD%9C/">
@@ -266,7 +266,7 @@ daovoice('update');
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-26 22:17:05" itemprop="dateModified" datetime="2022-04-26T22:17:05+08:00">2022-04-26</time>
+                <time title="修改时间：2022-04-26 22:20:01" itemprop="dateModified" datetime="2022-04-26T22:20:01+08:00">2022-04-26</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -339,6 +339,7 @@ daovoice('update');
 <h5 id="字符串切片"><a href="#字符串切片" class="headerlink" title="字符串切片"></a>字符串切片</h5><p>字符串&#39;xxx&#39;和Unicode字符串u&#39;xxx&#39;（Python3不再需要u）也可以看成是一种list，每个元素就是一个字符。因此，字符串也可以用切片操作，只是操作结果仍是字符串：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'ABCDEFG'</span>[:<span class="number">3</span>]  <span class="comment"># 'ABC'</span></span><br><span class="line"><span class="string">'ABCDEFG'</span>[<span class="number">-3</span>:]  <span class="comment"># 'EFG'</span></span><br><span class="line"><span class="string">'ABCDEFG'</span>[::<span class="number">2</span>]  <span class="comment"># 'ACEG'</span></span><br></pre></td></tr></table></figure>
 <p>在很多编程语言中，针对字符串提供了很多各种截取函数，其实目的就是对字符串切片。Python没有针对字符串的截取函数，只需要切片操作就可以完成。</p>
+<p><br><br></p>
 <p><strong>说明：[begin_index, end_index, step]切片形式，不论step正负，切片是从begin_index开始，end_index结束（不包含end_index）。这在同时指定begin_index和end_index的情况下不会有任何疑问，然而，Python允许省略begin_index或者end_index一个或两个，这会产生一些问题。</strong></p>
 <ul>
 <li><p><strong>当全部省略时，便是根据step全部切片；</strong></p>
